@@ -18,7 +18,7 @@ Below, the content related to the [Wikipedia page](https://en.wikipedia.org/wiki
 	- The dimension of each collision cell is no longer than a mean free path. All particles in a cell are collision candidates, regardless of their actual trajectories.
 	- The specifics of collision depend on the molecular interaction model. For the _hard spheres_ model, the collision probability for the pair of particles $i$ and $j$ is proportional to their relative speed,
 	
-	$$ P\_{coll}[i, j] = \frac{|\vec{v}\_i - \vec{v}\_j|}{\Sigma\_{m=1}^{N\_c} \Sigma\_{n=1}^{m-1} |\vec{v}\_m - \vec{v}_n|} $$
+	$$P\_{coll}[i, j] = \frac{|\vec{v}\_i - \vec{v}\_j|}{\Sigma\_{m=1}^{N\_c} \Sigma\_{n=1}^{m-1} |\vec{v}\_m - \vec{v}_n|}$$
 	
 	$N_c$ is the number of particles in the cell.
 	- The double summation in the denominator can be computationally intensive, so we use a technique called _rejection sampling_ to select collision pairs.
@@ -30,15 +30,15 @@ Below, the content related to the [Wikipedia page](https://en.wikipedia.org/wiki
 	- After a collision pair is chosen, their post collision velocities $` v_i^* `$ and $` v_j^* `$ are evaluated.
 	- The relative velocity in terms of the spherical angles $\theta, \phi$ is given by
 	
-	$$ \vec{v_r^*} = v\_r [(sin\theta cos\phi) \hat{x} + (sin\theta sin\phi)\hat{y} + cos\theta \hat{z}] $$
+	$$\vec{v_r^*} = v\_r [(sin\theta cos\phi) \hat{x} + (sin\theta sin\phi)\hat{y} + cos\theta \hat{z}]$$
 	
 	and these angles are selected by some Monte Carlo process with distributions given by the selected collision model. For the hard spheres model, these angles are uniformly distributed over the unit sphere. The azimuthal angle is between $0$ and $2\pi$, and is written as $` \phi = 2\pi \mathcal{R}_1 `$ where $` \mathcal{R}_1 `$ is a uniform deviate in $[0,1)$.
 	- The polar angle is ditributed according to 
 	
-	$$ P_\theta (\theta) d\theta = \frac{1}{2} sin\theta d\theta $$
+	$$P_\theta (\theta) d\theta = \frac{1}{2} sin\theta d\theta$$
 	
 	- If we use the change of variables $q = -cos\theta$, we obtain
 	
-	$$ P_q(q)dq = \frac{1}{2}dq $$
+	$$P_q(q)dq = \frac{1}{2}dq$$
 	
 	where we can write $` q = 2 \mathcal{R}_2 - 1 `$ where $` \mathcal{R}_2 `$ is a uniform deviate in $` [0,1) `$.
