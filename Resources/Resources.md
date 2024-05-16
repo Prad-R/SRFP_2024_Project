@@ -63,4 +63,21 @@ Below, the content related to the [Wikipedia page](https://en.wikipedia.org/wiki
 
 - **General Information**
 	- The Boltzmann equation or the Boltzmann Transport Equation (BTE) describes the statistical behaviour of a thermodynamic system not in a state of equilibrium.
-	- The equation is not the result of analysing every individual particle but is rather a result of considering a probability distribution of position and momentum of a typical particle. In other words, it's the probability that a particle occupies a very small region of space centred around $` \vec{r} `$ ($` d^3\vec{r} `$) and a momentum nearly equal to $` \vec{p} `$ ($` d^3\vec{p} `$) at an instant of time.
+	- The equation is not the result of analysing every individual particle but is rather a result of considering a probability distribution of position and momentum of a typical particle. In other words, it's the probability that a particle occupies a very small region of space centred around $` \vec{r} `$ (represented as $` d^3\vec{r} `$) and a momentum nearly equal to $` \vec{p} `$ (represented as$` d^3\vec{p} `$) at an instant of time.
+- **The phase space and density function**
+	- The set of all positions $` \vec{r} `$ and momenta $` \vec{p} `$ parameterised by time $t$ is called the _phase space_ of the system. This space is 6-dimensional.
+	- If we define a probability distribution function $` f(\vec{r}, \vec{p}, t) `$, then we obtain the number of particles in $` d^3 \vec{r} d^3 \vec{p} `$ as 
+	
+	$$dN = f(\vec{r}, \vec{p}, t) d^3 \vec{r} d^3 \vec{p}$$
+	
+	- Integrating over positions and momenta, we obtain
+	
+	$$N = \int\_{momenta} d^3 \vec{p} \int\_{positions} d^3 \vec{r} f(\vec{r}, \vec{p}, t)$$
+	
+	where $N$ is the total number of particles having positions and momenta in that region.
+- **Principal statement**
+	- The general equation is given by
+	
+	$$\frac{df}{dt} = \left( \frac{\partial f}{\partial t} \right)\_{force} + \left( \frac{\partial f}{\partial t} \right)\_{diff} + \left( \frac{\partial f}{\partial t} \right)\_{coll}$$
+	
+	where the force term corresponds to the forces exerted on the particles by an external influence, _diff_ refers to the diffusion of the particles and _coll_ refers to the forces due to particle collisions.
