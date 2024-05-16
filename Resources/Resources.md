@@ -14,9 +14,7 @@ Below, the content related to the [Wikipedia page](https://en.wikipedia.org/wiki
 	- If a particle reaches a boundary, it's position and velocity are reset accordingly.
 	- After all particles are moved, they are put into cells within which they randomly collide based on collision rates and probabilities obtained from the Kinetic Theory of Gases.
 	- After the velocities of the colliding particles are reset, statistical sampling is performed and the process is repeated.
-	```math
-	\Sigma
-	```
+	$$\Sigma$$
 - **Collisions**
 	- The dimension of each collision cell is no longer than a mean free path. All particles in a cell are collision candidates, regardless of their actual trajectories.
 	- The specifics of collision depend on the molecular interaction model. For the _hard spheres_ model, the collision probability for the pair of particles $i$ and $j$ is proportional to their relative speed,
