@@ -46,4 +46,4 @@ Below, the content related to the [Wikipedia page](https://en.wikipedia.org/wiki
 	where we can write $` q = 2 \mathcal{R}_2 - 1 `$ where $` \mathcal{R}_2 `$ is a uniform deviate in $` [0,1) `$.
 	- The post collision velocities are set as
 	
-	$$\vec{v}\_i^* = \vec{v}\_{cm}^* + \frac{1}{2} \vec{v}\_r^* \; \vec{v}\_j^* = \vec{v}\_{cm}^* - \frac{1}{2} \vec{v}\_r^*$$
+	$$\vec{v}\_i^* = \vec{v}\_{cm}^* + \frac{1}{2} \vec{v}\_r^* \qquad \vec{v}\_j^* = \vec{v}\_{cm}^* - \frac{1}{2} \vec{v}\_r^*$$
