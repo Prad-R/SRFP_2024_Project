@@ -4,7 +4,7 @@
 
 Below, the content related to the [Wikipedia page](https://en.wikipedia.org/wiki/Direct_simulation_Monte_Carlo) is mentioned.
 
-- **General Info**
+- **General Information**
 	- The DSMC method is used whenever the Knudsen number is of other order of 1. Right now used in MEMS and Space Shuttle Re-entry Aerodynamics.
 	- It models fluid flows using probabilistic simulation molecules to solve the [Boltzmann equation](https://en.wikipedia.org/wiki/Boltzmann_equation). Here's the [link](#boltzmann-equation) to the section discussing it in brief.
 - **DSMC Algorithm**
@@ -60,3 +60,7 @@ Below, the content related to the [Wikipedia page](https://en.wikipedia.org/wiki
 	$$\frac{M_{coll}}{M_{cand}} = \frac{\langle v\_r \rangle}{v\_r^{max}}$$
 	
 ## Boltzmann Equation
+
+- **General Information**
+	- The Boltzmann equation or the Boltzmann Transport Equation (BTE) describes the statistical behaviour of a thermodynamic system not in a state of equilibrium.
+	- The equation is not the result of analysing every individual particle but is rather a result of considering a probability distribution of position and momentum of a typical particle. In other words, it's the probability that a particle occupies a very small region of space centred around $` \vec{r} `$ ($` d^3\vec{r} `$) and a momentum nearly equal to $` \vec{p} `$ ($` d^3\vec{p| `$) at an instant of time.
