@@ -24,4 +24,4 @@ Below, the content related to the [Wikipedia page](https://en.wikipedia.org/wiki
 	- The double summation in the denominator can be computationally intensive, so we use a technique called _rejection sampling_ to select collision pairs.
 	- Rejection sampling is performed as follows : -
 		- A pair of candidates particles $i$, $j$ is chosen at random and their relative velocity magnitude is computed.
-		- The pair is accepted as a collision pair if $v_r$ > $v_r_{max} \cdot \mathcal{R}$ where $\mathcal{R}$ is a uniform random number in $[0,1)$.
+		- The pair is accepted as a collision pair if $v_r > v_{r_{max}} \cdot \mathcal{R}$ where $\mathcal{R}$ is a uniform random number in $[0,1)$.
