@@ -63,4 +63,4 @@ Below, the content related to the [Wikipedia page](https://en.wikipedia.org/wiki
 
 - **General Information**
 	- The Boltzmann equation or the Boltzmann Transport Equation (BTE) describes the statistical behaviour of a thermodynamic system not in a state of equilibrium.
-	- The equation is not the result of analysing every individual particle but is rather a result of considering a probability distribution of position and momentum of a typical particle. In other words, it's the probability that a particle occupies a very small region of space centred around $` \vec{r} `$ ($` d^3\vec{r} `$) and a momentum nearly equal to $` \vec{p} `$ ($` d^3\vec{p| `$) at an instant of time.
+	- The equation is not the result of analysing every individual particle but is rather a result of considering a probability distribution of position and momentum of a typical particle. In other words, it's the probability that a particle occupies a very small region of space centred around $` \vec{r} `$ ($` d^3\vec{r} `$) and a momentum nearly equal to $` \vec{p} `$ ($` d^3\vec{p} `$) at an instant of time.
