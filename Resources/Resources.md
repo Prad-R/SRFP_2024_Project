@@ -47,3 +47,14 @@ Below, the content related to the [Wikipedia page](https://en.wikipedia.org/wiki
 	- The post collision velocities are set as
 	
 	$$\vec{v}\_i^* = \vec{v}\_{cm}^* + \frac{1}{2} \vec{v}\_r^* \qquad \vec{v}\_j^* = \vec{v}\_{cm}^* - \frac{1}{2} \vec{v}\_r^*$$
+	
+	- By conservation of momentum and energy, the velocity of the CoM and the relative speed are unchanged.
+	- This process is repeated for every pair of particles.
+	- The total number of hard sphere collisions given in a cell during a time $` \tau `$ is given by
+	
+	$$M\_{coll} = \frac{1}{2} (N\_c - 1) F\_N f\_{coll} \tau = \frac{N\_c (N\_c - 1) F\_N \pi d^2 \langle v\_r \rangle \tau}{2 V\_c}$$
+	
+	where $` f_{coll}`$ is the collision frequency given by KTG, $` d `$ is the diameter of the cell and $` V_c `$ is the volume of the cell.
+	- The ratio of total accepted to the total number of candidates for hard sphere particles is given by 
+	
+	$$\frac{M_{coll}}{M_{cand}} = \frac{\langle v\_r \rangle}{v\_r^{max}}$$
