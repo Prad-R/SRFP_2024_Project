@@ -17,4 +17,4 @@ Below, the content related to the [Wikipedia page](https://en.wikipedia.org/wiki
 - **Collisions**
 	- The dimension of each collision cell is no longer than a mean free path. All particles in a cell are collision candidates, regardless of their actual trajectories.
 	- The specifics of collision depend on the molecular interaction model. For the _hard spheres_ model, the collision probability for the pair of particles $i$ and $j$ is proportional to their relative speed,
-	- $` P_{coll}[i, j] = \frac{|\vec{v}_i - \vec{v}_j|}{\Sum_{m=1}^{N_c} \Sum_{n=1}^{m-1} |\vec{v}_m - \vec{v}_n|} `$	
+	- $` P_{coll}[i, j] = \frac{|\vec{v}_i - \vec{v}_j|}{\Sigma_{m=1}^{N_c} \Sigma_{n=1}^{m-1} |\vec{v}_m - \vec{v}_n|} `$	
