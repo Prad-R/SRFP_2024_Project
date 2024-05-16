@@ -6,7 +6,7 @@ Below, the content related to the [Wikipedia page](https://en.wikipedia.org/wiki
 
 - **General Info**
 	- The DSMC method is used whenever the Knudsen number is of other order of 1. Right now used in MEMS and Space Shuttle Re-entry Aerodynamics.
-	- It models fluid flows using probabilistic simulation molecules to solve the [Boltzmann Equation](https://en.wikipedia.org/wiki/Boltzmann_equation).
+	- It models fluid flows using probabilistic simulation molecules to solve the [Boltzmann equation](https://en.wikipedia.org/wiki/Boltzmann_equation). Here's the [link](#boltzmann-equation) to the section discussing it in brief.
 - **DSMC Algorithm**
 	- State of the system is given by the positions and velocities of the particles $\{ \vec{r_i}, \vec{v_i} \}$ where $i = 1, 2, 3, \cdots, N$ and $N$ is the number of particles.
 	- Each DSMC particle represents $F_N$ particles in physical space with approximately the same positions and velocities.
@@ -58,3 +58,5 @@ Below, the content related to the [Wikipedia page](https://en.wikipedia.org/wiki
 	- The ratio of total accepted to the total number of candidates for hard sphere particles is given by 
 	
 	$$\frac{M_{coll}}{M_{cand}} = \frac{\langle v\_r \rangle}{v\_r^{max}}$$
+	
+## Boltzmann Equation
