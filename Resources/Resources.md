@@ -129,3 +129,10 @@ Below, the content related to the [Wikipedia page](https://en.wikipedia.org/wiki
 	$$\int A F\_j \frac{\partial f}{\partial p\_j} d^3\vec{p} = - n F\_j \left\langle \frac{\partial A}{\partial p\_j} \right\rangle$$
 	
 	$$\int A \left( \frac{\partial f}{\partial t} \right)\_{coll} d^3\vec{p} = 0$$
+	
+	- Zeroth moment
+		- If we let $` A = m(v_i)^0 = m `$, the integrated Boltzmann equation becomes the mass conservation equation. Note that we use $` nm = \rho `$.
+	- First moment
+		- If we let $` A = m(v_i)^1 = p_i `$, the integrated Boltzmann equation becomes the momentum conservation equation.
+	- Second moment 
+		- If we let $` A = m(v_i)^2 = \frac{p_i p_i}{2m} `$, the KE of the particle, the integrated Boltzmann equation becomes the energy conservation equation.
