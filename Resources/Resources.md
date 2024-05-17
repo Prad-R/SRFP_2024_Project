@@ -104,4 +104,9 @@ Below, the content related to the [Wikipedia page](https://en.wikipedia.org/wiki
 		
 		$$df = \frac{\partial f}{\partial t} dt + \left( \frac{\partial f}{\partial x} dx + \frac{\partial f}{\partial y} dy + \frac{\partial f}{\partial z} dz \right) + \left( \frac{\partial f}{\partial p_x} dp_x + \frac{\partial f}{\partial p_y} dp_y + \frac{\partial f}{\partial p_z} dp_z \right)$$
 		
-		$$= \frac{\partial f}{\partial t} dt + \vec{\nabla}f \cdot d\vec{r} + \vec{\nabla}_p f \cdot \vec{F}dt$$
+		$$= \frac{\partial f}{\partial t} dt + \vec{\nabla}f \cdot \frac{\vec{p}}{m}dt + \vec{\nabla}_p f \cdot \vec{F}dt$$
+		
+- **The Final Statement**
+	- Dividing the above equation by $` dt `$ and, we obtain,
+	
+	$$\frac{\partial f}{\partial t} dt + \vec{\nabla}f \cdot \frac{\vec{p}}{m} + \vec{\nabla}_p f \cdot \vec{F} = \left( \frac{\partial f}{\partial t} \right)\_{coll}$$
