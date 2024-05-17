@@ -81,3 +81,9 @@ Below, the content related to the [Wikipedia page](https://en.wikipedia.org/wiki
 	$$\frac{df}{dt} = \left( \frac{\partial f}{\partial t} \right)\_{force} + \left( \frac{\partial f}{\partial t} \right)\_{diff} + \left( \frac{\partial f}{\partial t} \right)\_{coll}$$
 	
 	where the force term corresponds to the forces exerted on the particles by an external influence, _diff_ refers to the diffusion of the particles and _coll_ refers to the forces due to particle collisions.
+	- The force and diffusion terms : -
+		- Suppose there are particles with position $` \vec{r} `$ in $` d^3 \vec{r} `$ and momentum $` \vec{p} `$ in $` d^3 \vec{p} `$ at time $` t `$. If $\vec{F}$ acts instantaneously on all particles, then at $` t + \Delta t `$, we have $` \vec{r} + \Delta \vec{r} = \vec{r} + \frac{\vec{p}}{m} \Delta t `$ and $` \vec{p} + \Delta \vec{p} = \vec{p} + \vec{F} \Delta t `$. In the absence of collisions, if we write an equation for the number of particles, we obtain,
+		
+		$$f(\vec{r} + \frac{\vec{p}}{m} \Delta t, \vec{p} + \vec{F} \Delta t, t + \Delta t) d^3\vec{r} d^3\vec{p} = f(\vec{r}, \vec{p}, t) d^3\vec{r} d^3\vec{p}$$
+		
+		In the above equation, we have used the fact that the phase space volume element is constant. 
