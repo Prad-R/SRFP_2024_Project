@@ -99,3 +99,5 @@ Below, the content related to the [Wikipedia page](https://en.wikipedia.org/wiki
 		dividing by the phase space volume and $` \Delta t `$ and taking $` \Delta f, \Delta t \to 0 `$, we obtain,
 		
 		$$\frac{df}{dt} = \left( \frac{\partial f}{\partial t} \right) _{coll}$$
+		
+		-Hi
