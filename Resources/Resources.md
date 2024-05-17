@@ -90,11 +90,14 @@ Below, the content related to the [Wikipedia page](https://en.wikipedia.org/wiki
 		
 		- However, if there are collisions, the particle density in phase space volume changes and as a result we obtain,
 		
-		$$dN_{coll} = \left( \frac{\partial f}{\partial t} \right)_{coll} \Delta t d^3\vec{r} d^3\vec{p}$$
+		$$\begin{align*}
 		
-		$$\qquad = f(\vec{r} + \frac{\vec{p}}{m} \Delta t, \vec{p} + \vec{F} \Delta t, t + \Delta t) d^3\vec{r} d^3\vec{p} - f(\vec{r}, \vec{p}, t) d^3\vec{r} d^3\vec{p}$$
+		dN_{coll} = \left( \frac{\partial f}{\partial t} \right)_{coll} \Delta t d^3\vec{r} d^3\vec{p} \\
 		
-		$$\qquad = \Delta f d^3\vec{r} d^3 \vec{p}$$
+		= f(\vec{r} + \frac{\vec{p}}{m} \Delta t, \vec{p} + \vec{F} \Delta t, t + \Delta t) d^3\vec{r} d^3\vec{p} - f(\vec{r}, \vec{p}, t) d^3\vec{r} d^3\vec{p} \\
+		
+		= \Delta f d^3\vec{r} d^3 \vec{p}
+		\end{align*}$$
 		
 		dividing by the phase space volume and $` \Delta t `$ and taking $` \Delta f, \Delta t \to 0 `$, we obtain,
 		
