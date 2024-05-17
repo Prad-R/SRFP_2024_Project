@@ -109,4 +109,23 @@ Below, the content related to the [Wikipedia page](https://en.wikipedia.org/wiki
 - **The Final Statement**
 	- Dividing the above equation by $` dt `$ and, we obtain,
 	
-	$$\frac{\partial f}{\partial t} dt + \vec{\nabla}f \cdot \frac{\vec{p}}{m} + \vec{\nabla}_p f \cdot \vec{F} = \left( \frac{\partial f}{\partial t} \right)\_{coll}$$		
+	$$\frac{\partial f}{\partial t} dt + \vec{\nabla}f \cdot \frac{\vec{p}}{m} + \vec{\nabla}_p f \cdot \vec{F} = \left( \frac{\partial f}{\partial t} \right)\_{coll}$$
+	
+- **Conservation Equations**
+	- The number density is given by
+	
+	$$n = \int\_{momenta)	f d^3\vec{p}$$
+	
+	- The average value of any function $` A `$ is given by
+	
+	$$ \langle A \rangle = \frac{1}{n} \int\_{momenta} A f d^3\vec{p}
+	
+	- If we multiply the entire Boltzmann equation with $A$ and integrate with respect to momentum volume, we obtain 4 equations given as
+	
+	$$\int A \frac{\partial f}{\partial t} d^3\vec{p} = \frac{\partial}{\partial t} \left( n \langle A \rangle \right)$$
+	
+	$$\int \frac{p\_jA}{m} \frac{\partial f}{\partial x\_j} d^3\vec{p} = \frac{1}{m} \frac{\partial}{\partial x\_j} \left( n \langle Ap\_j= \rangle \right)$$
+	
+	$$\int A F\_j \frac{\partial f}{\partial p\_j} d^3\vec{p} = - n F\_j \langle \frac{\partial A}{\partial p\_j} \rangle$$
+	
+	$$\int A \left( \frac{\partial f}{\partial t} \right)\_{coll} d^3\vec{p} = 0$$
