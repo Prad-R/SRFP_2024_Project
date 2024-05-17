@@ -92,11 +92,9 @@ Below, the content related to the [Wikipedia page](https://en.wikipedia.org/wiki
 		
 		$$dN\_{coll} = \left( \frac{\partial f}{\partial t} \right)\_{coll} \Delta t d^3\vec{r} d^3\vec{p}$$ 
 		
-		$$\hspace{5cm} = f(\vec{r} + \frac{\vec{p}}{m} \Delta t, \vec{p} + \vec{F} \Delta t, t + \Delta t) d^3\vec{r} d^3\vec{p} - f(\vec{r}, \vec{p}, t) d^3\vec{r} d^3\vec{p}$$
+		$$\hspace{20cm} = f(\vec{r} + \frac{\vec{p}}{m} \Delta t, \vec{p} + \vec{F} \Delta t, t + \Delta t) d^3\vec{r} d^3\vec{p} - f(\vec{r}, \vec{p}, t) d^3\vec{r} d^3\vec{p}$$
 		
-		$$\hspace{5cm} = \Delta f d^3\vec{r} d^3\vec{p}$$
-		
-		$$\displaylines{\begin{aligned}5x &= 4y \\\ 4y &= 5z \end{aligned}}$$
+		$$\hspace{20cm} = \Delta f d^3\vec{r} d^3\vec{p}$$
 		
 		dividing by the phase space volume and $` \Delta t `$ and taking $` \Delta f, \Delta t \to 0 `$, we obtain,
 		
