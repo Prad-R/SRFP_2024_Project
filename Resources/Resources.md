@@ -96,6 +96,9 @@ Below, the content related to the [Wikipedia page](https://en.wikipedia.org/wiki
 		
 		$$\hspace{5cm} = \Delta f d^3\vec{r} d^3\vec{p}$$
 		
+		$$5x = 4y \\
+		4y = 5z$$
+		
 		dividing by the phase space volume and $` \Delta t `$ and taking $` \Delta f, \Delta t \to 0 `$, we obtain,
 		
 		$$\frac{df}{dt} = \left( \frac{\partial f}{\partial t} \right) _{coll}$$
