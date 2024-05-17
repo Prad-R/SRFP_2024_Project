@@ -92,9 +92,9 @@ Below, the content related to the [Wikipedia page](https://en.wikipedia.org/wiki
 		
 		$$
 		\begin{aligned}
-		dN_{coll} = \left( \frac{\partial f}{\partial t} \right)_{coll} \Delta t d^3\vec{r} d^3\vec{p} \\
-		= f(\vec{r} + \frac{\vec{p}}{m} \Delta t, \vec{p} + \vec{F} \Delta t, t + \Delta t) d^3\vec{r} d^3\vec{p} - f(\vec{r}, \vec{p}, t) d^3\vec{r} d^3\vec{p} \\
-		= \Delta f d^3\vec{r} d^3 \vec{p}
+		dN_{coll} &= \left( \frac{\partial f}{\partial t} \right)_{coll} \Delta t d^3\vec{r} d^3\vec{p} \\
+		&= f(\vec{r} + \frac{\vec{p}}{m} \Delta t, \vec{p} + \vec{F} \Delta t, t + \Delta t) d^3\vec{r} d^3\vec{p} - f(\vec{r}, \vec{p}, t) d^3\vec{r} d^3\vec{p} \\
+		&= \Delta f d^3\vec{r} d^3 \vec{p}
 		\end{aligned}
 		$$
 		
