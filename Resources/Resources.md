@@ -114,7 +114,7 @@ Below, the content related to the [Wikipedia page](https://en.wikipedia.org/wiki
 - **Conservation Equations**
 	- The number density is given by
 	
-	$$n = \int\_{momenta)	f d^3\vec{p}$$
+	$$n = \int\_{momenta}	f d^3\vec{p}$$
 	
 	- The average value of any function $` A `$ is given by
 	
