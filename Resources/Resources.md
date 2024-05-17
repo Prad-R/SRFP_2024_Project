@@ -94,8 +94,8 @@ Below, the content related to the [Wikipedia page](https://en.wikipedia.org/wiki
 		
 		$$\qquad = f(\vec{r} + \frac{\vec{p}}{m} \Delta t, \vec{p} + \vec{F} \Delta t, t + \Delta t) d^3\vec{r} d^3\vec{p} - f(\vec{r}, \vec{p}, t) d^3\vec{r} d^3\vec{p}$$
 		
-		$$\Delta f d^3\vec{r} d^3 \vec{p}$$.
+		$$\qquad = \Delta f d^3\vec{r} d^3 \vec{p}$$
 		
 		dividing by the phase space volume and $` \Delta t `$ and taking $` \Delta f, \Delta t \to 0 `$, we obtain,
 		
-		$$\frac{df}{dt} = \frac{\partial f}{\partial t}_{coll}$$
+		$$\frac{df}{dt} = \left( \frac{\partial f}{\partial t} \right) _{coll}$$
