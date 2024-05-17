@@ -4,4 +4,6 @@ This repository has all relevant papers, code and documentation for my reserach 
 
 Refer to the [Papers](/Resources/Papers) folder for a non-exhaustive list of relevant publications and papers.
 
-Refer to the [Resources.md](/Resources/Resources.md) file for documentation of existing theoretical work.
+Refer to the [DSMC.md](/Resources/DSMC.md) file for knowing what DSMC is and understanding it.
+
+Refer to the [Boltzmann_Equation.md](/Resources/Boltzmann_Equation.md) file for knowing what the Boltzmann equation is and understanding it.
