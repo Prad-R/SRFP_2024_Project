@@ -124,8 +124,8 @@ Below, the content related to the [Wikipedia page](https://en.wikipedia.org/wiki
 	
 	$$\int A \frac{\partial f}{\partial t} d^3\vec{p} = \frac{\partial}{\partial t} \left( n \langle A \rangle \right)$$
 	
-	$$\int \frac{p\_jA}{m} \frac{\partial f}{\partial x\_j} d^3\vec{p} = \frac{1}{m} \frac{\partial}{\partial x\_j} \left( n \langle Ap\_j= \rangle \right)$$
+	$$\int \frac{p\_jA}{m} \frac{\partial f}{\partial x\_j} d^3\vec{p} = \frac{1}{m} \frac{\partial}{\partial x\_j} \left( n \langle Ap\_j \rangle \right)$$
 	
-	$$\int A F\_j \frac{\partial f}{\partial p\_j} d^3\vec{p} = - n F\_j \langle \frac{\partial A}{\partial p\_j} \rangle$$
+	$$\int A F\_j \frac{\partial f}{\partial p\_j} d^3\vec{p} = - n F\_j \left\langle \frac{\partial A}{\partial p\_j} \right\rangle$$
 	
 	$$\int A \left( \frac{\partial f}{\partial t} \right)\_{coll} d^3\vec{p} = 0$$
