@@ -94,7 +94,7 @@ Below, the content related to the [Wikipedia page](https://en.wikipedia.org/wiki
 		
 		$$\hspace{5cm} = f(\vec{r} + \frac{\vec{p}}{m} \Delta t, \vec{p} + \vec{F} \Delta t, t + \Delta t) d^3\vec{r} d^3\vec{p} - f(\vec{r}, \vec{p}, t) d^3\vec{r} d^3\vec{p}$$
 		
-		$$\hspace{5cm} = \Delta f d^3\vec{r} d^3\vec{p}\end{align}$$
+		$$\hspace{5cm} = \Delta f d^3\vec{r} d^3\vec{p}$$
 		
 		dividing by the phase space volume and $` \Delta t `$ and taking $` \Delta f, \Delta t \to 0 `$, we obtain,
 		
