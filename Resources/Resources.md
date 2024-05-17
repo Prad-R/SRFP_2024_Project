@@ -109,4 +109,4 @@ Below, the content related to the [Wikipedia page](https://en.wikipedia.org/wiki
 - **The Final Statement**
 	- Dividing the above equation by $` dt `$ and, we obtain,
 	
-	$$\frac{\partial f}{\partial t} dt + \vec{\nabla}f \cdot \frac{\vec{p}}{m} + \vec{\nabla}_p f \cdot \vec{F} = \left( \frac{\partial f}{\partial t} \right)\_{coll}$$
+	$$\frac{\partial f}{\partial t} dt + \vec{\nabla}f \cdot \frac{\vec{p}}{m} + \vec{\nabla}_p f \cdot \vec{F} = \left( \frac{\partial f}{\partial t} \right)\_{coll}$$		
