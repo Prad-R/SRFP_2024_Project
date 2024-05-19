@@ -1,5 +1,3 @@
-# Resources
-
 ## Direct Simulation Monte Carlo (DSMC)
 
 Below, the content related to the [Wikipedia page](https://en.wikipedia.org/wiki/Direct_simulation_Monte_Carlo) is summarized.
