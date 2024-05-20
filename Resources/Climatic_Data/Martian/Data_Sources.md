@@ -4,4 +4,4 @@
 	1. **Citation :** Tillman, J.E., VL1/VL2-M-FTS-3-FOOTPAD-TEMP-V1.0, NASA Planetary Data System, 1989. 
 
 2. The dataset for the average footpad temperature available in [VL_Avg_Footpad_Temp](VL_Avg_Footpad_Temp) can be accessed from [here](https://atmos.nmsu.edu/data_and_services/atmospheres_data/MARS/viking/sol_avg_footpad_temp.html) under the name [vl_avet.dat](https://atmos.nmsu.edu/PDS/data/vl_1002/data/vl_avet.dat).
-	2. **Citation :** Tillman, J.E., VL1/VL2-M-FTS-4-SOL-AVG-FTPD-TEMP-V1.0, NASA Planetary Data System, 1989. 
+	1. **Citation :** Tillman, J.E., VL1/VL2-M-FTS-4-SOL-AVG-FTPD-TEMP-V1.0, NASA Planetary Data System, 1989. 
