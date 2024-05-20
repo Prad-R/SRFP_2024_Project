@@ -17,5 +17,9 @@ The data presented below are obtained from the following sources : -
 
 - The Martian atmosphere is mainly made of $` CO_2 `$ and has a mean atmospheric pressure of 600 Pa (for reference, the atmospheric pressure on Earth at sea level is about 101,000 Pa). A direct effect of this is that the Martian surface is subject to strong thermal tides. Liquid water is unstable on the surface as the atmospheric pressure is lesser than the triple point of water.[^1]
 
+### Descent Data
+
+- The dataset giving the density, pressure and temperature during the descent of the Curiosity rover can be found in [Curiosity_Descent_Atmosphere](Climatic_Data/Martian/Curiosity_Descent_Atmosphere).[^2]
+
 [^1]: https://en.wikipedia.org/wiki/Climate_of_Mars
 [^2]: https://atmos.nmsu.edu/data_and_services/atmospheres_data/MARS/data_archive.html
