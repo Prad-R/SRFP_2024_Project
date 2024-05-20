@@ -8,7 +8,7 @@ The data presented below are obtained from the following sources : -
 ### Temperature
 
 - The surface temperature is said to reach $` 20^\circ `$ in noon at the equator. The Viking landers have measured temmperatures from 166K to 256K. The warmest soil temperature has been about 300K. Temperatures are usually above 273K except during the winter.[^1]
-- For point-by-point footpad temperature sensor data, the *instrument description* is given by [Instrument_Description.txt](Climatic Data/Martian/Instrument_Description.txt).
+- For point-by-point footpad temperature sensor data, the *instrument description* is given by [Instrument_Description.txt](Climatic_Data/Martian/Instrument_Description.txt).
 
 
 ### Atmospheric Pressure
