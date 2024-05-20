@@ -1,0 +1,201 @@
+ PDS_VERSION_ID                 = PDS3                                        
+                                                                              
+ RECORD_TYPE         = FIXED_LENGTH                                           
+ RECORD_BYTES        = 80                                                     
+                                                                              
+ OBJECT                         = DATA_SET                                    
+ DATA_SET_ID                    = "VL1/VL2-M-FTS-3-FOOTPAD-TEMP-V1.0"         
+                                                                              
+ OBJECT                         = DATA_SET_INFORMATION                        
+ DATA_SET_NAME                  = "VL1/VL2 MARS METEOROLOGY CALIBRATED        
+                                     FOOTPAD TEMP V1.0"                       
+ DATA_SET_COLLECTION_MEMBER_FLG = "N"                                         
+ START_TIME                     = 1979-05-22                                  
+ STOP_TIME                      = 1982-11-13                                  
+ DATA_SET_RELEASE_DATE          = "TBD"                                       
+ PRODUCER_FULL_NAME             = "James E. Tillman"                          
+ PRODUCER_FULL_NAME             = "William R. Guest"                          
+ PRODUCER_INSTITUTION_NAME      = "University of Washington"                  
+ DETAILED_CATALOG_FLAG          = "N"                                         
+ DATA_OBJECT_TYPE               =  "TABLE"                                    
+ DATA_SET_DESC                  = "                                           
+                                                                              
+    Data Set Overview                                                         
+    =================                                                         
+      This data set contains the Martian near-surface temperatures            
+      obtained from the Viking Lander 1 and 2 thermocouple footpad            
+      temperature sensors.  The data set is composed of the following         
+      parameter fields (listed as the field name followed by a                
+      description).                                                           
+                                                                              
+                                                                              
+    Parameters                                                                
+    ==========                                                                
+      SC_ID - Spacecraft id: VL1 : Viking Lander 1 VL2 : Viking               
+      Lander 2                                                                
+                                                                              
+      VIKING_YEAR - Viking mission year, starting at 1 when the Viking        
+      spacecraft reached Mars, and incremented at Ls = 0 every martian        
+      year                                                                    
+                                                                              
+      SOL_LON - Areocentric longitude of the sun corresponding to the         
+      local Martian time                                                      
+                                                                              
+      MARTIAN_DAY - Martian solar day (sol), starting at sol 0 when           
+      each Lander touched down.  Each martian day is 24 hr 39 minutes         
+      35.25 seconds in length.                                                
+                                                                              
+      LOCAL_HOUR - Local hour: Earth hour                                     
+                                                                              
+      LOCAL_MINUTE - Local minute: Earth minute                               
+                                                                              
+      LOCAL_SECOND - Local second: Earth second                               
+                                                                              
+      TEMP_FOOTPAD - Footpad temperature: degrees Kelvin                      
+                                                                              
+                                                                              
+    Sensor Description                                                        
+    ==================                                                        
+      The footpad sensors, mounted on footpad 2 of each lander, are           
+      rugged thermocouples designed for measurements during                   
+      atmospheric entry for engineering and the Entry Science                 
+      Experiment [SEIFF1976].  They have served as a simple indicator         
+      of the surface, or near-surface, temperature during the mission         
+      [TILLMAN1985].  They were not designed to make good                     
+      measurements of atmospheric temperature after landing, since            
+      their exposure, size, and location makes them susceptible to            
+      large conduction and radiation errors.  Their relatively large          
+      radiation and conduction errors, their exposure to winds                
+      disturbed by the footpad and lander, and changes in the shadows         
+      of the lander with season and location, make it difficult to            
+      correct these radiation errors.  At VL-1, the footpad sensor            
+      was buried by soil while for VL-2, it was free within the               
+      footpad.  Details of the burial and exposure are given in               
+      [MOOREETAL1987].                                                        
+                                                                              
+                                                                              
+    Processing                                                                
+    ==========                                                                
+      The footpad temperature measurement is incorporated in the              
+      engineering data stream.  Measurements are taken along with all         
+      other data in the same lander data format and the formats were          
+      sampled to satisfy both engineering and science requirements.           
+      For example, each meteorology data frame was associated with a          
+      prior and subsequent engineering frame to provide an                    
+      atmospheric pressure measurement for the meteorology experiment         
+      - the pressure sensor was sampled by the engineering data               
+      system, not the Viking Meteorology Instrument System.                   
+      Engineering and meteorology sampling requirements produced data         
+      frames at intervals from much less than one second to                   
+      approximately 40 minutes.                                               
+                                                                              
+      The point by point data were edited to remove communications            
+      generated errors using automated procedures to reject bad               
+      points.  These procedures checked against seasonally varying            
+      limit files and rejected points outside the limits.  During the         
+      processing, these limits were updated for each lander and year.         
+      After the automated editing, the measurements were plotted, and         
+      remaining errors removed.  The editing is similar to that of            
+      the Viking Lander pressure record (see PDS data set name                
+      VL1/VL2 MARS METEOROLOGY DATA CALIBRATED DATA PRESSURE V1.0;            
+      data set id VL1/VL2-M-MET-3-P-V1.0, and description in                  
+      [NSSDC1993]).                                                           
+                                                                              
+                                                                              
+    Media/Format                                                              
+    ============                                                              
+      This data set is sufficiently small that it is available online         
+      from the Planetary Atmospheres Node of the Planetary Data               
+      System (PDS), or from the National Space Science Data Center            
+      (NSSDC).  "                                                             
+                                                                              
+                                                                              
+ CONFIDENCE_LEVEL_NOTE = "                                                    
+                                                                              
+    Confidence Level Overview                                                 
+    =========================                                                 
+      The footpad sensor was not designed to necessarily survive or           
+      provide low errors in the landed configuration footpad.  It is          
+      larger in diameter than the meteorology sensor and therefore            
+      has a slower response time and is more subject to conduction            
+      and radiation errors, as well as air heated or cooled by some           
+      lander components.  Since it is within the footpad and downwind         
+      of the lander for at least 120 degrees of wind direction, it is         
+      strongly influenced by the temperature of the lander leg, the           
+      footpad, and the lander.  At times the lander shades it from            
+      direct sunlight and its long wave radiation to space is                 
+      constrained by the lander.  An example of the seasonal shading          
+      error can be seen in [TILLMAN1985] where the annual cycle of            
+      temperature is plotted as a function of time for several years.         
+      Due to the shading problems, there are two local peaks in the           
+      annual cycle instead of the expected single peak.                       
+                                                                              
+      The footpad sensor is buried under the soil on VL-1 but not             
+      VL-2.  [MOOREETAL1987] provide details of the exposure of the           
+      sensors.  [SEIFF1976] states that the 'overall expected                 
+      accuracy' in the descent phase is 1.25 degrees Kelvin.                  
+      Comparing the design and exposure to the atmospheric sensor, it         
+      is expected that conduction and radiation errors of up to 10            
+      degrees or more at low wind speeds are present in data from the         
+      VL-2 sensor.  For VL-1, the base of the footpad is buried about         
+      .165 meters below the surface ([MOOREETAL1987], figures 16b,            
+      88a, 88b), and only the top of the sensor housing is exposed.           
+      It appears that the thermocouples are buried well below the             
+      surface.  Therefore, the temperature would be determined by the         
+      albedo, thermal conductivity of the soil and all of the                 
+      associated lander physical parameters.                                  
+                                                                              
+      Regardless of these problems, the VL-1 footpad sensor gives a           
+      clear indication of major events on short time scales such as           
+      great dust storms, as shown by [TILLMAN1985].                           
+                                                                              
+                                                                              
+    Data Coverage                                                             
+    =============                                                             
+      Footpad temperature measurements were taken throughout the              
+      mission but were generated in edited and summarized format only         
+      after raw spacecraft mission data processing was implemented            
+      and formally begun by the Viking Computer Facility (VCF),               
+      Department of Atmospheric Sciences, University of Washington.           
+      These measurements from Viking Lander 1 were archived beginning         
+      at sol 1008 (May 22, 1979) and ending at sol 2245 (Nov.  13,            
+      1982), the Lander's last downlink.  For Viking Lander 2, data           
+      were archived beginning at VL2 sol 1000 and ending on sol 1050,         
+      which was the last high quality downlink.  (Subsequent to sol           
+      1050, there were unsuccessful attempts for about 100 sols to            
+      recover from a VL-2 power system failure).  "                           
+                                                                              
+ END_OBJECT                     = DATA_SET_INFORMATION                        
+                                                                              
+ OBJECT                         = DATA_SET_TARGET                             
+ TARGET_NAME                    = MARS                                        
+ END_OBJECT                     = DATA_SET_TARGET                             
+                                                                              
+ OBJECT                         = DATA_SET_HOST                               
+ INSTRUMENT_HOST_ID             = VL1                                         
+ INSTRUMENT_ID                  = "FTS"                                       
+ END_OBJECT                     = DATA_SET_HOST                               
+                                                                              
+ OBJECT                         = DATA_SET_HOST                               
+ INSTRUMENT_HOST_ID             = VL2                                         
+ INSTRUMENT_ID                  = "FTS"                                       
+ END_OBJECT                     = DATA_SET_HOST                               
+                                                                              
+ OBJECT                         = DATA_SET_REFERENCE_INFORMATION              
+ REFERENCE_KEY_ID               = "SEIFF1976"                                 
+ END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION              
+                                                                              
+ OBJECT                         = DATA_SET_REFERENCE_INFORMATION              
+ REFERENCE_KEY_ID               = "TILLMAN1985"                               
+ END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION              
+                                                                              
+ OBJECT                         = DATA_SET_REFERENCE_INFORMATION              
+ REFERENCE_KEY_ID               = "MOOREETAL1987"                             
+ END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION              
+                                                                              
+ OBJECT                         = DATA_SET_REFERENCE_INFORMATION              
+ REFERENCE_KEY_ID               = "NSSDC1993"                                 
+ END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION              
+                                                                              
+ END_OBJECT                     = DATA_SET                                    
+ END                                                                          
