@@ -9,3 +9,15 @@
 3. The dataset and relevant documents containing the atmospheric density, pressure and temperature during the descent of the Curiosity mission available in [Curiosity_Descent_Atmosphere](Curiosity_Descent_Atmosphere) and can be accessed from [here](https://atmos.nmsu.edu/PDS/data/PDS4/msledl_bundle/data/) under the name [BU_PDS_EDLData.tab](https://atmos.nmsu.edu/PDS/data/PDS4/msledl_bundle/data/BU_PDS_EDLdata.tab)
 	1. **Citation :** C. Holstein-Rathlou, A Maue, P. Withers (2015), MSL Entry, Descent and Landing atmospheric structure, NASA Planetary Data System
 	2. **Citation :** Holstein-Rathlou, 2016, Atmospheric studies from the Mars Science Laboratory Entry, Descent and Landing atmospheric structure reconstruction, Planetary and Space Science, Volume 120, p. 15-23, [https://doi.org/10.1016/j.pss.2015.10.015](https://doi.org/10.1016/j.pss.2015.10.015).
+	
+4. The datasets and the relevant documents containing Martian sample analysis data avalaiable in [Curiosity_SAM](Curiosity_SAM) can be accessed from [here](https://pds-geosciences.wustl.edu/missions/msl/sam.htm).
+	1. There are four levels of data available and they are discussed below : -
+		1. **Level 0 :**  Raw instrument readings
+		2. **Level 1A :** Readings converted to scientific units
+		3. **Level 1B :** Corrected scientific data
+		4. **Level 2 :** Results of data interpretation
+	2. If we go to the [data directory](https://pds-geosciences.wustl.edu/msl/msl-m-sam-2-rdr-l0-v1/mslsam_1xxx/data/) inside the Reduced Data Records (RDR), we can see a list of directories containing experimental data with the naming format _eidxxxxx_ where _xxxxx_ represents the experiment ID.
+	3. Within each of the experiment directory, there are 4 levels of data available (as described above) in different directories. Note that all levels of data are not available for every experiment. I have collected Level 2 data from all experiments in the [Curiosity_SAM](Curiosity_SAM) folder.
+	4. Within Level 2 data, there are two specific files I have chosen to collect. One is a `.txt` file which summarises the observations while the other is a `.csv` gives the relative abundances[^1] of various compounds.
+	
+[^1] : Relative abundance is a term associated with mass spectrometry. Refer to : https://en.wikipedia.org/wiki/Mass_spectrum
