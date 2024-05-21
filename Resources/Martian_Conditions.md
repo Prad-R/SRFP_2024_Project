@@ -8,8 +8,8 @@ The data presented below are obtained from the following sources : -
 ### Temperature
 
 - The surface temperature is said to reach $` 20^\circ C`$ in noon at the equator. The Viking landers have measured temmperatures from 166K to 256K. The warmest soil temperature has been about 300K. Temperatures are usually above 273K except during the winter.[^1]
-- For point-by-point footpad temperature sensor data measured by the Viking Landers, the relevant files are included in [VL_Point-by-Point_Footpad_Temp](Climatic_Data/Martian/VL_Point-by-Point_Footpad_Temp).[^2]
-- For average footpad temperature sensor data measured by the Viking Landers, the relevant files are included in [VL_Average_Footpad_Temp](Climatic_Data/Martian/VL_Avg_Footpad_Temp).[^2]
+- For point-by-point footpad temperature sensor data measured by the Viking Landers, the relevant files are included in [VL_Point-by-Point_Footpad_Temp](Planetary_Data/Martian/VL_Point-by-Point_Footpad_Temp).[^2]
+- For average footpad temperature sensor data measured by the Viking Landers, the relevant files are included in [VL_Average_Footpad_Temp](Planetary_Data/Martian/VL_Avg_Footpad_Temp).[^2]
 - The footpad temperature data aren't very accurate owing to large conduction and radiation errors. These errors are not easy to correct either.
 
 
@@ -19,7 +19,7 @@ The data presented below are obtained from the following sources : -
 
 ### Descent Data
 
-- The dataset giving the density, pressure and temperature during the descent of the Curiosity rover can be found in [Curiosity_Descent_Atmosphere](Climatic_Data/Martian/Curiosity_Descent_Atmosphere).[^2]
+- The dataset giving the density, pressure and temperature during the descent of the Curiosity rover can be found in [Curiosity_Descent_Atmosphere](Planetary_Data/Martian/Curiosity_Descent_Atmosphere).[^2]
 
 [^1]: https://en.wikipedia.org/wiki/Climate_of_Mars
 [^2]: https://atmos.nmsu.edu/data_and_services/atmospheres_data/MARS/data_archive.html
