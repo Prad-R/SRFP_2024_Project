@@ -8,4 +8,4 @@ Refer to the [DSMC.md](/Resources/DSMC.md) file for knowing what DSMC is and und
 
 Refer to the [Boltzmann_Equation.md](/Resources/Boltzmann_Equation.md) file for knowing what the Boltzmann equation is and understanding it.
 
-Refer to the [Martian_Conditions.md](/Resources/Martian_Conditions.md) file for some information on Martian climatic conditions.
+Refer to the [Martian_Conditions.md](/Resources/Martian_Conditions.md) file for some information on Martian conditions.
