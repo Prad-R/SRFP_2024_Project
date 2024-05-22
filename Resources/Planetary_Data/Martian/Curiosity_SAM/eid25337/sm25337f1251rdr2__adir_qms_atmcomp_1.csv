@@ -1,0 +1,11 @@
+"SPECIES","VOLUME MIXING RATIO","UNCERTAINTY"
+"CO2 region 1",0.959,0.03
+"40_Ar region 1",0.019,0.0006
+"N_2 region 1",0.02,0.0004
+"O_2 region 1",1.90E-03,9.20E-05
+"CO region 1",9.20E-04,7.00E-05
+"CO2 region 2",0.959,0.03
+"40_Ar region 2",0.018,0.0006
+"N_2 region 2",0.019,0.0004
+"O_2 region 2",1.85E-03,6.30E-05
+"CO region 2",1.14E-03,7.90E-05
