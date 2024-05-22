@@ -21,6 +21,6 @@
 	4. Within Level 2 data, I have collected `.csv` files that give atmospheric composition data in terms of volume mixing ratios[^1].
 	5. These data are stored in directories with names `eidxxxxx` in the [Curiosity_SAM](Curiosity_SAM) folder. Each of these directories contains a `.csv` file. The nomenculature of these files is explained in [RDR_SIS.pdf](Curiosity_SAM/RDR_SIS.pdf) in pages 20-21.
 	6. Additionally, there are also `.png` files in each of the `eidxxxxx` directories that plot the volume mixing ratios[^1] of the various compounds detected in the atmospheric sample.
-	7. THe code for scraping and plotting the data is given in [Data_Fetcher.py](Curiosity/SAM/Data_Fetcher.py) and [Data_Visualizer.py](Curiosity/SAM/Data_Visualizer.py) respectively.
+	7. The code for scraping and plotting the data is given in [Data_Fetcher.py](Curiosity_SAM/Data_Fetcher.py) and [Data_Visualizer.py](Curiosity_SAM/Data_Visualizer.py) respectively.
 	
 [^1]: Number of moles of gas divided by the number of moles of air
