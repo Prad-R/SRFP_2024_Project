@@ -1,6 +1,5 @@
 import requests as req
 from bs4 import BeautifulSoup as BS
-import pandas as pd
 import re # regex
 import os # for making directories
 
