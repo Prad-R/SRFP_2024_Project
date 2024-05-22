@@ -18,6 +18,8 @@
 		4. **Level 2 :** Results of data interpretation
 	2. If we go to the [data directory](https://pds-geosciences.wustl.edu/msl/msl-m-sam-2-rdr-l0-v1/mslsam_1xxx/data/) inside the Reduced Data Records (RDR), we can see a list of directories containing experimental data with the naming format `eidxxxxx` where _xxxxx_ represents the experiment ID.
 	3. Within each of the experiment directory, there are 4 levels of data available (as described above) in different directories. Note that all levels of data are not available for every experiment. I have collected Level 2 data from all experiments in the [Curiosity_SAM](Curiosity_SAM) folder.
-	4. Within Level 2 data, there are two specific files I have chosen to collect. One is a `.txt` file which summarises the observations while the other is a `.csv` gives the relative abundances[^1] of various compounds.
+	4. Within Level 2 data, I have collected `.csv` files that give atmospheric composition data in terms of volume mixing ratios[^2].
+	5. These data are stored in directories with names `eidxxxxx` in the [Curiosity_SAM](Curiosity_SAM) folder. Each of these directories contains a `.csv` file. The nomenculature of these files is explained in [RDR_SIS.pdf](Curiosity_SAM/RDR_SIS.pdf) in pages 20-21.
 	
 [^1]: Relative abundance is a term associated with mass spectrometry. Refer to : https://en.wikipedia.org/wiki/Mass_spectrum
+[^2]: Number of moles of gas divided by the number of moles of air
