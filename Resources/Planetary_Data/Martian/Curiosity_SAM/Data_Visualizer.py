@@ -14,15 +14,14 @@ def extract_and_plot(root, file):
 
     print("------------- Plotting ----------------- " + eid)
 
-    plt.figure(figsize = (9, 12.5))
+    plt.figure(figsize = (12, 9))
     plt.ioff()
-    plt.bar(data[columns[0]], data[columns[1]], color = 'b', width = 0.4)
-    plt.xlabel(columns[0] + "$\\longrightarrow$", fontsize = 15)
-    plt.ylabel(columns[1] + "$\\longrightarrow$", fontsize = 15)
-    plt.yticks([i/20 for i in range(21)])
+    plt.barh(data[columns[0]], data[columns[1]], color = 'b', height = 0.4)
+    plt.ylabel(columns[0] + "$\\longrightarrow$", fontsize = 15)
+    plt.xlabel(columns[1] + "$\\longrightarrow$", fontsize = 15)
+    plt.xticks([i/20 for i in range(21)])
     plt.grid()
     plt.title(eid, fontsize = 21)
-    plt.xticks(rotation = 90)
     plt.savefig(root + '/' + eid + '.png')
 
 for (root, dirs, files) in os.walk('.', topdown = True):
