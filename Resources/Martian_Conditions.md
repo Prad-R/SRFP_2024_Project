@@ -16,6 +16,7 @@ The data presented below are obtained from the following sources : -
 ### Atmospheric Pressure
 
 - The Martian atmosphere is mainly made of $` CO_2 `$ and has a mean atmospheric pressure of 600 Pa (for reference, the atmospheric pressure on Earth at sea level is about 101,000 Pa). A direct effect of this is that the Martian surface is subject to strong thermal tides. Liquid water is unstable on the surface as the atmospheric pressure is lesser than the triple point of water.[^1]
+- There are also _katabatic winds_ or drainage atmospheric flows in Mars. These are basically winds made of cool and dense air that accelerate down a slope due to gravity.
 
 ### Descent Data
 
