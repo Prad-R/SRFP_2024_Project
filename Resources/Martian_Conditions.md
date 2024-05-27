@@ -22,5 +22,10 @@ The data presented below are obtained from the following sources : -
 
 - The dataset giving the density, pressure and temperature during the descent of the Curiosity rover can be found in [Curiosity_Descent_Atmosphere](Planetary_Data/Martian/Curiosity_Descent_Atmosphere).[^2]
 
+### Reference Data
+
+- The reference data (Earth data) is stored in [Earth_Data.csv](Planetary_Data/Earth/Earth_Data.csv] and is obtained from 'The Engineering Toolbox'[^3].
+
 [^1]: https://en.wikipedia.org/wiki/Climate_of_Mars
 [^2]: https://atmos.nmsu.edu/data_and_services/atmospheres_data/MARS/data_archive.html
+[^3]: https://www.engineeringtoolbox.com/standard-atmosphere-d_604.html
