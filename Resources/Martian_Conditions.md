@@ -24,7 +24,7 @@ The data presented below are obtained from the following sources : -
 
 ### Reference Data
 
-- The reference data (Earth data) is stored in [Earth_Data.csv](Planetary_Data/Earth/Earth_Data.csv] and is obtained from 'The Engineering Toolbox'[^3].
+- The reference data (Earth data) is stored in [Earth_Data.csv](Planetary_Data/Earth/Earth_Data.csv) and is obtained from 'The Engineering Toolbox'[^3].
 
 [^1]: https://en.wikipedia.org/wiki/Climate_of_Mars
 [^2]: https://atmos.nmsu.edu/data_and_services/atmospheres_data/MARS/data_archive.html
