@@ -1,1 +1,0 @@
-/usr/bin/c++  -O CMakeFiles/spa_mac.dir/main.cpp.o -o spa_mac  libsparta_mac.a FFT/libpkg_fft.a STUBS/libpkg_mpi_stubs.a 

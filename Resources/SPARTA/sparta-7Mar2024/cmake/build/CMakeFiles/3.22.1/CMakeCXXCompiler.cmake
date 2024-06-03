@@ -22,7 +22,7 @@ set(CMAKE_CXX_SIMULATE_VERSION "")
 
 
 
-set(CMAKE_AR "ar")
+set(CMAKE_AR "/usr/bin/ar")
 set(CMAKE_CXX_COMPILER_AR "/usr/bin/gcc-ar-11")
 set(CMAKE_RANLIB "/usr/bin/ranlib")
 set(CMAKE_CXX_COMPILER_RANLIB "/usr/bin/gcc-ranlib-11")

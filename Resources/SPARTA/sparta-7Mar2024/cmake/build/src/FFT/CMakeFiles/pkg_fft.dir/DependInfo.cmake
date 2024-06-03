@@ -19,7 +19,9 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build/src/STUBS/CMakeFiles/pkg_mpi_stubs.dir/DependInfo.cmake"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build/src/KOKKOS/lib/kokkos/containers/src/CMakeFiles/kokkoscontainers.dir/DependInfo.cmake"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build/src/KOKKOS/lib/kokkos/core/src/CMakeFiles/kokkoscore.dir/DependInfo.cmake"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build/src/KOKKOS/lib/kokkos/simd/src/CMakeFiles/kokkossimd.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

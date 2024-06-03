@@ -358,3 +358,156 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
   file(TOUCH_NOCREATE "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build/CMakeFiles/cmake.verify_globs")
 endif()
+
+# SPARTA_PKG_KOKKOS_SRC_FILES at /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/CMakeLists.txt:31 (file)
+file(GLOB NEW_GLOB LIST_DIRECTORIES false "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/*.cpp")
+set(OLD_GLOB
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/collide_vss_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/comm_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_boundary_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_count_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_distsurf_grid_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_dt_grid_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_eflux_grid_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_fft_grid_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_grid_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_ke_particle_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_lambda_grid_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_pflux_grid_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_property_grid_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_sonine_grid_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_surf_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_temp_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_thermal_grid_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_tvib_grid_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/create_particles_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/domain_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/fft2d_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/fft3d_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/fix_adapt_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/fix_ambipolar_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/fix_ave_grid_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/fix_ave_histo_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/fix_ave_histo_weight_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/fix_balance_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/fix_dt_reset_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/fix_emit_face_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/fix_grid_check_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/fix_move_surf_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/fix_surf_temp_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/fix_temp_rescale_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/fix_vibmode_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/grid_custom_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/grid_id_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/grid_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/irregular_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/kokkos_scan.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/modify_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/particle_custom_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/particle_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/rand_pool_wrap.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/react_bird_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/react_tce_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/read_surf_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/remap2d_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/remap3d_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/surf_collide_diffuse_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/surf_collide_piston_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/surf_collide_specular_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/surf_collide_transparent_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/surf_collide_vanish_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/surf_custom_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/surf_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/surf_react_global_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/surf_react_prob_kokkos.cpp"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/update_kokkos.cpp"
+  )
+if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
+  message("-- GLOB mismatch!")
+  file(TOUCH_NOCREATE "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build/CMakeFiles/cmake.verify_globs")
+endif()
+
+# SPARTA_PKG_KOKKOS_SRC_FILES at /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/CMakeLists.txt:31 (file)
+file(GLOB NEW_GLOB LIST_DIRECTORIES false "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/*.h")
+set(OLD_GLOB
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/collide_vss_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/comm_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_boundary_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_count_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_distsurf_grid_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_dt_grid_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_eflux_grid_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_fft_grid_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_grid_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_ke_particle_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_lambda_grid_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_pflux_grid_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_property_grid_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_sonine_grid_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_surf_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_temp_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_thermal_grid_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/compute_tvib_grid_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/create_particles_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/domain_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/fft2d_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/fft3d_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/fftdata_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/fix_adapt_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/fix_ambipolar_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/fix_ave_grid_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/fix_ave_histo_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/fix_ave_histo_weight_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/fix_balance_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/fix_dt_reset_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/fix_emit_face_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/fix_grid_check_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/fix_move_surf_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/fix_surf_temp_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/fix_temp_rescale_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/fix_vibmode_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/geometry_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/grid_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/irregular_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/kissfft_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/kokkos_base.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/kokkos_base_fft.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/kokkos_copy.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/kokkos_type.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/math_extra_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/memory_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/modify_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/pack2d_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/pack3d_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/particle_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/rand_pool_wrap.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/react_bird_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/react_tce_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/read_surf_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/remap2d_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/remap3d_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/surf_collide_diffuse_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/surf_collide_piston_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/surf_collide_specular_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/surf_collide_transparent_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/surf_collide_vanish_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/surf_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/surf_react_global_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/surf_react_prob_kokkos.h"
+  "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/update_kokkos.h"
+  )
+if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
+  message("-- GLOB mismatch!")
+  file(TOUCH_NOCREATE "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build/CMakeFiles/cmake.verify_globs")
+endif()
+
+# SPARTA_PKG_KOKKOS_SRC_FILES at /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/CMakeLists.txt:31 (file)
+file(GLOB NEW_GLOB LIST_DIRECTORIES false "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/src/KOKKOS/*.hpp")
+set(OLD_GLOB
+  )
+if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
+  message("-- GLOB mismatch!")
+  file(TOUCH_NOCREATE "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build/CMakeFiles/cmake.verify_globs")
+endif()

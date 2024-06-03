@@ -87,7 +87,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"KokkosContainers\" \"KokkosCore\" \"KokkosSimd\" \"Unspecified\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -162,44 +162,6 @@ depend:
 	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-src/STUBS/CMakeFiles/pkg_mpi_stubs.dir/rule:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/STUBS/CMakeFiles/pkg_mpi_stubs.dir/rule
-.PHONY : src/STUBS/CMakeFiles/pkg_mpi_stubs.dir/rule
-
-# Convenience name for target.
-pkg_mpi_stubs: src/STUBS/CMakeFiles/pkg_mpi_stubs.dir/rule
-.PHONY : pkg_mpi_stubs
-
-# fast build rule for target.
-pkg_mpi_stubs/fast:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/STUBS/CMakeFiles/pkg_mpi_stubs.dir/build.make src/STUBS/CMakeFiles/pkg_mpi_stubs.dir/build
-.PHONY : pkg_mpi_stubs/fast
-
-mpi.o: mpi.c.o
-.PHONY : mpi.o
-
-# target to build an object file
-mpi.c.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/STUBS/CMakeFiles/pkg_mpi_stubs.dir/build.make src/STUBS/CMakeFiles/pkg_mpi_stubs.dir/mpi.c.o
-.PHONY : mpi.c.o
-
-mpi.i: mpi.c.i
-.PHONY : mpi.i
-
-# target to preprocess a source file
-mpi.c.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/STUBS/CMakeFiles/pkg_mpi_stubs.dir/build.make src/STUBS/CMakeFiles/pkg_mpi_stubs.dir/mpi.c.i
-.PHONY : mpi.c.i
-
-mpi.s: mpi.c.s
-.PHONY : mpi.s
-
-# target to generate assembly for a file
-mpi.c.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/STUBS/CMakeFiles/pkg_mpi_stubs.dir/build.make src/STUBS/CMakeFiles/pkg_mpi_stubs.dir/mpi.c.s
-.PHONY : mpi.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,10 +174,6 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... pkg_mpi_stubs"
-	@echo "... mpi.o"
-	@echo "... mpi.i"
-	@echo "... mpi.s"
 .PHONY : help
 
 

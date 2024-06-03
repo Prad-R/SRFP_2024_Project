@@ -87,7 +87,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"KokkosContainers\" \"KokkosCore\" \"KokkosSimd\" \"Unspecified\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -163,53 +163,53 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/sparta_mac.dir/rule:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/sparta_mac.dir/rule
-.PHONY : src/CMakeFiles/sparta_mac.dir/rule
+src/CMakeFiles/sparta_tutorial.dir/rule:
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/sparta_tutorial.dir/rule
+.PHONY : src/CMakeFiles/sparta_tutorial.dir/rule
 
 # Convenience name for target.
-sparta_mac: src/CMakeFiles/sparta_mac.dir/rule
-.PHONY : sparta_mac
+sparta_tutorial: src/CMakeFiles/sparta_tutorial.dir/rule
+.PHONY : sparta_tutorial
 
 # fast build rule for target.
-sparta_mac/fast:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/build
-.PHONY : sparta_mac/fast
+sparta_tutorial/fast:
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/build
+.PHONY : sparta_tutorial/fast
 
 # Convenience name for target.
-src/CMakeFiles/sparta_mac_PRE_BUILD.dir/rule:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/sparta_mac_PRE_BUILD.dir/rule
-.PHONY : src/CMakeFiles/sparta_mac_PRE_BUILD.dir/rule
+src/CMakeFiles/sparta_tutorial_PRE_BUILD.dir/rule:
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/sparta_tutorial_PRE_BUILD.dir/rule
+.PHONY : src/CMakeFiles/sparta_tutorial_PRE_BUILD.dir/rule
 
 # Convenience name for target.
-sparta_mac_PRE_BUILD: src/CMakeFiles/sparta_mac_PRE_BUILD.dir/rule
-.PHONY : sparta_mac_PRE_BUILD
+sparta_tutorial_PRE_BUILD: src/CMakeFiles/sparta_tutorial_PRE_BUILD.dir/rule
+.PHONY : sparta_tutorial_PRE_BUILD
 
 # fast build rule for target.
-sparta_mac_PRE_BUILD/fast:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac_PRE_BUILD.dir/build.make src/CMakeFiles/sparta_mac_PRE_BUILD.dir/build
-.PHONY : sparta_mac_PRE_BUILD/fast
+sparta_tutorial_PRE_BUILD/fast:
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial_PRE_BUILD.dir/build.make src/CMakeFiles/sparta_tutorial_PRE_BUILD.dir/build
+.PHONY : sparta_tutorial_PRE_BUILD/fast
 
 # Convenience name for target.
-src/CMakeFiles/spa_mac.dir/rule:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/spa_mac.dir/rule
-.PHONY : src/CMakeFiles/spa_mac.dir/rule
+src/CMakeFiles/spa_tutorial.dir/rule:
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/spa_tutorial.dir/rule
+.PHONY : src/CMakeFiles/spa_tutorial.dir/rule
 
 # Convenience name for target.
-spa_mac: src/CMakeFiles/spa_mac.dir/rule
-.PHONY : spa_mac
+spa_tutorial: src/CMakeFiles/spa_tutorial.dir/rule
+.PHONY : spa_tutorial
 
 # fast build rule for target.
-spa_mac/fast:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/spa_mac.dir/build.make src/CMakeFiles/spa_mac.dir/build
-.PHONY : spa_mac/fast
+spa_tutorial/fast:
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/spa_tutorial.dir/build.make src/CMakeFiles/spa_tutorial.dir/build
+.PHONY : spa_tutorial/fast
 
 adapt_grid.o: adapt_grid.cpp.o
 .PHONY : adapt_grid.o
 
 # target to build an object file
 adapt_grid.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/adapt_grid.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/adapt_grid.cpp.o
 .PHONY : adapt_grid.cpp.o
 
 adapt_grid.i: adapt_grid.cpp.i
@@ -217,7 +217,7 @@ adapt_grid.i: adapt_grid.cpp.i
 
 # target to preprocess a source file
 adapt_grid.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/adapt_grid.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/adapt_grid.cpp.i
 .PHONY : adapt_grid.cpp.i
 
 adapt_grid.s: adapt_grid.cpp.s
@@ -225,7 +225,7 @@ adapt_grid.s: adapt_grid.cpp.s
 
 # target to generate assembly for a file
 adapt_grid.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/adapt_grid.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/adapt_grid.cpp.s
 .PHONY : adapt_grid.cpp.s
 
 balance_grid.o: balance_grid.cpp.o
@@ -233,7 +233,7 @@ balance_grid.o: balance_grid.cpp.o
 
 # target to build an object file
 balance_grid.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/balance_grid.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/balance_grid.cpp.o
 .PHONY : balance_grid.cpp.o
 
 balance_grid.i: balance_grid.cpp.i
@@ -241,7 +241,7 @@ balance_grid.i: balance_grid.cpp.i
 
 # target to preprocess a source file
 balance_grid.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/balance_grid.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/balance_grid.cpp.i
 .PHONY : balance_grid.cpp.i
 
 balance_grid.s: balance_grid.cpp.s
@@ -249,7 +249,7 @@ balance_grid.s: balance_grid.cpp.s
 
 # target to generate assembly for a file
 balance_grid.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/balance_grid.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/balance_grid.cpp.s
 .PHONY : balance_grid.cpp.s
 
 collide.o: collide.cpp.o
@@ -257,7 +257,7 @@ collide.o: collide.cpp.o
 
 # target to build an object file
 collide.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/collide.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/collide.cpp.o
 .PHONY : collide.cpp.o
 
 collide.i: collide.cpp.i
@@ -265,7 +265,7 @@ collide.i: collide.cpp.i
 
 # target to preprocess a source file
 collide.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/collide.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/collide.cpp.i
 .PHONY : collide.cpp.i
 
 collide.s: collide.cpp.s
@@ -273,7 +273,7 @@ collide.s: collide.cpp.s
 
 # target to generate assembly for a file
 collide.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/collide.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/collide.cpp.s
 .PHONY : collide.cpp.s
 
 collide_vss.o: collide_vss.cpp.o
@@ -281,7 +281,7 @@ collide_vss.o: collide_vss.cpp.o
 
 # target to build an object file
 collide_vss.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/collide_vss.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/collide_vss.cpp.o
 .PHONY : collide_vss.cpp.o
 
 collide_vss.i: collide_vss.cpp.i
@@ -289,7 +289,7 @@ collide_vss.i: collide_vss.cpp.i
 
 # target to preprocess a source file
 collide_vss.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/collide_vss.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/collide_vss.cpp.i
 .PHONY : collide_vss.cpp.i
 
 collide_vss.s: collide_vss.cpp.s
@@ -297,7 +297,7 @@ collide_vss.s: collide_vss.cpp.s
 
 # target to generate assembly for a file
 collide_vss.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/collide_vss.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/collide_vss.cpp.s
 .PHONY : collide_vss.cpp.s
 
 comm.o: comm.cpp.o
@@ -305,7 +305,7 @@ comm.o: comm.cpp.o
 
 # target to build an object file
 comm.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/comm.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/comm.cpp.o
 .PHONY : comm.cpp.o
 
 comm.i: comm.cpp.i
@@ -313,7 +313,7 @@ comm.i: comm.cpp.i
 
 # target to preprocess a source file
 comm.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/comm.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/comm.cpp.i
 .PHONY : comm.cpp.i
 
 comm.s: comm.cpp.s
@@ -321,7 +321,7 @@ comm.s: comm.cpp.s
 
 # target to generate assembly for a file
 comm.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/comm.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/comm.cpp.s
 .PHONY : comm.cpp.s
 
 compute.o: compute.cpp.o
@@ -329,7 +329,7 @@ compute.o: compute.cpp.o
 
 # target to build an object file
 compute.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute.cpp.o
 .PHONY : compute.cpp.o
 
 compute.i: compute.cpp.i
@@ -337,7 +337,7 @@ compute.i: compute.cpp.i
 
 # target to preprocess a source file
 compute.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute.cpp.i
 .PHONY : compute.cpp.i
 
 compute.s: compute.cpp.s
@@ -345,7 +345,7 @@ compute.s: compute.cpp.s
 
 # target to generate assembly for a file
 compute.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute.cpp.s
 .PHONY : compute.cpp.s
 
 compute_boundary.o: compute_boundary.cpp.o
@@ -353,7 +353,7 @@ compute_boundary.o: compute_boundary.cpp.o
 
 # target to build an object file
 compute_boundary.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_boundary.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_boundary.cpp.o
 .PHONY : compute_boundary.cpp.o
 
 compute_boundary.i: compute_boundary.cpp.i
@@ -361,7 +361,7 @@ compute_boundary.i: compute_boundary.cpp.i
 
 # target to preprocess a source file
 compute_boundary.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_boundary.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_boundary.cpp.i
 .PHONY : compute_boundary.cpp.i
 
 compute_boundary.s: compute_boundary.cpp.s
@@ -369,7 +369,7 @@ compute_boundary.s: compute_boundary.cpp.s
 
 # target to generate assembly for a file
 compute_boundary.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_boundary.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_boundary.cpp.s
 .PHONY : compute_boundary.cpp.s
 
 compute_count.o: compute_count.cpp.o
@@ -377,7 +377,7 @@ compute_count.o: compute_count.cpp.o
 
 # target to build an object file
 compute_count.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_count.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_count.cpp.o
 .PHONY : compute_count.cpp.o
 
 compute_count.i: compute_count.cpp.i
@@ -385,7 +385,7 @@ compute_count.i: compute_count.cpp.i
 
 # target to preprocess a source file
 compute_count.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_count.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_count.cpp.i
 .PHONY : compute_count.cpp.i
 
 compute_count.s: compute_count.cpp.s
@@ -393,7 +393,7 @@ compute_count.s: compute_count.cpp.s
 
 # target to generate assembly for a file
 compute_count.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_count.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_count.cpp.s
 .PHONY : compute_count.cpp.s
 
 compute_distsurf_grid.o: compute_distsurf_grid.cpp.o
@@ -401,7 +401,7 @@ compute_distsurf_grid.o: compute_distsurf_grid.cpp.o
 
 # target to build an object file
 compute_distsurf_grid.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_distsurf_grid.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_distsurf_grid.cpp.o
 .PHONY : compute_distsurf_grid.cpp.o
 
 compute_distsurf_grid.i: compute_distsurf_grid.cpp.i
@@ -409,7 +409,7 @@ compute_distsurf_grid.i: compute_distsurf_grid.cpp.i
 
 # target to preprocess a source file
 compute_distsurf_grid.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_distsurf_grid.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_distsurf_grid.cpp.i
 .PHONY : compute_distsurf_grid.cpp.i
 
 compute_distsurf_grid.s: compute_distsurf_grid.cpp.s
@@ -417,7 +417,7 @@ compute_distsurf_grid.s: compute_distsurf_grid.cpp.s
 
 # target to generate assembly for a file
 compute_distsurf_grid.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_distsurf_grid.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_distsurf_grid.cpp.s
 .PHONY : compute_distsurf_grid.cpp.s
 
 compute_dt_grid.o: compute_dt_grid.cpp.o
@@ -425,7 +425,7 @@ compute_dt_grid.o: compute_dt_grid.cpp.o
 
 # target to build an object file
 compute_dt_grid.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_dt_grid.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_dt_grid.cpp.o
 .PHONY : compute_dt_grid.cpp.o
 
 compute_dt_grid.i: compute_dt_grid.cpp.i
@@ -433,7 +433,7 @@ compute_dt_grid.i: compute_dt_grid.cpp.i
 
 # target to preprocess a source file
 compute_dt_grid.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_dt_grid.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_dt_grid.cpp.i
 .PHONY : compute_dt_grid.cpp.i
 
 compute_dt_grid.s: compute_dt_grid.cpp.s
@@ -441,7 +441,7 @@ compute_dt_grid.s: compute_dt_grid.cpp.s
 
 # target to generate assembly for a file
 compute_dt_grid.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_dt_grid.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_dt_grid.cpp.s
 .PHONY : compute_dt_grid.cpp.s
 
 compute_eflux_grid.o: compute_eflux_grid.cpp.o
@@ -449,7 +449,7 @@ compute_eflux_grid.o: compute_eflux_grid.cpp.o
 
 # target to build an object file
 compute_eflux_grid.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_eflux_grid.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_eflux_grid.cpp.o
 .PHONY : compute_eflux_grid.cpp.o
 
 compute_eflux_grid.i: compute_eflux_grid.cpp.i
@@ -457,7 +457,7 @@ compute_eflux_grid.i: compute_eflux_grid.cpp.i
 
 # target to preprocess a source file
 compute_eflux_grid.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_eflux_grid.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_eflux_grid.cpp.i
 .PHONY : compute_eflux_grid.cpp.i
 
 compute_eflux_grid.s: compute_eflux_grid.cpp.s
@@ -465,7 +465,7 @@ compute_eflux_grid.s: compute_eflux_grid.cpp.s
 
 # target to generate assembly for a file
 compute_eflux_grid.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_eflux_grid.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_eflux_grid.cpp.s
 .PHONY : compute_eflux_grid.cpp.s
 
 compute_grid.o: compute_grid.cpp.o
@@ -473,7 +473,7 @@ compute_grid.o: compute_grid.cpp.o
 
 # target to build an object file
 compute_grid.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_grid.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_grid.cpp.o
 .PHONY : compute_grid.cpp.o
 
 compute_grid.i: compute_grid.cpp.i
@@ -481,7 +481,7 @@ compute_grid.i: compute_grid.cpp.i
 
 # target to preprocess a source file
 compute_grid.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_grid.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_grid.cpp.i
 .PHONY : compute_grid.cpp.i
 
 compute_grid.s: compute_grid.cpp.s
@@ -489,7 +489,7 @@ compute_grid.s: compute_grid.cpp.s
 
 # target to generate assembly for a file
 compute_grid.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_grid.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_grid.cpp.s
 .PHONY : compute_grid.cpp.s
 
 compute_isurf_grid.o: compute_isurf_grid.cpp.o
@@ -497,7 +497,7 @@ compute_isurf_grid.o: compute_isurf_grid.cpp.o
 
 # target to build an object file
 compute_isurf_grid.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_isurf_grid.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_isurf_grid.cpp.o
 .PHONY : compute_isurf_grid.cpp.o
 
 compute_isurf_grid.i: compute_isurf_grid.cpp.i
@@ -505,7 +505,7 @@ compute_isurf_grid.i: compute_isurf_grid.cpp.i
 
 # target to preprocess a source file
 compute_isurf_grid.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_isurf_grid.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_isurf_grid.cpp.i
 .PHONY : compute_isurf_grid.cpp.i
 
 compute_isurf_grid.s: compute_isurf_grid.cpp.s
@@ -513,7 +513,7 @@ compute_isurf_grid.s: compute_isurf_grid.cpp.s
 
 # target to generate assembly for a file
 compute_isurf_grid.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_isurf_grid.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_isurf_grid.cpp.s
 .PHONY : compute_isurf_grid.cpp.s
 
 compute_ke_particle.o: compute_ke_particle.cpp.o
@@ -521,7 +521,7 @@ compute_ke_particle.o: compute_ke_particle.cpp.o
 
 # target to build an object file
 compute_ke_particle.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_ke_particle.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_ke_particle.cpp.o
 .PHONY : compute_ke_particle.cpp.o
 
 compute_ke_particle.i: compute_ke_particle.cpp.i
@@ -529,7 +529,7 @@ compute_ke_particle.i: compute_ke_particle.cpp.i
 
 # target to preprocess a source file
 compute_ke_particle.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_ke_particle.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_ke_particle.cpp.i
 .PHONY : compute_ke_particle.cpp.i
 
 compute_ke_particle.s: compute_ke_particle.cpp.s
@@ -537,7 +537,7 @@ compute_ke_particle.s: compute_ke_particle.cpp.s
 
 # target to generate assembly for a file
 compute_ke_particle.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_ke_particle.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_ke_particle.cpp.s
 .PHONY : compute_ke_particle.cpp.s
 
 compute_lambda_grid.o: compute_lambda_grid.cpp.o
@@ -545,7 +545,7 @@ compute_lambda_grid.o: compute_lambda_grid.cpp.o
 
 # target to build an object file
 compute_lambda_grid.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_lambda_grid.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_lambda_grid.cpp.o
 .PHONY : compute_lambda_grid.cpp.o
 
 compute_lambda_grid.i: compute_lambda_grid.cpp.i
@@ -553,7 +553,7 @@ compute_lambda_grid.i: compute_lambda_grid.cpp.i
 
 # target to preprocess a source file
 compute_lambda_grid.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_lambda_grid.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_lambda_grid.cpp.i
 .PHONY : compute_lambda_grid.cpp.i
 
 compute_lambda_grid.s: compute_lambda_grid.cpp.s
@@ -561,7 +561,7 @@ compute_lambda_grid.s: compute_lambda_grid.cpp.s
 
 # target to generate assembly for a file
 compute_lambda_grid.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_lambda_grid.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_lambda_grid.cpp.s
 .PHONY : compute_lambda_grid.cpp.s
 
 compute_pflux_grid.o: compute_pflux_grid.cpp.o
@@ -569,7 +569,7 @@ compute_pflux_grid.o: compute_pflux_grid.cpp.o
 
 # target to build an object file
 compute_pflux_grid.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_pflux_grid.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_pflux_grid.cpp.o
 .PHONY : compute_pflux_grid.cpp.o
 
 compute_pflux_grid.i: compute_pflux_grid.cpp.i
@@ -577,7 +577,7 @@ compute_pflux_grid.i: compute_pflux_grid.cpp.i
 
 # target to preprocess a source file
 compute_pflux_grid.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_pflux_grid.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_pflux_grid.cpp.i
 .PHONY : compute_pflux_grid.cpp.i
 
 compute_pflux_grid.s: compute_pflux_grid.cpp.s
@@ -585,7 +585,7 @@ compute_pflux_grid.s: compute_pflux_grid.cpp.s
 
 # target to generate assembly for a file
 compute_pflux_grid.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_pflux_grid.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_pflux_grid.cpp.s
 .PHONY : compute_pflux_grid.cpp.s
 
 compute_property_grid.o: compute_property_grid.cpp.o
@@ -593,7 +593,7 @@ compute_property_grid.o: compute_property_grid.cpp.o
 
 # target to build an object file
 compute_property_grid.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_property_grid.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_property_grid.cpp.o
 .PHONY : compute_property_grid.cpp.o
 
 compute_property_grid.i: compute_property_grid.cpp.i
@@ -601,7 +601,7 @@ compute_property_grid.i: compute_property_grid.cpp.i
 
 # target to preprocess a source file
 compute_property_grid.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_property_grid.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_property_grid.cpp.i
 .PHONY : compute_property_grid.cpp.i
 
 compute_property_grid.s: compute_property_grid.cpp.s
@@ -609,7 +609,7 @@ compute_property_grid.s: compute_property_grid.cpp.s
 
 # target to generate assembly for a file
 compute_property_grid.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_property_grid.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_property_grid.cpp.s
 .PHONY : compute_property_grid.cpp.s
 
 compute_property_surf.o: compute_property_surf.cpp.o
@@ -617,7 +617,7 @@ compute_property_surf.o: compute_property_surf.cpp.o
 
 # target to build an object file
 compute_property_surf.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_property_surf.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_property_surf.cpp.o
 .PHONY : compute_property_surf.cpp.o
 
 compute_property_surf.i: compute_property_surf.cpp.i
@@ -625,7 +625,7 @@ compute_property_surf.i: compute_property_surf.cpp.i
 
 # target to preprocess a source file
 compute_property_surf.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_property_surf.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_property_surf.cpp.i
 .PHONY : compute_property_surf.cpp.i
 
 compute_property_surf.s: compute_property_surf.cpp.s
@@ -633,7 +633,7 @@ compute_property_surf.s: compute_property_surf.cpp.s
 
 # target to generate assembly for a file
 compute_property_surf.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_property_surf.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_property_surf.cpp.s
 .PHONY : compute_property_surf.cpp.s
 
 compute_react_boundary.o: compute_react_boundary.cpp.o
@@ -641,7 +641,7 @@ compute_react_boundary.o: compute_react_boundary.cpp.o
 
 # target to build an object file
 compute_react_boundary.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_react_boundary.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_react_boundary.cpp.o
 .PHONY : compute_react_boundary.cpp.o
 
 compute_react_boundary.i: compute_react_boundary.cpp.i
@@ -649,7 +649,7 @@ compute_react_boundary.i: compute_react_boundary.cpp.i
 
 # target to preprocess a source file
 compute_react_boundary.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_react_boundary.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_react_boundary.cpp.i
 .PHONY : compute_react_boundary.cpp.i
 
 compute_react_boundary.s: compute_react_boundary.cpp.s
@@ -657,7 +657,7 @@ compute_react_boundary.s: compute_react_boundary.cpp.s
 
 # target to generate assembly for a file
 compute_react_boundary.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_react_boundary.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_react_boundary.cpp.s
 .PHONY : compute_react_boundary.cpp.s
 
 compute_react_isurf_grid.o: compute_react_isurf_grid.cpp.o
@@ -665,7 +665,7 @@ compute_react_isurf_grid.o: compute_react_isurf_grid.cpp.o
 
 # target to build an object file
 compute_react_isurf_grid.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_react_isurf_grid.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_react_isurf_grid.cpp.o
 .PHONY : compute_react_isurf_grid.cpp.o
 
 compute_react_isurf_grid.i: compute_react_isurf_grid.cpp.i
@@ -673,7 +673,7 @@ compute_react_isurf_grid.i: compute_react_isurf_grid.cpp.i
 
 # target to preprocess a source file
 compute_react_isurf_grid.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_react_isurf_grid.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_react_isurf_grid.cpp.i
 .PHONY : compute_react_isurf_grid.cpp.i
 
 compute_react_isurf_grid.s: compute_react_isurf_grid.cpp.s
@@ -681,7 +681,7 @@ compute_react_isurf_grid.s: compute_react_isurf_grid.cpp.s
 
 # target to generate assembly for a file
 compute_react_isurf_grid.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_react_isurf_grid.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_react_isurf_grid.cpp.s
 .PHONY : compute_react_isurf_grid.cpp.s
 
 compute_react_surf.o: compute_react_surf.cpp.o
@@ -689,7 +689,7 @@ compute_react_surf.o: compute_react_surf.cpp.o
 
 # target to build an object file
 compute_react_surf.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_react_surf.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_react_surf.cpp.o
 .PHONY : compute_react_surf.cpp.o
 
 compute_react_surf.i: compute_react_surf.cpp.i
@@ -697,7 +697,7 @@ compute_react_surf.i: compute_react_surf.cpp.i
 
 # target to preprocess a source file
 compute_react_surf.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_react_surf.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_react_surf.cpp.i
 .PHONY : compute_react_surf.cpp.i
 
 compute_react_surf.s: compute_react_surf.cpp.s
@@ -705,7 +705,7 @@ compute_react_surf.s: compute_react_surf.cpp.s
 
 # target to generate assembly for a file
 compute_react_surf.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_react_surf.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_react_surf.cpp.s
 .PHONY : compute_react_surf.cpp.s
 
 compute_reduce.o: compute_reduce.cpp.o
@@ -713,7 +713,7 @@ compute_reduce.o: compute_reduce.cpp.o
 
 # target to build an object file
 compute_reduce.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_reduce.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_reduce.cpp.o
 .PHONY : compute_reduce.cpp.o
 
 compute_reduce.i: compute_reduce.cpp.i
@@ -721,7 +721,7 @@ compute_reduce.i: compute_reduce.cpp.i
 
 # target to preprocess a source file
 compute_reduce.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_reduce.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_reduce.cpp.i
 .PHONY : compute_reduce.cpp.i
 
 compute_reduce.s: compute_reduce.cpp.s
@@ -729,7 +729,7 @@ compute_reduce.s: compute_reduce.cpp.s
 
 # target to generate assembly for a file
 compute_reduce.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_reduce.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_reduce.cpp.s
 .PHONY : compute_reduce.cpp.s
 
 compute_sonine_grid.o: compute_sonine_grid.cpp.o
@@ -737,7 +737,7 @@ compute_sonine_grid.o: compute_sonine_grid.cpp.o
 
 # target to build an object file
 compute_sonine_grid.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_sonine_grid.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_sonine_grid.cpp.o
 .PHONY : compute_sonine_grid.cpp.o
 
 compute_sonine_grid.i: compute_sonine_grid.cpp.i
@@ -745,7 +745,7 @@ compute_sonine_grid.i: compute_sonine_grid.cpp.i
 
 # target to preprocess a source file
 compute_sonine_grid.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_sonine_grid.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_sonine_grid.cpp.i
 .PHONY : compute_sonine_grid.cpp.i
 
 compute_sonine_grid.s: compute_sonine_grid.cpp.s
@@ -753,7 +753,7 @@ compute_sonine_grid.s: compute_sonine_grid.cpp.s
 
 # target to generate assembly for a file
 compute_sonine_grid.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_sonine_grid.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_sonine_grid.cpp.s
 .PHONY : compute_sonine_grid.cpp.s
 
 compute_surf.o: compute_surf.cpp.o
@@ -761,7 +761,7 @@ compute_surf.o: compute_surf.cpp.o
 
 # target to build an object file
 compute_surf.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_surf.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_surf.cpp.o
 .PHONY : compute_surf.cpp.o
 
 compute_surf.i: compute_surf.cpp.i
@@ -769,7 +769,7 @@ compute_surf.i: compute_surf.cpp.i
 
 # target to preprocess a source file
 compute_surf.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_surf.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_surf.cpp.i
 .PHONY : compute_surf.cpp.i
 
 compute_surf.s: compute_surf.cpp.s
@@ -777,7 +777,7 @@ compute_surf.s: compute_surf.cpp.s
 
 # target to generate assembly for a file
 compute_surf.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_surf.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_surf.cpp.s
 .PHONY : compute_surf.cpp.s
 
 compute_temp.o: compute_temp.cpp.o
@@ -785,7 +785,7 @@ compute_temp.o: compute_temp.cpp.o
 
 # target to build an object file
 compute_temp.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_temp.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_temp.cpp.o
 .PHONY : compute_temp.cpp.o
 
 compute_temp.i: compute_temp.cpp.i
@@ -793,7 +793,7 @@ compute_temp.i: compute_temp.cpp.i
 
 # target to preprocess a source file
 compute_temp.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_temp.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_temp.cpp.i
 .PHONY : compute_temp.cpp.i
 
 compute_temp.s: compute_temp.cpp.s
@@ -801,7 +801,7 @@ compute_temp.s: compute_temp.cpp.s
 
 # target to generate assembly for a file
 compute_temp.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_temp.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_temp.cpp.s
 .PHONY : compute_temp.cpp.s
 
 compute_thermal_grid.o: compute_thermal_grid.cpp.o
@@ -809,7 +809,7 @@ compute_thermal_grid.o: compute_thermal_grid.cpp.o
 
 # target to build an object file
 compute_thermal_grid.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_thermal_grid.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_thermal_grid.cpp.o
 .PHONY : compute_thermal_grid.cpp.o
 
 compute_thermal_grid.i: compute_thermal_grid.cpp.i
@@ -817,7 +817,7 @@ compute_thermal_grid.i: compute_thermal_grid.cpp.i
 
 # target to preprocess a source file
 compute_thermal_grid.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_thermal_grid.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_thermal_grid.cpp.i
 .PHONY : compute_thermal_grid.cpp.i
 
 compute_thermal_grid.s: compute_thermal_grid.cpp.s
@@ -825,7 +825,7 @@ compute_thermal_grid.s: compute_thermal_grid.cpp.s
 
 # target to generate assembly for a file
 compute_thermal_grid.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_thermal_grid.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_thermal_grid.cpp.s
 .PHONY : compute_thermal_grid.cpp.s
 
 compute_tvib_grid.o: compute_tvib_grid.cpp.o
@@ -833,7 +833,7 @@ compute_tvib_grid.o: compute_tvib_grid.cpp.o
 
 # target to build an object file
 compute_tvib_grid.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_tvib_grid.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_tvib_grid.cpp.o
 .PHONY : compute_tvib_grid.cpp.o
 
 compute_tvib_grid.i: compute_tvib_grid.cpp.i
@@ -841,7 +841,7 @@ compute_tvib_grid.i: compute_tvib_grid.cpp.i
 
 # target to preprocess a source file
 compute_tvib_grid.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_tvib_grid.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_tvib_grid.cpp.i
 .PHONY : compute_tvib_grid.cpp.i
 
 compute_tvib_grid.s: compute_tvib_grid.cpp.s
@@ -849,7 +849,7 @@ compute_tvib_grid.s: compute_tvib_grid.cpp.s
 
 # target to generate assembly for a file
 compute_tvib_grid.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/compute_tvib_grid.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/compute_tvib_grid.cpp.s
 .PHONY : compute_tvib_grid.cpp.s
 
 create_box.o: create_box.cpp.o
@@ -857,7 +857,7 @@ create_box.o: create_box.cpp.o
 
 # target to build an object file
 create_box.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/create_box.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/create_box.cpp.o
 .PHONY : create_box.cpp.o
 
 create_box.i: create_box.cpp.i
@@ -865,7 +865,7 @@ create_box.i: create_box.cpp.i
 
 # target to preprocess a source file
 create_box.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/create_box.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/create_box.cpp.i
 .PHONY : create_box.cpp.i
 
 create_box.s: create_box.cpp.s
@@ -873,7 +873,7 @@ create_box.s: create_box.cpp.s
 
 # target to generate assembly for a file
 create_box.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/create_box.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/create_box.cpp.s
 .PHONY : create_box.cpp.s
 
 create_grid.o: create_grid.cpp.o
@@ -881,7 +881,7 @@ create_grid.o: create_grid.cpp.o
 
 # target to build an object file
 create_grid.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/create_grid.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/create_grid.cpp.o
 .PHONY : create_grid.cpp.o
 
 create_grid.i: create_grid.cpp.i
@@ -889,7 +889,7 @@ create_grid.i: create_grid.cpp.i
 
 # target to preprocess a source file
 create_grid.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/create_grid.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/create_grid.cpp.i
 .PHONY : create_grid.cpp.i
 
 create_grid.s: create_grid.cpp.s
@@ -897,7 +897,7 @@ create_grid.s: create_grid.cpp.s
 
 # target to generate assembly for a file
 create_grid.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/create_grid.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/create_grid.cpp.s
 .PHONY : create_grid.cpp.s
 
 create_particles.o: create_particles.cpp.o
@@ -905,7 +905,7 @@ create_particles.o: create_particles.cpp.o
 
 # target to build an object file
 create_particles.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/create_particles.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/create_particles.cpp.o
 .PHONY : create_particles.cpp.o
 
 create_particles.i: create_particles.cpp.i
@@ -913,7 +913,7 @@ create_particles.i: create_particles.cpp.i
 
 # target to preprocess a source file
 create_particles.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/create_particles.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/create_particles.cpp.i
 .PHONY : create_particles.cpp.i
 
 create_particles.s: create_particles.cpp.s
@@ -921,7 +921,7 @@ create_particles.s: create_particles.cpp.s
 
 # target to generate assembly for a file
 create_particles.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/create_particles.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/create_particles.cpp.s
 .PHONY : create_particles.cpp.s
 
 custom.o: custom.cpp.o
@@ -929,7 +929,7 @@ custom.o: custom.cpp.o
 
 # target to build an object file
 custom.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/custom.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/custom.cpp.o
 .PHONY : custom.cpp.o
 
 custom.i: custom.cpp.i
@@ -937,7 +937,7 @@ custom.i: custom.cpp.i
 
 # target to preprocess a source file
 custom.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/custom.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/custom.cpp.i
 .PHONY : custom.cpp.i
 
 custom.s: custom.cpp.s
@@ -945,7 +945,7 @@ custom.s: custom.cpp.s
 
 # target to generate assembly for a file
 custom.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/custom.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/custom.cpp.s
 .PHONY : custom.cpp.s
 
 cut2d.o: cut2d.cpp.o
@@ -953,7 +953,7 @@ cut2d.o: cut2d.cpp.o
 
 # target to build an object file
 cut2d.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/cut2d.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/cut2d.cpp.o
 .PHONY : cut2d.cpp.o
 
 cut2d.i: cut2d.cpp.i
@@ -961,7 +961,7 @@ cut2d.i: cut2d.cpp.i
 
 # target to preprocess a source file
 cut2d.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/cut2d.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/cut2d.cpp.i
 .PHONY : cut2d.cpp.i
 
 cut2d.s: cut2d.cpp.s
@@ -969,7 +969,7 @@ cut2d.s: cut2d.cpp.s
 
 # target to generate assembly for a file
 cut2d.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/cut2d.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/cut2d.cpp.s
 .PHONY : cut2d.cpp.s
 
 cut3d.o: cut3d.cpp.o
@@ -977,7 +977,7 @@ cut3d.o: cut3d.cpp.o
 
 # target to build an object file
 cut3d.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/cut3d.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/cut3d.cpp.o
 .PHONY : cut3d.cpp.o
 
 cut3d.i: cut3d.cpp.i
@@ -985,7 +985,7 @@ cut3d.i: cut3d.cpp.i
 
 # target to preprocess a source file
 cut3d.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/cut3d.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/cut3d.cpp.i
 .PHONY : cut3d.cpp.i
 
 cut3d.s: cut3d.cpp.s
@@ -993,7 +993,7 @@ cut3d.s: cut3d.cpp.s
 
 # target to generate assembly for a file
 cut3d.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/cut3d.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/cut3d.cpp.s
 .PHONY : cut3d.cpp.s
 
 domain.o: domain.cpp.o
@@ -1001,7 +1001,7 @@ domain.o: domain.cpp.o
 
 # target to build an object file
 domain.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/domain.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/domain.cpp.o
 .PHONY : domain.cpp.o
 
 domain.i: domain.cpp.i
@@ -1009,7 +1009,7 @@ domain.i: domain.cpp.i
 
 # target to preprocess a source file
 domain.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/domain.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/domain.cpp.i
 .PHONY : domain.cpp.i
 
 domain.s: domain.cpp.s
@@ -1017,7 +1017,7 @@ domain.s: domain.cpp.s
 
 # target to generate assembly for a file
 domain.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/domain.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/domain.cpp.s
 .PHONY : domain.cpp.s
 
 dump.o: dump.cpp.o
@@ -1025,7 +1025,7 @@ dump.o: dump.cpp.o
 
 # target to build an object file
 dump.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/dump.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/dump.cpp.o
 .PHONY : dump.cpp.o
 
 dump.i: dump.cpp.i
@@ -1033,7 +1033,7 @@ dump.i: dump.cpp.i
 
 # target to preprocess a source file
 dump.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/dump.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/dump.cpp.i
 .PHONY : dump.cpp.i
 
 dump.s: dump.cpp.s
@@ -1041,7 +1041,7 @@ dump.s: dump.cpp.s
 
 # target to generate assembly for a file
 dump.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/dump.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/dump.cpp.s
 .PHONY : dump.cpp.s
 
 dump_grid.o: dump_grid.cpp.o
@@ -1049,7 +1049,7 @@ dump_grid.o: dump_grid.cpp.o
 
 # target to build an object file
 dump_grid.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/dump_grid.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/dump_grid.cpp.o
 .PHONY : dump_grid.cpp.o
 
 dump_grid.i: dump_grid.cpp.i
@@ -1057,7 +1057,7 @@ dump_grid.i: dump_grid.cpp.i
 
 # target to preprocess a source file
 dump_grid.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/dump_grid.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/dump_grid.cpp.i
 .PHONY : dump_grid.cpp.i
 
 dump_grid.s: dump_grid.cpp.s
@@ -1065,7 +1065,7 @@ dump_grid.s: dump_grid.cpp.s
 
 # target to generate assembly for a file
 dump_grid.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/dump_grid.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/dump_grid.cpp.s
 .PHONY : dump_grid.cpp.s
 
 dump_image.o: dump_image.cpp.o
@@ -1073,7 +1073,7 @@ dump_image.o: dump_image.cpp.o
 
 # target to build an object file
 dump_image.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/dump_image.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/dump_image.cpp.o
 .PHONY : dump_image.cpp.o
 
 dump_image.i: dump_image.cpp.i
@@ -1081,7 +1081,7 @@ dump_image.i: dump_image.cpp.i
 
 # target to preprocess a source file
 dump_image.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/dump_image.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/dump_image.cpp.i
 .PHONY : dump_image.cpp.i
 
 dump_image.s: dump_image.cpp.s
@@ -1089,7 +1089,7 @@ dump_image.s: dump_image.cpp.s
 
 # target to generate assembly for a file
 dump_image.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/dump_image.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/dump_image.cpp.s
 .PHONY : dump_image.cpp.s
 
 dump_movie.o: dump_movie.cpp.o
@@ -1097,7 +1097,7 @@ dump_movie.o: dump_movie.cpp.o
 
 # target to build an object file
 dump_movie.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/dump_movie.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/dump_movie.cpp.o
 .PHONY : dump_movie.cpp.o
 
 dump_movie.i: dump_movie.cpp.i
@@ -1105,7 +1105,7 @@ dump_movie.i: dump_movie.cpp.i
 
 # target to preprocess a source file
 dump_movie.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/dump_movie.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/dump_movie.cpp.i
 .PHONY : dump_movie.cpp.i
 
 dump_movie.s: dump_movie.cpp.s
@@ -1113,7 +1113,7 @@ dump_movie.s: dump_movie.cpp.s
 
 # target to generate assembly for a file
 dump_movie.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/dump_movie.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/dump_movie.cpp.s
 .PHONY : dump_movie.cpp.s
 
 dump_particle.o: dump_particle.cpp.o
@@ -1121,7 +1121,7 @@ dump_particle.o: dump_particle.cpp.o
 
 # target to build an object file
 dump_particle.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/dump_particle.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/dump_particle.cpp.o
 .PHONY : dump_particle.cpp.o
 
 dump_particle.i: dump_particle.cpp.i
@@ -1129,7 +1129,7 @@ dump_particle.i: dump_particle.cpp.i
 
 # target to preprocess a source file
 dump_particle.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/dump_particle.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/dump_particle.cpp.i
 .PHONY : dump_particle.cpp.i
 
 dump_particle.s: dump_particle.cpp.s
@@ -1137,7 +1137,7 @@ dump_particle.s: dump_particle.cpp.s
 
 # target to generate assembly for a file
 dump_particle.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/dump_particle.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/dump_particle.cpp.s
 .PHONY : dump_particle.cpp.s
 
 dump_surf.o: dump_surf.cpp.o
@@ -1145,7 +1145,7 @@ dump_surf.o: dump_surf.cpp.o
 
 # target to build an object file
 dump_surf.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/dump_surf.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/dump_surf.cpp.o
 .PHONY : dump_surf.cpp.o
 
 dump_surf.i: dump_surf.cpp.i
@@ -1153,7 +1153,7 @@ dump_surf.i: dump_surf.cpp.i
 
 # target to preprocess a source file
 dump_surf.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/dump_surf.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/dump_surf.cpp.i
 .PHONY : dump_surf.cpp.i
 
 dump_surf.s: dump_surf.cpp.s
@@ -1161,7 +1161,7 @@ dump_surf.s: dump_surf.cpp.s
 
 # target to generate assembly for a file
 dump_surf.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/dump_surf.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/dump_surf.cpp.s
 .PHONY : dump_surf.cpp.s
 
 error.o: error.cpp.o
@@ -1169,7 +1169,7 @@ error.o: error.cpp.o
 
 # target to build an object file
 error.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/error.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/error.cpp.o
 .PHONY : error.cpp.o
 
 error.i: error.cpp.i
@@ -1177,7 +1177,7 @@ error.i: error.cpp.i
 
 # target to preprocess a source file
 error.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/error.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/error.cpp.i
 .PHONY : error.cpp.i
 
 error.s: error.cpp.s
@@ -1185,7 +1185,7 @@ error.s: error.cpp.s
 
 # target to generate assembly for a file
 error.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/error.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/error.cpp.s
 .PHONY : error.cpp.s
 
 finish.o: finish.cpp.o
@@ -1193,7 +1193,7 @@ finish.o: finish.cpp.o
 
 # target to build an object file
 finish.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/finish.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/finish.cpp.o
 .PHONY : finish.cpp.o
 
 finish.i: finish.cpp.i
@@ -1201,7 +1201,7 @@ finish.i: finish.cpp.i
 
 # target to preprocess a source file
 finish.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/finish.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/finish.cpp.i
 .PHONY : finish.cpp.i
 
 finish.s: finish.cpp.s
@@ -1209,7 +1209,7 @@ finish.s: finish.cpp.s
 
 # target to generate assembly for a file
 finish.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/finish.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/finish.cpp.s
 .PHONY : finish.cpp.s
 
 fix.o: fix.cpp.o
@@ -1217,7 +1217,7 @@ fix.o: fix.cpp.o
 
 # target to build an object file
 fix.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix.cpp.o
 .PHONY : fix.cpp.o
 
 fix.i: fix.cpp.i
@@ -1225,7 +1225,7 @@ fix.i: fix.cpp.i
 
 # target to preprocess a source file
 fix.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix.cpp.i
 .PHONY : fix.cpp.i
 
 fix.s: fix.cpp.s
@@ -1233,7 +1233,7 @@ fix.s: fix.cpp.s
 
 # target to generate assembly for a file
 fix.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix.cpp.s
 .PHONY : fix.cpp.s
 
 fix_ablate.o: fix_ablate.cpp.o
@@ -1241,7 +1241,7 @@ fix_ablate.o: fix_ablate.cpp.o
 
 # target to build an object file
 fix_ablate.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_ablate.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_ablate.cpp.o
 .PHONY : fix_ablate.cpp.o
 
 fix_ablate.i: fix_ablate.cpp.i
@@ -1249,7 +1249,7 @@ fix_ablate.i: fix_ablate.cpp.i
 
 # target to preprocess a source file
 fix_ablate.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_ablate.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_ablate.cpp.i
 .PHONY : fix_ablate.cpp.i
 
 fix_ablate.s: fix_ablate.cpp.s
@@ -1257,7 +1257,7 @@ fix_ablate.s: fix_ablate.cpp.s
 
 # target to generate assembly for a file
 fix_ablate.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_ablate.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_ablate.cpp.s
 .PHONY : fix_ablate.cpp.s
 
 fix_adapt.o: fix_adapt.cpp.o
@@ -1265,7 +1265,7 @@ fix_adapt.o: fix_adapt.cpp.o
 
 # target to build an object file
 fix_adapt.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_adapt.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_adapt.cpp.o
 .PHONY : fix_adapt.cpp.o
 
 fix_adapt.i: fix_adapt.cpp.i
@@ -1273,7 +1273,7 @@ fix_adapt.i: fix_adapt.cpp.i
 
 # target to preprocess a source file
 fix_adapt.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_adapt.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_adapt.cpp.i
 .PHONY : fix_adapt.cpp.i
 
 fix_adapt.s: fix_adapt.cpp.s
@@ -1281,7 +1281,7 @@ fix_adapt.s: fix_adapt.cpp.s
 
 # target to generate assembly for a file
 fix_adapt.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_adapt.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_adapt.cpp.s
 .PHONY : fix_adapt.cpp.s
 
 fix_ambipolar.o: fix_ambipolar.cpp.o
@@ -1289,7 +1289,7 @@ fix_ambipolar.o: fix_ambipolar.cpp.o
 
 # target to build an object file
 fix_ambipolar.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_ambipolar.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_ambipolar.cpp.o
 .PHONY : fix_ambipolar.cpp.o
 
 fix_ambipolar.i: fix_ambipolar.cpp.i
@@ -1297,7 +1297,7 @@ fix_ambipolar.i: fix_ambipolar.cpp.i
 
 # target to preprocess a source file
 fix_ambipolar.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_ambipolar.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_ambipolar.cpp.i
 .PHONY : fix_ambipolar.cpp.i
 
 fix_ambipolar.s: fix_ambipolar.cpp.s
@@ -1305,7 +1305,7 @@ fix_ambipolar.s: fix_ambipolar.cpp.s
 
 # target to generate assembly for a file
 fix_ambipolar.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_ambipolar.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_ambipolar.cpp.s
 .PHONY : fix_ambipolar.cpp.s
 
 fix_ave_grid.o: fix_ave_grid.cpp.o
@@ -1313,7 +1313,7 @@ fix_ave_grid.o: fix_ave_grid.cpp.o
 
 # target to build an object file
 fix_ave_grid.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_ave_grid.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_ave_grid.cpp.o
 .PHONY : fix_ave_grid.cpp.o
 
 fix_ave_grid.i: fix_ave_grid.cpp.i
@@ -1321,7 +1321,7 @@ fix_ave_grid.i: fix_ave_grid.cpp.i
 
 # target to preprocess a source file
 fix_ave_grid.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_ave_grid.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_ave_grid.cpp.i
 .PHONY : fix_ave_grid.cpp.i
 
 fix_ave_grid.s: fix_ave_grid.cpp.s
@@ -1329,7 +1329,7 @@ fix_ave_grid.s: fix_ave_grid.cpp.s
 
 # target to generate assembly for a file
 fix_ave_grid.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_ave_grid.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_ave_grid.cpp.s
 .PHONY : fix_ave_grid.cpp.s
 
 fix_ave_histo.o: fix_ave_histo.cpp.o
@@ -1337,7 +1337,7 @@ fix_ave_histo.o: fix_ave_histo.cpp.o
 
 # target to build an object file
 fix_ave_histo.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_ave_histo.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_ave_histo.cpp.o
 .PHONY : fix_ave_histo.cpp.o
 
 fix_ave_histo.i: fix_ave_histo.cpp.i
@@ -1345,7 +1345,7 @@ fix_ave_histo.i: fix_ave_histo.cpp.i
 
 # target to preprocess a source file
 fix_ave_histo.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_ave_histo.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_ave_histo.cpp.i
 .PHONY : fix_ave_histo.cpp.i
 
 fix_ave_histo.s: fix_ave_histo.cpp.s
@@ -1353,7 +1353,7 @@ fix_ave_histo.s: fix_ave_histo.cpp.s
 
 # target to generate assembly for a file
 fix_ave_histo.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_ave_histo.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_ave_histo.cpp.s
 .PHONY : fix_ave_histo.cpp.s
 
 fix_ave_histo_weight.o: fix_ave_histo_weight.cpp.o
@@ -1361,7 +1361,7 @@ fix_ave_histo_weight.o: fix_ave_histo_weight.cpp.o
 
 # target to build an object file
 fix_ave_histo_weight.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_ave_histo_weight.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_ave_histo_weight.cpp.o
 .PHONY : fix_ave_histo_weight.cpp.o
 
 fix_ave_histo_weight.i: fix_ave_histo_weight.cpp.i
@@ -1369,7 +1369,7 @@ fix_ave_histo_weight.i: fix_ave_histo_weight.cpp.i
 
 # target to preprocess a source file
 fix_ave_histo_weight.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_ave_histo_weight.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_ave_histo_weight.cpp.i
 .PHONY : fix_ave_histo_weight.cpp.i
 
 fix_ave_histo_weight.s: fix_ave_histo_weight.cpp.s
@@ -1377,7 +1377,7 @@ fix_ave_histo_weight.s: fix_ave_histo_weight.cpp.s
 
 # target to generate assembly for a file
 fix_ave_histo_weight.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_ave_histo_weight.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_ave_histo_weight.cpp.s
 .PHONY : fix_ave_histo_weight.cpp.s
 
 fix_ave_surf.o: fix_ave_surf.cpp.o
@@ -1385,7 +1385,7 @@ fix_ave_surf.o: fix_ave_surf.cpp.o
 
 # target to build an object file
 fix_ave_surf.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_ave_surf.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_ave_surf.cpp.o
 .PHONY : fix_ave_surf.cpp.o
 
 fix_ave_surf.i: fix_ave_surf.cpp.i
@@ -1393,7 +1393,7 @@ fix_ave_surf.i: fix_ave_surf.cpp.i
 
 # target to preprocess a source file
 fix_ave_surf.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_ave_surf.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_ave_surf.cpp.i
 .PHONY : fix_ave_surf.cpp.i
 
 fix_ave_surf.s: fix_ave_surf.cpp.s
@@ -1401,7 +1401,7 @@ fix_ave_surf.s: fix_ave_surf.cpp.s
 
 # target to generate assembly for a file
 fix_ave_surf.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_ave_surf.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_ave_surf.cpp.s
 .PHONY : fix_ave_surf.cpp.s
 
 fix_ave_time.o: fix_ave_time.cpp.o
@@ -1409,7 +1409,7 @@ fix_ave_time.o: fix_ave_time.cpp.o
 
 # target to build an object file
 fix_ave_time.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_ave_time.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_ave_time.cpp.o
 .PHONY : fix_ave_time.cpp.o
 
 fix_ave_time.i: fix_ave_time.cpp.i
@@ -1417,7 +1417,7 @@ fix_ave_time.i: fix_ave_time.cpp.i
 
 # target to preprocess a source file
 fix_ave_time.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_ave_time.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_ave_time.cpp.i
 .PHONY : fix_ave_time.cpp.i
 
 fix_ave_time.s: fix_ave_time.cpp.s
@@ -1425,7 +1425,7 @@ fix_ave_time.s: fix_ave_time.cpp.s
 
 # target to generate assembly for a file
 fix_ave_time.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_ave_time.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_ave_time.cpp.s
 .PHONY : fix_ave_time.cpp.s
 
 fix_balance.o: fix_balance.cpp.o
@@ -1433,7 +1433,7 @@ fix_balance.o: fix_balance.cpp.o
 
 # target to build an object file
 fix_balance.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_balance.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_balance.cpp.o
 .PHONY : fix_balance.cpp.o
 
 fix_balance.i: fix_balance.cpp.i
@@ -1441,7 +1441,7 @@ fix_balance.i: fix_balance.cpp.i
 
 # target to preprocess a source file
 fix_balance.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_balance.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_balance.cpp.i
 .PHONY : fix_balance.cpp.i
 
 fix_balance.s: fix_balance.cpp.s
@@ -1449,7 +1449,7 @@ fix_balance.s: fix_balance.cpp.s
 
 # target to generate assembly for a file
 fix_balance.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_balance.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_balance.cpp.s
 .PHONY : fix_balance.cpp.s
 
 fix_dt_reset.o: fix_dt_reset.cpp.o
@@ -1457,7 +1457,7 @@ fix_dt_reset.o: fix_dt_reset.cpp.o
 
 # target to build an object file
 fix_dt_reset.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_dt_reset.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_dt_reset.cpp.o
 .PHONY : fix_dt_reset.cpp.o
 
 fix_dt_reset.i: fix_dt_reset.cpp.i
@@ -1465,7 +1465,7 @@ fix_dt_reset.i: fix_dt_reset.cpp.i
 
 # target to preprocess a source file
 fix_dt_reset.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_dt_reset.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_dt_reset.cpp.i
 .PHONY : fix_dt_reset.cpp.i
 
 fix_dt_reset.s: fix_dt_reset.cpp.s
@@ -1473,7 +1473,7 @@ fix_dt_reset.s: fix_dt_reset.cpp.s
 
 # target to generate assembly for a file
 fix_dt_reset.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_dt_reset.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_dt_reset.cpp.s
 .PHONY : fix_dt_reset.cpp.s
 
 fix_emit.o: fix_emit.cpp.o
@@ -1481,7 +1481,7 @@ fix_emit.o: fix_emit.cpp.o
 
 # target to build an object file
 fix_emit.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_emit.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_emit.cpp.o
 .PHONY : fix_emit.cpp.o
 
 fix_emit.i: fix_emit.cpp.i
@@ -1489,7 +1489,7 @@ fix_emit.i: fix_emit.cpp.i
 
 # target to preprocess a source file
 fix_emit.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_emit.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_emit.cpp.i
 .PHONY : fix_emit.cpp.i
 
 fix_emit.s: fix_emit.cpp.s
@@ -1497,7 +1497,7 @@ fix_emit.s: fix_emit.cpp.s
 
 # target to generate assembly for a file
 fix_emit.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_emit.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_emit.cpp.s
 .PHONY : fix_emit.cpp.s
 
 fix_emit_face.o: fix_emit_face.cpp.o
@@ -1505,7 +1505,7 @@ fix_emit_face.o: fix_emit_face.cpp.o
 
 # target to build an object file
 fix_emit_face.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_emit_face.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_emit_face.cpp.o
 .PHONY : fix_emit_face.cpp.o
 
 fix_emit_face.i: fix_emit_face.cpp.i
@@ -1513,7 +1513,7 @@ fix_emit_face.i: fix_emit_face.cpp.i
 
 # target to preprocess a source file
 fix_emit_face.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_emit_face.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_emit_face.cpp.i
 .PHONY : fix_emit_face.cpp.i
 
 fix_emit_face.s: fix_emit_face.cpp.s
@@ -1521,7 +1521,7 @@ fix_emit_face.s: fix_emit_face.cpp.s
 
 # target to generate assembly for a file
 fix_emit_face.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_emit_face.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_emit_face.cpp.s
 .PHONY : fix_emit_face.cpp.s
 
 fix_emit_face_file.o: fix_emit_face_file.cpp.o
@@ -1529,7 +1529,7 @@ fix_emit_face_file.o: fix_emit_face_file.cpp.o
 
 # target to build an object file
 fix_emit_face_file.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_emit_face_file.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_emit_face_file.cpp.o
 .PHONY : fix_emit_face_file.cpp.o
 
 fix_emit_face_file.i: fix_emit_face_file.cpp.i
@@ -1537,7 +1537,7 @@ fix_emit_face_file.i: fix_emit_face_file.cpp.i
 
 # target to preprocess a source file
 fix_emit_face_file.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_emit_face_file.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_emit_face_file.cpp.i
 .PHONY : fix_emit_face_file.cpp.i
 
 fix_emit_face_file.s: fix_emit_face_file.cpp.s
@@ -1545,7 +1545,7 @@ fix_emit_face_file.s: fix_emit_face_file.cpp.s
 
 # target to generate assembly for a file
 fix_emit_face_file.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_emit_face_file.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_emit_face_file.cpp.s
 .PHONY : fix_emit_face_file.cpp.s
 
 fix_emit_surf.o: fix_emit_surf.cpp.o
@@ -1553,7 +1553,7 @@ fix_emit_surf.o: fix_emit_surf.cpp.o
 
 # target to build an object file
 fix_emit_surf.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_emit_surf.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_emit_surf.cpp.o
 .PHONY : fix_emit_surf.cpp.o
 
 fix_emit_surf.i: fix_emit_surf.cpp.i
@@ -1561,7 +1561,7 @@ fix_emit_surf.i: fix_emit_surf.cpp.i
 
 # target to preprocess a source file
 fix_emit_surf.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_emit_surf.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_emit_surf.cpp.i
 .PHONY : fix_emit_surf.cpp.i
 
 fix_emit_surf.s: fix_emit_surf.cpp.s
@@ -1569,7 +1569,7 @@ fix_emit_surf.s: fix_emit_surf.cpp.s
 
 # target to generate assembly for a file
 fix_emit_surf.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_emit_surf.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_emit_surf.cpp.s
 .PHONY : fix_emit_surf.cpp.s
 
 fix_field_grid.o: fix_field_grid.cpp.o
@@ -1577,7 +1577,7 @@ fix_field_grid.o: fix_field_grid.cpp.o
 
 # target to build an object file
 fix_field_grid.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_field_grid.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_field_grid.cpp.o
 .PHONY : fix_field_grid.cpp.o
 
 fix_field_grid.i: fix_field_grid.cpp.i
@@ -1585,7 +1585,7 @@ fix_field_grid.i: fix_field_grid.cpp.i
 
 # target to preprocess a source file
 fix_field_grid.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_field_grid.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_field_grid.cpp.i
 .PHONY : fix_field_grid.cpp.i
 
 fix_field_grid.s: fix_field_grid.cpp.s
@@ -1593,7 +1593,7 @@ fix_field_grid.s: fix_field_grid.cpp.s
 
 # target to generate assembly for a file
 fix_field_grid.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_field_grid.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_field_grid.cpp.s
 .PHONY : fix_field_grid.cpp.s
 
 fix_field_particle.o: fix_field_particle.cpp.o
@@ -1601,7 +1601,7 @@ fix_field_particle.o: fix_field_particle.cpp.o
 
 # target to build an object file
 fix_field_particle.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_field_particle.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_field_particle.cpp.o
 .PHONY : fix_field_particle.cpp.o
 
 fix_field_particle.i: fix_field_particle.cpp.i
@@ -1609,7 +1609,7 @@ fix_field_particle.i: fix_field_particle.cpp.i
 
 # target to preprocess a source file
 fix_field_particle.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_field_particle.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_field_particle.cpp.i
 .PHONY : fix_field_particle.cpp.i
 
 fix_field_particle.s: fix_field_particle.cpp.s
@@ -1617,7 +1617,7 @@ fix_field_particle.s: fix_field_particle.cpp.s
 
 # target to generate assembly for a file
 fix_field_particle.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_field_particle.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_field_particle.cpp.s
 .PHONY : fix_field_particle.cpp.s
 
 fix_grid_check.o: fix_grid_check.cpp.o
@@ -1625,7 +1625,7 @@ fix_grid_check.o: fix_grid_check.cpp.o
 
 # target to build an object file
 fix_grid_check.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_grid_check.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_grid_check.cpp.o
 .PHONY : fix_grid_check.cpp.o
 
 fix_grid_check.i: fix_grid_check.cpp.i
@@ -1633,7 +1633,7 @@ fix_grid_check.i: fix_grid_check.cpp.i
 
 # target to preprocess a source file
 fix_grid_check.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_grid_check.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_grid_check.cpp.i
 .PHONY : fix_grid_check.cpp.i
 
 fix_grid_check.s: fix_grid_check.cpp.s
@@ -1641,7 +1641,7 @@ fix_grid_check.s: fix_grid_check.cpp.s
 
 # target to generate assembly for a file
 fix_grid_check.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_grid_check.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_grid_check.cpp.s
 .PHONY : fix_grid_check.cpp.s
 
 fix_move_surf.o: fix_move_surf.cpp.o
@@ -1649,7 +1649,7 @@ fix_move_surf.o: fix_move_surf.cpp.o
 
 # target to build an object file
 fix_move_surf.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_move_surf.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_move_surf.cpp.o
 .PHONY : fix_move_surf.cpp.o
 
 fix_move_surf.i: fix_move_surf.cpp.i
@@ -1657,7 +1657,7 @@ fix_move_surf.i: fix_move_surf.cpp.i
 
 # target to preprocess a source file
 fix_move_surf.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_move_surf.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_move_surf.cpp.i
 .PHONY : fix_move_surf.cpp.i
 
 fix_move_surf.s: fix_move_surf.cpp.s
@@ -1665,7 +1665,7 @@ fix_move_surf.s: fix_move_surf.cpp.s
 
 # target to generate assembly for a file
 fix_move_surf.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_move_surf.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_move_surf.cpp.s
 .PHONY : fix_move_surf.cpp.s
 
 fix_print.o: fix_print.cpp.o
@@ -1673,7 +1673,7 @@ fix_print.o: fix_print.cpp.o
 
 # target to build an object file
 fix_print.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_print.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_print.cpp.o
 .PHONY : fix_print.cpp.o
 
 fix_print.i: fix_print.cpp.i
@@ -1681,7 +1681,7 @@ fix_print.i: fix_print.cpp.i
 
 # target to preprocess a source file
 fix_print.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_print.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_print.cpp.i
 .PHONY : fix_print.cpp.i
 
 fix_print.s: fix_print.cpp.s
@@ -1689,7 +1689,7 @@ fix_print.s: fix_print.cpp.s
 
 # target to generate assembly for a file
 fix_print.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_print.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_print.cpp.s
 .PHONY : fix_print.cpp.s
 
 fix_surf_temp.o: fix_surf_temp.cpp.o
@@ -1697,7 +1697,7 @@ fix_surf_temp.o: fix_surf_temp.cpp.o
 
 # target to build an object file
 fix_surf_temp.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_surf_temp.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_surf_temp.cpp.o
 .PHONY : fix_surf_temp.cpp.o
 
 fix_surf_temp.i: fix_surf_temp.cpp.i
@@ -1705,7 +1705,7 @@ fix_surf_temp.i: fix_surf_temp.cpp.i
 
 # target to preprocess a source file
 fix_surf_temp.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_surf_temp.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_surf_temp.cpp.i
 .PHONY : fix_surf_temp.cpp.i
 
 fix_surf_temp.s: fix_surf_temp.cpp.s
@@ -1713,7 +1713,7 @@ fix_surf_temp.s: fix_surf_temp.cpp.s
 
 # target to generate assembly for a file
 fix_surf_temp.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_surf_temp.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_surf_temp.cpp.s
 .PHONY : fix_surf_temp.cpp.s
 
 fix_temp_global_rescale.o: fix_temp_global_rescale.cpp.o
@@ -1721,7 +1721,7 @@ fix_temp_global_rescale.o: fix_temp_global_rescale.cpp.o
 
 # target to build an object file
 fix_temp_global_rescale.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_temp_global_rescale.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_temp_global_rescale.cpp.o
 .PHONY : fix_temp_global_rescale.cpp.o
 
 fix_temp_global_rescale.i: fix_temp_global_rescale.cpp.i
@@ -1729,7 +1729,7 @@ fix_temp_global_rescale.i: fix_temp_global_rescale.cpp.i
 
 # target to preprocess a source file
 fix_temp_global_rescale.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_temp_global_rescale.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_temp_global_rescale.cpp.i
 .PHONY : fix_temp_global_rescale.cpp.i
 
 fix_temp_global_rescale.s: fix_temp_global_rescale.cpp.s
@@ -1737,7 +1737,7 @@ fix_temp_global_rescale.s: fix_temp_global_rescale.cpp.s
 
 # target to generate assembly for a file
 fix_temp_global_rescale.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_temp_global_rescale.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_temp_global_rescale.cpp.s
 .PHONY : fix_temp_global_rescale.cpp.s
 
 fix_temp_rescale.o: fix_temp_rescale.cpp.o
@@ -1745,7 +1745,7 @@ fix_temp_rescale.o: fix_temp_rescale.cpp.o
 
 # target to build an object file
 fix_temp_rescale.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_temp_rescale.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_temp_rescale.cpp.o
 .PHONY : fix_temp_rescale.cpp.o
 
 fix_temp_rescale.i: fix_temp_rescale.cpp.i
@@ -1753,7 +1753,7 @@ fix_temp_rescale.i: fix_temp_rescale.cpp.i
 
 # target to preprocess a source file
 fix_temp_rescale.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_temp_rescale.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_temp_rescale.cpp.i
 .PHONY : fix_temp_rescale.cpp.i
 
 fix_temp_rescale.s: fix_temp_rescale.cpp.s
@@ -1761,7 +1761,7 @@ fix_temp_rescale.s: fix_temp_rescale.cpp.s
 
 # target to generate assembly for a file
 fix_temp_rescale.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_temp_rescale.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_temp_rescale.cpp.s
 .PHONY : fix_temp_rescale.cpp.s
 
 fix_vibmode.o: fix_vibmode.cpp.o
@@ -1769,7 +1769,7 @@ fix_vibmode.o: fix_vibmode.cpp.o
 
 # target to build an object file
 fix_vibmode.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_vibmode.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_vibmode.cpp.o
 .PHONY : fix_vibmode.cpp.o
 
 fix_vibmode.i: fix_vibmode.cpp.i
@@ -1777,7 +1777,7 @@ fix_vibmode.i: fix_vibmode.cpp.i
 
 # target to preprocess a source file
 fix_vibmode.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_vibmode.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_vibmode.cpp.i
 .PHONY : fix_vibmode.cpp.i
 
 fix_vibmode.s: fix_vibmode.cpp.s
@@ -1785,7 +1785,7 @@ fix_vibmode.s: fix_vibmode.cpp.s
 
 # target to generate assembly for a file
 fix_vibmode.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/fix_vibmode.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/fix_vibmode.cpp.s
 .PHONY : fix_vibmode.cpp.s
 
 geometry.o: geometry.cpp.o
@@ -1793,7 +1793,7 @@ geometry.o: geometry.cpp.o
 
 # target to build an object file
 geometry.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/geometry.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/geometry.cpp.o
 .PHONY : geometry.cpp.o
 
 geometry.i: geometry.cpp.i
@@ -1801,7 +1801,7 @@ geometry.i: geometry.cpp.i
 
 # target to preprocess a source file
 geometry.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/geometry.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/geometry.cpp.i
 .PHONY : geometry.cpp.i
 
 geometry.s: geometry.cpp.s
@@ -1809,7 +1809,7 @@ geometry.s: geometry.cpp.s
 
 # target to generate assembly for a file
 geometry.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/geometry.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/geometry.cpp.s
 .PHONY : geometry.cpp.s
 
 grid.o: grid.cpp.o
@@ -1817,7 +1817,7 @@ grid.o: grid.cpp.o
 
 # target to build an object file
 grid.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/grid.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/grid.cpp.o
 .PHONY : grid.cpp.o
 
 grid.i: grid.cpp.i
@@ -1825,7 +1825,7 @@ grid.i: grid.cpp.i
 
 # target to preprocess a source file
 grid.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/grid.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/grid.cpp.i
 .PHONY : grid.cpp.i
 
 grid.s: grid.cpp.s
@@ -1833,7 +1833,7 @@ grid.s: grid.cpp.s
 
 # target to generate assembly for a file
 grid.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/grid.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/grid.cpp.s
 .PHONY : grid.cpp.s
 
 grid_adapt.o: grid_adapt.cpp.o
@@ -1841,7 +1841,7 @@ grid_adapt.o: grid_adapt.cpp.o
 
 # target to build an object file
 grid_adapt.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/grid_adapt.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/grid_adapt.cpp.o
 .PHONY : grid_adapt.cpp.o
 
 grid_adapt.i: grid_adapt.cpp.i
@@ -1849,7 +1849,7 @@ grid_adapt.i: grid_adapt.cpp.i
 
 # target to preprocess a source file
 grid_adapt.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/grid_adapt.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/grid_adapt.cpp.i
 .PHONY : grid_adapt.cpp.i
 
 grid_adapt.s: grid_adapt.cpp.s
@@ -1857,7 +1857,7 @@ grid_adapt.s: grid_adapt.cpp.s
 
 # target to generate assembly for a file
 grid_adapt.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/grid_adapt.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/grid_adapt.cpp.s
 .PHONY : grid_adapt.cpp.s
 
 grid_collate.o: grid_collate.cpp.o
@@ -1865,7 +1865,7 @@ grid_collate.o: grid_collate.cpp.o
 
 # target to build an object file
 grid_collate.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/grid_collate.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/grid_collate.cpp.o
 .PHONY : grid_collate.cpp.o
 
 grid_collate.i: grid_collate.cpp.i
@@ -1873,7 +1873,7 @@ grid_collate.i: grid_collate.cpp.i
 
 # target to preprocess a source file
 grid_collate.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/grid_collate.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/grid_collate.cpp.i
 .PHONY : grid_collate.cpp.i
 
 grid_collate.s: grid_collate.cpp.s
@@ -1881,7 +1881,7 @@ grid_collate.s: grid_collate.cpp.s
 
 # target to generate assembly for a file
 grid_collate.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/grid_collate.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/grid_collate.cpp.s
 .PHONY : grid_collate.cpp.s
 
 grid_comm.o: grid_comm.cpp.o
@@ -1889,7 +1889,7 @@ grid_comm.o: grid_comm.cpp.o
 
 # target to build an object file
 grid_comm.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/grid_comm.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/grid_comm.cpp.o
 .PHONY : grid_comm.cpp.o
 
 grid_comm.i: grid_comm.cpp.i
@@ -1897,7 +1897,7 @@ grid_comm.i: grid_comm.cpp.i
 
 # target to preprocess a source file
 grid_comm.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/grid_comm.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/grid_comm.cpp.i
 .PHONY : grid_comm.cpp.i
 
 grid_comm.s: grid_comm.cpp.s
@@ -1905,7 +1905,7 @@ grid_comm.s: grid_comm.cpp.s
 
 # target to generate assembly for a file
 grid_comm.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/grid_comm.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/grid_comm.cpp.s
 .PHONY : grid_comm.cpp.s
 
 grid_custom.o: grid_custom.cpp.o
@@ -1913,7 +1913,7 @@ grid_custom.o: grid_custom.cpp.o
 
 # target to build an object file
 grid_custom.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/grid_custom.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/grid_custom.cpp.o
 .PHONY : grid_custom.cpp.o
 
 grid_custom.i: grid_custom.cpp.i
@@ -1921,7 +1921,7 @@ grid_custom.i: grid_custom.cpp.i
 
 # target to preprocess a source file
 grid_custom.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/grid_custom.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/grid_custom.cpp.i
 .PHONY : grid_custom.cpp.i
 
 grid_custom.s: grid_custom.cpp.s
@@ -1929,7 +1929,7 @@ grid_custom.s: grid_custom.cpp.s
 
 # target to generate assembly for a file
 grid_custom.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/grid_custom.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/grid_custom.cpp.s
 .PHONY : grid_custom.cpp.s
 
 grid_id.o: grid_id.cpp.o
@@ -1937,7 +1937,7 @@ grid_id.o: grid_id.cpp.o
 
 # target to build an object file
 grid_id.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/grid_id.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/grid_id.cpp.o
 .PHONY : grid_id.cpp.o
 
 grid_id.i: grid_id.cpp.i
@@ -1945,7 +1945,7 @@ grid_id.i: grid_id.cpp.i
 
 # target to preprocess a source file
 grid_id.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/grid_id.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/grid_id.cpp.i
 .PHONY : grid_id.cpp.i
 
 grid_id.s: grid_id.cpp.s
@@ -1953,7 +1953,7 @@ grid_id.s: grid_id.cpp.s
 
 # target to generate assembly for a file
 grid_id.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/grid_id.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/grid_id.cpp.s
 .PHONY : grid_id.cpp.s
 
 grid_surf.o: grid_surf.cpp.o
@@ -1961,7 +1961,7 @@ grid_surf.o: grid_surf.cpp.o
 
 # target to build an object file
 grid_surf.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/grid_surf.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/grid_surf.cpp.o
 .PHONY : grid_surf.cpp.o
 
 grid_surf.i: grid_surf.cpp.i
@@ -1969,7 +1969,7 @@ grid_surf.i: grid_surf.cpp.i
 
 # target to preprocess a source file
 grid_surf.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/grid_surf.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/grid_surf.cpp.i
 .PHONY : grid_surf.cpp.i
 
 grid_surf.s: grid_surf.cpp.s
@@ -1977,7 +1977,7 @@ grid_surf.s: grid_surf.cpp.s
 
 # target to generate assembly for a file
 grid_surf.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/grid_surf.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/grid_surf.cpp.s
 .PHONY : grid_surf.cpp.s
 
 hashlittle.o: hashlittle.cpp.o
@@ -1985,7 +1985,7 @@ hashlittle.o: hashlittle.cpp.o
 
 # target to build an object file
 hashlittle.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/hashlittle.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/hashlittle.cpp.o
 .PHONY : hashlittle.cpp.o
 
 hashlittle.i: hashlittle.cpp.i
@@ -1993,7 +1993,7 @@ hashlittle.i: hashlittle.cpp.i
 
 # target to preprocess a source file
 hashlittle.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/hashlittle.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/hashlittle.cpp.i
 .PHONY : hashlittle.cpp.i
 
 hashlittle.s: hashlittle.cpp.s
@@ -2001,7 +2001,7 @@ hashlittle.s: hashlittle.cpp.s
 
 # target to generate assembly for a file
 hashlittle.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/hashlittle.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/hashlittle.cpp.s
 .PHONY : hashlittle.cpp.s
 
 image.o: image.cpp.o
@@ -2009,7 +2009,7 @@ image.o: image.cpp.o
 
 # target to build an object file
 image.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/image.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/image.cpp.o
 .PHONY : image.cpp.o
 
 image.i: image.cpp.i
@@ -2017,7 +2017,7 @@ image.i: image.cpp.i
 
 # target to preprocess a source file
 image.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/image.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/image.cpp.i
 .PHONY : image.cpp.i
 
 image.s: image.cpp.s
@@ -2025,7 +2025,7 @@ image.s: image.cpp.s
 
 # target to generate assembly for a file
 image.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/image.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/image.cpp.s
 .PHONY : image.cpp.s
 
 input.o: input.cpp.o
@@ -2033,7 +2033,7 @@ input.o: input.cpp.o
 
 # target to build an object file
 input.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/input.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/input.cpp.o
 .PHONY : input.cpp.o
 
 input.i: input.cpp.i
@@ -2041,7 +2041,7 @@ input.i: input.cpp.i
 
 # target to preprocess a source file
 input.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/input.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/input.cpp.i
 .PHONY : input.cpp.i
 
 input.s: input.cpp.s
@@ -2049,7 +2049,7 @@ input.s: input.cpp.s
 
 # target to generate assembly for a file
 input.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/input.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/input.cpp.s
 .PHONY : input.cpp.s
 
 irregular.o: irregular.cpp.o
@@ -2057,7 +2057,7 @@ irregular.o: irregular.cpp.o
 
 # target to build an object file
 irregular.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/irregular.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/irregular.cpp.o
 .PHONY : irregular.cpp.o
 
 irregular.i: irregular.cpp.i
@@ -2065,7 +2065,7 @@ irregular.i: irregular.cpp.i
 
 # target to preprocess a source file
 irregular.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/irregular.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/irregular.cpp.i
 .PHONY : irregular.cpp.i
 
 irregular.s: irregular.cpp.s
@@ -2073,7 +2073,7 @@ irregular.s: irregular.cpp.s
 
 # target to generate assembly for a file
 irregular.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/irregular.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/irregular.cpp.s
 .PHONY : irregular.cpp.s
 
 library.o: library.cpp.o
@@ -2081,7 +2081,7 @@ library.o: library.cpp.o
 
 # target to build an object file
 library.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/library.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/library.cpp.o
 .PHONY : library.cpp.o
 
 library.i: library.cpp.i
@@ -2089,7 +2089,7 @@ library.i: library.cpp.i
 
 # target to preprocess a source file
 library.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/library.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/library.cpp.i
 .PHONY : library.cpp.i
 
 library.s: library.cpp.s
@@ -2097,7 +2097,7 @@ library.s: library.cpp.s
 
 # target to generate assembly for a file
 library.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/library.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/library.cpp.s
 .PHONY : library.cpp.s
 
 main.o: main.cpp.o
@@ -2105,8 +2105,8 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/main.cpp.o
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/spa_mac.dir/build.make src/CMakeFiles/spa_mac.dir/main.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/main.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/spa_tutorial.dir/build.make src/CMakeFiles/spa_tutorial.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -2114,8 +2114,8 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/main.cpp.i
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/spa_mac.dir/build.make src/CMakeFiles/spa_mac.dir/main.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/main.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/spa_tutorial.dir/build.make src/CMakeFiles/spa_tutorial.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -2123,8 +2123,8 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/main.cpp.s
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/spa_mac.dir/build.make src/CMakeFiles/spa_mac.dir/main.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/main.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/spa_tutorial.dir/build.make src/CMakeFiles/spa_tutorial.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 marching_cubes.o: marching_cubes.cpp.o
@@ -2132,7 +2132,7 @@ marching_cubes.o: marching_cubes.cpp.o
 
 # target to build an object file
 marching_cubes.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/marching_cubes.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/marching_cubes.cpp.o
 .PHONY : marching_cubes.cpp.o
 
 marching_cubes.i: marching_cubes.cpp.i
@@ -2140,7 +2140,7 @@ marching_cubes.i: marching_cubes.cpp.i
 
 # target to preprocess a source file
 marching_cubes.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/marching_cubes.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/marching_cubes.cpp.i
 .PHONY : marching_cubes.cpp.i
 
 marching_cubes.s: marching_cubes.cpp.s
@@ -2148,7 +2148,7 @@ marching_cubes.s: marching_cubes.cpp.s
 
 # target to generate assembly for a file
 marching_cubes.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/marching_cubes.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/marching_cubes.cpp.s
 .PHONY : marching_cubes.cpp.s
 
 marching_squares.o: marching_squares.cpp.o
@@ -2156,7 +2156,7 @@ marching_squares.o: marching_squares.cpp.o
 
 # target to build an object file
 marching_squares.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/marching_squares.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/marching_squares.cpp.o
 .PHONY : marching_squares.cpp.o
 
 marching_squares.i: marching_squares.cpp.i
@@ -2164,7 +2164,7 @@ marching_squares.i: marching_squares.cpp.i
 
 # target to preprocess a source file
 marching_squares.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/marching_squares.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/marching_squares.cpp.i
 .PHONY : marching_squares.cpp.i
 
 marching_squares.s: marching_squares.cpp.s
@@ -2172,7 +2172,7 @@ marching_squares.s: marching_squares.cpp.s
 
 # target to generate assembly for a file
 marching_squares.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/marching_squares.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/marching_squares.cpp.s
 .PHONY : marching_squares.cpp.s
 
 math_extra.o: math_extra.cpp.o
@@ -2180,7 +2180,7 @@ math_extra.o: math_extra.cpp.o
 
 # target to build an object file
 math_extra.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/math_extra.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/math_extra.cpp.o
 .PHONY : math_extra.cpp.o
 
 math_extra.i: math_extra.cpp.i
@@ -2188,7 +2188,7 @@ math_extra.i: math_extra.cpp.i
 
 # target to preprocess a source file
 math_extra.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/math_extra.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/math_extra.cpp.i
 .PHONY : math_extra.cpp.i
 
 math_extra.s: math_extra.cpp.s
@@ -2196,7 +2196,7 @@ math_extra.s: math_extra.cpp.s
 
 # target to generate assembly for a file
 math_extra.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/math_extra.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/math_extra.cpp.s
 .PHONY : math_extra.cpp.s
 
 memory.o: memory.cpp.o
@@ -2204,7 +2204,7 @@ memory.o: memory.cpp.o
 
 # target to build an object file
 memory.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/memory.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/memory.cpp.o
 .PHONY : memory.cpp.o
 
 memory.i: memory.cpp.i
@@ -2212,7 +2212,7 @@ memory.i: memory.cpp.i
 
 # target to preprocess a source file
 memory.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/memory.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/memory.cpp.i
 .PHONY : memory.cpp.i
 
 memory.s: memory.cpp.s
@@ -2220,7 +2220,7 @@ memory.s: memory.cpp.s
 
 # target to generate assembly for a file
 memory.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/memory.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/memory.cpp.s
 .PHONY : memory.cpp.s
 
 mixture.o: mixture.cpp.o
@@ -2228,7 +2228,7 @@ mixture.o: mixture.cpp.o
 
 # target to build an object file
 mixture.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/mixture.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/mixture.cpp.o
 .PHONY : mixture.cpp.o
 
 mixture.i: mixture.cpp.i
@@ -2236,7 +2236,7 @@ mixture.i: mixture.cpp.i
 
 # target to preprocess a source file
 mixture.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/mixture.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/mixture.cpp.i
 .PHONY : mixture.cpp.i
 
 mixture.s: mixture.cpp.s
@@ -2244,7 +2244,7 @@ mixture.s: mixture.cpp.s
 
 # target to generate assembly for a file
 mixture.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/mixture.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/mixture.cpp.s
 .PHONY : mixture.cpp.s
 
 modify.o: modify.cpp.o
@@ -2252,7 +2252,7 @@ modify.o: modify.cpp.o
 
 # target to build an object file
 modify.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/modify.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/modify.cpp.o
 .PHONY : modify.cpp.o
 
 modify.i: modify.cpp.i
@@ -2260,7 +2260,7 @@ modify.i: modify.cpp.i
 
 # target to preprocess a source file
 modify.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/modify.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/modify.cpp.i
 .PHONY : modify.cpp.i
 
 modify.s: modify.cpp.s
@@ -2268,7 +2268,7 @@ modify.s: modify.cpp.s
 
 # target to generate assembly for a file
 modify.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/modify.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/modify.cpp.s
 .PHONY : modify.cpp.s
 
 move_surf.o: move_surf.cpp.o
@@ -2276,7 +2276,7 @@ move_surf.o: move_surf.cpp.o
 
 # target to build an object file
 move_surf.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/move_surf.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/move_surf.cpp.o
 .PHONY : move_surf.cpp.o
 
 move_surf.i: move_surf.cpp.i
@@ -2284,7 +2284,7 @@ move_surf.i: move_surf.cpp.i
 
 # target to preprocess a source file
 move_surf.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/move_surf.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/move_surf.cpp.i
 .PHONY : move_surf.cpp.i
 
 move_surf.s: move_surf.cpp.s
@@ -2292,7 +2292,7 @@ move_surf.s: move_surf.cpp.s
 
 # target to generate assembly for a file
 move_surf.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/move_surf.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/move_surf.cpp.s
 .PHONY : move_surf.cpp.s
 
 output.o: output.cpp.o
@@ -2300,7 +2300,7 @@ output.o: output.cpp.o
 
 # target to build an object file
 output.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/output.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/output.cpp.o
 .PHONY : output.cpp.o
 
 output.i: output.cpp.i
@@ -2308,7 +2308,7 @@ output.i: output.cpp.i
 
 # target to preprocess a source file
 output.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/output.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/output.cpp.i
 .PHONY : output.cpp.i
 
 output.s: output.cpp.s
@@ -2316,7 +2316,7 @@ output.s: output.cpp.s
 
 # target to generate assembly for a file
 output.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/output.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/output.cpp.s
 .PHONY : output.cpp.s
 
 particle.o: particle.cpp.o
@@ -2324,7 +2324,7 @@ particle.o: particle.cpp.o
 
 # target to build an object file
 particle.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/particle.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/particle.cpp.o
 .PHONY : particle.cpp.o
 
 particle.i: particle.cpp.i
@@ -2332,7 +2332,7 @@ particle.i: particle.cpp.i
 
 # target to preprocess a source file
 particle.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/particle.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/particle.cpp.i
 .PHONY : particle.cpp.i
 
 particle.s: particle.cpp.s
@@ -2340,7 +2340,7 @@ particle.s: particle.cpp.s
 
 # target to generate assembly for a file
 particle.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/particle.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/particle.cpp.s
 .PHONY : particle.cpp.s
 
 particle_custom.o: particle_custom.cpp.o
@@ -2348,7 +2348,7 @@ particle_custom.o: particle_custom.cpp.o
 
 # target to build an object file
 particle_custom.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/particle_custom.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/particle_custom.cpp.o
 .PHONY : particle_custom.cpp.o
 
 particle_custom.i: particle_custom.cpp.i
@@ -2356,7 +2356,7 @@ particle_custom.i: particle_custom.cpp.i
 
 # target to preprocess a source file
 particle_custom.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/particle_custom.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/particle_custom.cpp.i
 .PHONY : particle_custom.cpp.i
 
 particle_custom.s: particle_custom.cpp.s
@@ -2364,7 +2364,7 @@ particle_custom.s: particle_custom.cpp.s
 
 # target to generate assembly for a file
 particle_custom.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/particle_custom.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/particle_custom.cpp.s
 .PHONY : particle_custom.cpp.s
 
 random_knuth.o: random_knuth.cpp.o
@@ -2372,7 +2372,7 @@ random_knuth.o: random_knuth.cpp.o
 
 # target to build an object file
 random_knuth.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/random_knuth.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/random_knuth.cpp.o
 .PHONY : random_knuth.cpp.o
 
 random_knuth.i: random_knuth.cpp.i
@@ -2380,7 +2380,7 @@ random_knuth.i: random_knuth.cpp.i
 
 # target to preprocess a source file
 random_knuth.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/random_knuth.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/random_knuth.cpp.i
 .PHONY : random_knuth.cpp.i
 
 random_knuth.s: random_knuth.cpp.s
@@ -2388,7 +2388,7 @@ random_knuth.s: random_knuth.cpp.s
 
 # target to generate assembly for a file
 random_knuth.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/random_knuth.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/random_knuth.cpp.s
 .PHONY : random_knuth.cpp.s
 
 random_mars.o: random_mars.cpp.o
@@ -2396,7 +2396,7 @@ random_mars.o: random_mars.cpp.o
 
 # target to build an object file
 random_mars.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/random_mars.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/random_mars.cpp.o
 .PHONY : random_mars.cpp.o
 
 random_mars.i: random_mars.cpp.i
@@ -2404,7 +2404,7 @@ random_mars.i: random_mars.cpp.i
 
 # target to preprocess a source file
 random_mars.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/random_mars.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/random_mars.cpp.i
 .PHONY : random_mars.cpp.i
 
 random_mars.s: random_mars.cpp.s
@@ -2412,7 +2412,7 @@ random_mars.s: random_mars.cpp.s
 
 # target to generate assembly for a file
 random_mars.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/random_mars.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/random_mars.cpp.s
 .PHONY : random_mars.cpp.s
 
 rcb.o: rcb.cpp.o
@@ -2420,7 +2420,7 @@ rcb.o: rcb.cpp.o
 
 # target to build an object file
 rcb.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/rcb.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/rcb.cpp.o
 .PHONY : rcb.cpp.o
 
 rcb.i: rcb.cpp.i
@@ -2428,7 +2428,7 @@ rcb.i: rcb.cpp.i
 
 # target to preprocess a source file
 rcb.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/rcb.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/rcb.cpp.i
 .PHONY : rcb.cpp.i
 
 rcb.s: rcb.cpp.s
@@ -2436,7 +2436,7 @@ rcb.s: rcb.cpp.s
 
 # target to generate assembly for a file
 rcb.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/rcb.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/rcb.cpp.s
 .PHONY : rcb.cpp.s
 
 react.o: react.cpp.o
@@ -2444,7 +2444,7 @@ react.o: react.cpp.o
 
 # target to build an object file
 react.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/react.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/react.cpp.o
 .PHONY : react.cpp.o
 
 react.i: react.cpp.i
@@ -2452,7 +2452,7 @@ react.i: react.cpp.i
 
 # target to preprocess a source file
 react.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/react.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/react.cpp.i
 .PHONY : react.cpp.i
 
 react.s: react.cpp.s
@@ -2460,7 +2460,7 @@ react.s: react.cpp.s
 
 # target to generate assembly for a file
 react.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/react.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/react.cpp.s
 .PHONY : react.cpp.s
 
 react_bird.o: react_bird.cpp.o
@@ -2468,7 +2468,7 @@ react_bird.o: react_bird.cpp.o
 
 # target to build an object file
 react_bird.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/react_bird.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/react_bird.cpp.o
 .PHONY : react_bird.cpp.o
 
 react_bird.i: react_bird.cpp.i
@@ -2476,7 +2476,7 @@ react_bird.i: react_bird.cpp.i
 
 # target to preprocess a source file
 react_bird.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/react_bird.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/react_bird.cpp.i
 .PHONY : react_bird.cpp.i
 
 react_bird.s: react_bird.cpp.s
@@ -2484,7 +2484,7 @@ react_bird.s: react_bird.cpp.s
 
 # target to generate assembly for a file
 react_bird.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/react_bird.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/react_bird.cpp.s
 .PHONY : react_bird.cpp.s
 
 react_qk.o: react_qk.cpp.o
@@ -2492,7 +2492,7 @@ react_qk.o: react_qk.cpp.o
 
 # target to build an object file
 react_qk.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/react_qk.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/react_qk.cpp.o
 .PHONY : react_qk.cpp.o
 
 react_qk.i: react_qk.cpp.i
@@ -2500,7 +2500,7 @@ react_qk.i: react_qk.cpp.i
 
 # target to preprocess a source file
 react_qk.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/react_qk.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/react_qk.cpp.i
 .PHONY : react_qk.cpp.i
 
 react_qk.s: react_qk.cpp.s
@@ -2508,7 +2508,7 @@ react_qk.s: react_qk.cpp.s
 
 # target to generate assembly for a file
 react_qk.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/react_qk.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/react_qk.cpp.s
 .PHONY : react_qk.cpp.s
 
 react_tce.o: react_tce.cpp.o
@@ -2516,7 +2516,7 @@ react_tce.o: react_tce.cpp.o
 
 # target to build an object file
 react_tce.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/react_tce.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/react_tce.cpp.o
 .PHONY : react_tce.cpp.o
 
 react_tce.i: react_tce.cpp.i
@@ -2524,7 +2524,7 @@ react_tce.i: react_tce.cpp.i
 
 # target to preprocess a source file
 react_tce.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/react_tce.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/react_tce.cpp.i
 .PHONY : react_tce.cpp.i
 
 react_tce.s: react_tce.cpp.s
@@ -2532,7 +2532,7 @@ react_tce.s: react_tce.cpp.s
 
 # target to generate assembly for a file
 react_tce.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/react_tce.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/react_tce.cpp.s
 .PHONY : react_tce.cpp.s
 
 react_tce_qk.o: react_tce_qk.cpp.o
@@ -2540,7 +2540,7 @@ react_tce_qk.o: react_tce_qk.cpp.o
 
 # target to build an object file
 react_tce_qk.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/react_tce_qk.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/react_tce_qk.cpp.o
 .PHONY : react_tce_qk.cpp.o
 
 react_tce_qk.i: react_tce_qk.cpp.i
@@ -2548,7 +2548,7 @@ react_tce_qk.i: react_tce_qk.cpp.i
 
 # target to preprocess a source file
 react_tce_qk.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/react_tce_qk.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/react_tce_qk.cpp.i
 .PHONY : react_tce_qk.cpp.i
 
 react_tce_qk.s: react_tce_qk.cpp.s
@@ -2556,7 +2556,7 @@ react_tce_qk.s: react_tce_qk.cpp.s
 
 # target to generate assembly for a file
 react_tce_qk.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/react_tce_qk.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/react_tce_qk.cpp.s
 .PHONY : react_tce_qk.cpp.s
 
 read_grid.o: read_grid.cpp.o
@@ -2564,7 +2564,7 @@ read_grid.o: read_grid.cpp.o
 
 # target to build an object file
 read_grid.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/read_grid.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/read_grid.cpp.o
 .PHONY : read_grid.cpp.o
 
 read_grid.i: read_grid.cpp.i
@@ -2572,7 +2572,7 @@ read_grid.i: read_grid.cpp.i
 
 # target to preprocess a source file
 read_grid.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/read_grid.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/read_grid.cpp.i
 .PHONY : read_grid.cpp.i
 
 read_grid.s: read_grid.cpp.s
@@ -2580,7 +2580,7 @@ read_grid.s: read_grid.cpp.s
 
 # target to generate assembly for a file
 read_grid.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/read_grid.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/read_grid.cpp.s
 .PHONY : read_grid.cpp.s
 
 read_isurf.o: read_isurf.cpp.o
@@ -2588,7 +2588,7 @@ read_isurf.o: read_isurf.cpp.o
 
 # target to build an object file
 read_isurf.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/read_isurf.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/read_isurf.cpp.o
 .PHONY : read_isurf.cpp.o
 
 read_isurf.i: read_isurf.cpp.i
@@ -2596,7 +2596,7 @@ read_isurf.i: read_isurf.cpp.i
 
 # target to preprocess a source file
 read_isurf.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/read_isurf.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/read_isurf.cpp.i
 .PHONY : read_isurf.cpp.i
 
 read_isurf.s: read_isurf.cpp.s
@@ -2604,7 +2604,7 @@ read_isurf.s: read_isurf.cpp.s
 
 # target to generate assembly for a file
 read_isurf.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/read_isurf.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/read_isurf.cpp.s
 .PHONY : read_isurf.cpp.s
 
 read_particles.o: read_particles.cpp.o
@@ -2612,7 +2612,7 @@ read_particles.o: read_particles.cpp.o
 
 # target to build an object file
 read_particles.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/read_particles.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/read_particles.cpp.o
 .PHONY : read_particles.cpp.o
 
 read_particles.i: read_particles.cpp.i
@@ -2620,7 +2620,7 @@ read_particles.i: read_particles.cpp.i
 
 # target to preprocess a source file
 read_particles.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/read_particles.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/read_particles.cpp.i
 .PHONY : read_particles.cpp.i
 
 read_particles.s: read_particles.cpp.s
@@ -2628,7 +2628,7 @@ read_particles.s: read_particles.cpp.s
 
 # target to generate assembly for a file
 read_particles.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/read_particles.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/read_particles.cpp.s
 .PHONY : read_particles.cpp.s
 
 read_restart.o: read_restart.cpp.o
@@ -2636,7 +2636,7 @@ read_restart.o: read_restart.cpp.o
 
 # target to build an object file
 read_restart.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/read_restart.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/read_restart.cpp.o
 .PHONY : read_restart.cpp.o
 
 read_restart.i: read_restart.cpp.i
@@ -2644,7 +2644,7 @@ read_restart.i: read_restart.cpp.i
 
 # target to preprocess a source file
 read_restart.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/read_restart.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/read_restart.cpp.i
 .PHONY : read_restart.cpp.i
 
 read_restart.s: read_restart.cpp.s
@@ -2652,7 +2652,7 @@ read_restart.s: read_restart.cpp.s
 
 # target to generate assembly for a file
 read_restart.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/read_restart.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/read_restart.cpp.s
 .PHONY : read_restart.cpp.s
 
 read_surf.o: read_surf.cpp.o
@@ -2660,7 +2660,7 @@ read_surf.o: read_surf.cpp.o
 
 # target to build an object file
 read_surf.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/read_surf.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/read_surf.cpp.o
 .PHONY : read_surf.cpp.o
 
 read_surf.i: read_surf.cpp.i
@@ -2668,7 +2668,7 @@ read_surf.i: read_surf.cpp.i
 
 # target to preprocess a source file
 read_surf.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/read_surf.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/read_surf.cpp.i
 .PHONY : read_surf.cpp.i
 
 read_surf.s: read_surf.cpp.s
@@ -2676,7 +2676,7 @@ read_surf.s: read_surf.cpp.s
 
 # target to generate assembly for a file
 read_surf.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/read_surf.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/read_surf.cpp.s
 .PHONY : read_surf.cpp.s
 
 region.o: region.cpp.o
@@ -2684,7 +2684,7 @@ region.o: region.cpp.o
 
 # target to build an object file
 region.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/region.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/region.cpp.o
 .PHONY : region.cpp.o
 
 region.i: region.cpp.i
@@ -2692,7 +2692,7 @@ region.i: region.cpp.i
 
 # target to preprocess a source file
 region.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/region.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/region.cpp.i
 .PHONY : region.cpp.i
 
 region.s: region.cpp.s
@@ -2700,7 +2700,7 @@ region.s: region.cpp.s
 
 # target to generate assembly for a file
 region.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/region.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/region.cpp.s
 .PHONY : region.cpp.s
 
 region_block.o: region_block.cpp.o
@@ -2708,7 +2708,7 @@ region_block.o: region_block.cpp.o
 
 # target to build an object file
 region_block.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/region_block.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/region_block.cpp.o
 .PHONY : region_block.cpp.o
 
 region_block.i: region_block.cpp.i
@@ -2716,7 +2716,7 @@ region_block.i: region_block.cpp.i
 
 # target to preprocess a source file
 region_block.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/region_block.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/region_block.cpp.i
 .PHONY : region_block.cpp.i
 
 region_block.s: region_block.cpp.s
@@ -2724,7 +2724,7 @@ region_block.s: region_block.cpp.s
 
 # target to generate assembly for a file
 region_block.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/region_block.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/region_block.cpp.s
 .PHONY : region_block.cpp.s
 
 region_cylinder.o: region_cylinder.cpp.o
@@ -2732,7 +2732,7 @@ region_cylinder.o: region_cylinder.cpp.o
 
 # target to build an object file
 region_cylinder.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/region_cylinder.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/region_cylinder.cpp.o
 .PHONY : region_cylinder.cpp.o
 
 region_cylinder.i: region_cylinder.cpp.i
@@ -2740,7 +2740,7 @@ region_cylinder.i: region_cylinder.cpp.i
 
 # target to preprocess a source file
 region_cylinder.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/region_cylinder.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/region_cylinder.cpp.i
 .PHONY : region_cylinder.cpp.i
 
 region_cylinder.s: region_cylinder.cpp.s
@@ -2748,7 +2748,7 @@ region_cylinder.s: region_cylinder.cpp.s
 
 # target to generate assembly for a file
 region_cylinder.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/region_cylinder.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/region_cylinder.cpp.s
 .PHONY : region_cylinder.cpp.s
 
 region_intersect.o: region_intersect.cpp.o
@@ -2756,7 +2756,7 @@ region_intersect.o: region_intersect.cpp.o
 
 # target to build an object file
 region_intersect.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/region_intersect.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/region_intersect.cpp.o
 .PHONY : region_intersect.cpp.o
 
 region_intersect.i: region_intersect.cpp.i
@@ -2764,7 +2764,7 @@ region_intersect.i: region_intersect.cpp.i
 
 # target to preprocess a source file
 region_intersect.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/region_intersect.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/region_intersect.cpp.i
 .PHONY : region_intersect.cpp.i
 
 region_intersect.s: region_intersect.cpp.s
@@ -2772,7 +2772,7 @@ region_intersect.s: region_intersect.cpp.s
 
 # target to generate assembly for a file
 region_intersect.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/region_intersect.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/region_intersect.cpp.s
 .PHONY : region_intersect.cpp.s
 
 region_plane.o: region_plane.cpp.o
@@ -2780,7 +2780,7 @@ region_plane.o: region_plane.cpp.o
 
 # target to build an object file
 region_plane.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/region_plane.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/region_plane.cpp.o
 .PHONY : region_plane.cpp.o
 
 region_plane.i: region_plane.cpp.i
@@ -2788,7 +2788,7 @@ region_plane.i: region_plane.cpp.i
 
 # target to preprocess a source file
 region_plane.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/region_plane.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/region_plane.cpp.i
 .PHONY : region_plane.cpp.i
 
 region_plane.s: region_plane.cpp.s
@@ -2796,7 +2796,7 @@ region_plane.s: region_plane.cpp.s
 
 # target to generate assembly for a file
 region_plane.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/region_plane.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/region_plane.cpp.s
 .PHONY : region_plane.cpp.s
 
 region_sphere.o: region_sphere.cpp.o
@@ -2804,7 +2804,7 @@ region_sphere.o: region_sphere.cpp.o
 
 # target to build an object file
 region_sphere.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/region_sphere.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/region_sphere.cpp.o
 .PHONY : region_sphere.cpp.o
 
 region_sphere.i: region_sphere.cpp.i
@@ -2812,7 +2812,7 @@ region_sphere.i: region_sphere.cpp.i
 
 # target to preprocess a source file
 region_sphere.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/region_sphere.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/region_sphere.cpp.i
 .PHONY : region_sphere.cpp.i
 
 region_sphere.s: region_sphere.cpp.s
@@ -2820,7 +2820,7 @@ region_sphere.s: region_sphere.cpp.s
 
 # target to generate assembly for a file
 region_sphere.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/region_sphere.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/region_sphere.cpp.s
 .PHONY : region_sphere.cpp.s
 
 region_union.o: region_union.cpp.o
@@ -2828,7 +2828,7 @@ region_union.o: region_union.cpp.o
 
 # target to build an object file
 region_union.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/region_union.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/region_union.cpp.o
 .PHONY : region_union.cpp.o
 
 region_union.i: region_union.cpp.i
@@ -2836,7 +2836,7 @@ region_union.i: region_union.cpp.i
 
 # target to preprocess a source file
 region_union.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/region_union.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/region_union.cpp.i
 .PHONY : region_union.cpp.i
 
 region_union.s: region_union.cpp.s
@@ -2844,7 +2844,7 @@ region_union.s: region_union.cpp.s
 
 # target to generate assembly for a file
 region_union.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/region_union.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/region_union.cpp.s
 .PHONY : region_union.cpp.s
 
 remove_surf.o: remove_surf.cpp.o
@@ -2852,7 +2852,7 @@ remove_surf.o: remove_surf.cpp.o
 
 # target to build an object file
 remove_surf.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/remove_surf.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/remove_surf.cpp.o
 .PHONY : remove_surf.cpp.o
 
 remove_surf.i: remove_surf.cpp.i
@@ -2860,7 +2860,7 @@ remove_surf.i: remove_surf.cpp.i
 
 # target to preprocess a source file
 remove_surf.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/remove_surf.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/remove_surf.cpp.i
 .PHONY : remove_surf.cpp.i
 
 remove_surf.s: remove_surf.cpp.s
@@ -2868,7 +2868,7 @@ remove_surf.s: remove_surf.cpp.s
 
 # target to generate assembly for a file
 remove_surf.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/remove_surf.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/remove_surf.cpp.s
 .PHONY : remove_surf.cpp.s
 
 run.o: run.cpp.o
@@ -2876,7 +2876,7 @@ run.o: run.cpp.o
 
 # target to build an object file
 run.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/run.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/run.cpp.o
 .PHONY : run.cpp.o
 
 run.i: run.cpp.i
@@ -2884,7 +2884,7 @@ run.i: run.cpp.i
 
 # target to preprocess a source file
 run.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/run.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/run.cpp.i
 .PHONY : run.cpp.i
 
 run.s: run.cpp.s
@@ -2892,7 +2892,7 @@ run.s: run.cpp.s
 
 # target to generate assembly for a file
 run.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/run.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/run.cpp.s
 .PHONY : run.cpp.s
 
 scale_particles.o: scale_particles.cpp.o
@@ -2900,7 +2900,7 @@ scale_particles.o: scale_particles.cpp.o
 
 # target to build an object file
 scale_particles.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/scale_particles.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/scale_particles.cpp.o
 .PHONY : scale_particles.cpp.o
 
 scale_particles.i: scale_particles.cpp.i
@@ -2908,7 +2908,7 @@ scale_particles.i: scale_particles.cpp.i
 
 # target to preprocess a source file
 scale_particles.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/scale_particles.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/scale_particles.cpp.i
 .PHONY : scale_particles.cpp.i
 
 scale_particles.s: scale_particles.cpp.s
@@ -2916,7 +2916,7 @@ scale_particles.s: scale_particles.cpp.s
 
 # target to generate assembly for a file
 scale_particles.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/scale_particles.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/scale_particles.cpp.s
 .PHONY : scale_particles.cpp.s
 
 sparta.o: sparta.cpp.o
@@ -2924,7 +2924,7 @@ sparta.o: sparta.cpp.o
 
 # target to build an object file
 sparta.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/sparta.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/sparta.cpp.o
 .PHONY : sparta.cpp.o
 
 sparta.i: sparta.cpp.i
@@ -2932,7 +2932,7 @@ sparta.i: sparta.cpp.i
 
 # target to preprocess a source file
 sparta.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/sparta.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/sparta.cpp.i
 .PHONY : sparta.cpp.i
 
 sparta.s: sparta.cpp.s
@@ -2940,7 +2940,7 @@ sparta.s: sparta.cpp.s
 
 # target to generate assembly for a file
 sparta.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/sparta.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/sparta.cpp.s
 .PHONY : sparta.cpp.s
 
 stats.o: stats.cpp.o
@@ -2948,7 +2948,7 @@ stats.o: stats.cpp.o
 
 # target to build an object file
 stats.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/stats.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/stats.cpp.o
 .PHONY : stats.cpp.o
 
 stats.i: stats.cpp.i
@@ -2956,7 +2956,7 @@ stats.i: stats.cpp.i
 
 # target to preprocess a source file
 stats.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/stats.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/stats.cpp.i
 .PHONY : stats.cpp.i
 
 stats.s: stats.cpp.s
@@ -2964,7 +2964,7 @@ stats.s: stats.cpp.s
 
 # target to generate assembly for a file
 stats.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/stats.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/stats.cpp.s
 .PHONY : stats.cpp.s
 
 surf.o: surf.cpp.o
@@ -2972,7 +2972,7 @@ surf.o: surf.cpp.o
 
 # target to build an object file
 surf.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf.cpp.o
 .PHONY : surf.cpp.o
 
 surf.i: surf.cpp.i
@@ -2980,7 +2980,7 @@ surf.i: surf.cpp.i
 
 # target to preprocess a source file
 surf.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf.cpp.i
 .PHONY : surf.cpp.i
 
 surf.s: surf.cpp.s
@@ -2988,7 +2988,7 @@ surf.s: surf.cpp.s
 
 # target to generate assembly for a file
 surf.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf.cpp.s
 .PHONY : surf.cpp.s
 
 surf_collate.o: surf_collate.cpp.o
@@ -2996,7 +2996,7 @@ surf_collate.o: surf_collate.cpp.o
 
 # target to build an object file
 surf_collate.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collate.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collate.cpp.o
 .PHONY : surf_collate.cpp.o
 
 surf_collate.i: surf_collate.cpp.i
@@ -3004,7 +3004,7 @@ surf_collate.i: surf_collate.cpp.i
 
 # target to preprocess a source file
 surf_collate.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collate.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collate.cpp.i
 .PHONY : surf_collate.cpp.i
 
 surf_collate.s: surf_collate.cpp.s
@@ -3012,7 +3012,7 @@ surf_collate.s: surf_collate.cpp.s
 
 # target to generate assembly for a file
 surf_collate.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collate.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collate.cpp.s
 .PHONY : surf_collate.cpp.s
 
 surf_collide.o: surf_collide.cpp.o
@@ -3020,7 +3020,7 @@ surf_collide.o: surf_collide.cpp.o
 
 # target to build an object file
 surf_collide.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collide.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collide.cpp.o
 .PHONY : surf_collide.cpp.o
 
 surf_collide.i: surf_collide.cpp.i
@@ -3028,7 +3028,7 @@ surf_collide.i: surf_collide.cpp.i
 
 # target to preprocess a source file
 surf_collide.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collide.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collide.cpp.i
 .PHONY : surf_collide.cpp.i
 
 surf_collide.s: surf_collide.cpp.s
@@ -3036,7 +3036,7 @@ surf_collide.s: surf_collide.cpp.s
 
 # target to generate assembly for a file
 surf_collide.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collide.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collide.cpp.s
 .PHONY : surf_collide.cpp.s
 
 surf_collide_adiabatic.o: surf_collide_adiabatic.cpp.o
@@ -3044,7 +3044,7 @@ surf_collide_adiabatic.o: surf_collide_adiabatic.cpp.o
 
 # target to build an object file
 surf_collide_adiabatic.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collide_adiabatic.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collide_adiabatic.cpp.o
 .PHONY : surf_collide_adiabatic.cpp.o
 
 surf_collide_adiabatic.i: surf_collide_adiabatic.cpp.i
@@ -3052,7 +3052,7 @@ surf_collide_adiabatic.i: surf_collide_adiabatic.cpp.i
 
 # target to preprocess a source file
 surf_collide_adiabatic.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collide_adiabatic.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collide_adiabatic.cpp.i
 .PHONY : surf_collide_adiabatic.cpp.i
 
 surf_collide_adiabatic.s: surf_collide_adiabatic.cpp.s
@@ -3060,7 +3060,7 @@ surf_collide_adiabatic.s: surf_collide_adiabatic.cpp.s
 
 # target to generate assembly for a file
 surf_collide_adiabatic.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collide_adiabatic.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collide_adiabatic.cpp.s
 .PHONY : surf_collide_adiabatic.cpp.s
 
 surf_collide_cll.o: surf_collide_cll.cpp.o
@@ -3068,7 +3068,7 @@ surf_collide_cll.o: surf_collide_cll.cpp.o
 
 # target to build an object file
 surf_collide_cll.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collide_cll.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collide_cll.cpp.o
 .PHONY : surf_collide_cll.cpp.o
 
 surf_collide_cll.i: surf_collide_cll.cpp.i
@@ -3076,7 +3076,7 @@ surf_collide_cll.i: surf_collide_cll.cpp.i
 
 # target to preprocess a source file
 surf_collide_cll.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collide_cll.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collide_cll.cpp.i
 .PHONY : surf_collide_cll.cpp.i
 
 surf_collide_cll.s: surf_collide_cll.cpp.s
@@ -3084,7 +3084,7 @@ surf_collide_cll.s: surf_collide_cll.cpp.s
 
 # target to generate assembly for a file
 surf_collide_cll.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collide_cll.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collide_cll.cpp.s
 .PHONY : surf_collide_cll.cpp.s
 
 surf_collide_diffuse.o: surf_collide_diffuse.cpp.o
@@ -3092,7 +3092,7 @@ surf_collide_diffuse.o: surf_collide_diffuse.cpp.o
 
 # target to build an object file
 surf_collide_diffuse.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collide_diffuse.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collide_diffuse.cpp.o
 .PHONY : surf_collide_diffuse.cpp.o
 
 surf_collide_diffuse.i: surf_collide_diffuse.cpp.i
@@ -3100,7 +3100,7 @@ surf_collide_diffuse.i: surf_collide_diffuse.cpp.i
 
 # target to preprocess a source file
 surf_collide_diffuse.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collide_diffuse.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collide_diffuse.cpp.i
 .PHONY : surf_collide_diffuse.cpp.i
 
 surf_collide_diffuse.s: surf_collide_diffuse.cpp.s
@@ -3108,7 +3108,7 @@ surf_collide_diffuse.s: surf_collide_diffuse.cpp.s
 
 # target to generate assembly for a file
 surf_collide_diffuse.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collide_diffuse.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collide_diffuse.cpp.s
 .PHONY : surf_collide_diffuse.cpp.s
 
 surf_collide_impulsive.o: surf_collide_impulsive.cpp.o
@@ -3116,7 +3116,7 @@ surf_collide_impulsive.o: surf_collide_impulsive.cpp.o
 
 # target to build an object file
 surf_collide_impulsive.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collide_impulsive.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collide_impulsive.cpp.o
 .PHONY : surf_collide_impulsive.cpp.o
 
 surf_collide_impulsive.i: surf_collide_impulsive.cpp.i
@@ -3124,7 +3124,7 @@ surf_collide_impulsive.i: surf_collide_impulsive.cpp.i
 
 # target to preprocess a source file
 surf_collide_impulsive.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collide_impulsive.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collide_impulsive.cpp.i
 .PHONY : surf_collide_impulsive.cpp.i
 
 surf_collide_impulsive.s: surf_collide_impulsive.cpp.s
@@ -3132,7 +3132,7 @@ surf_collide_impulsive.s: surf_collide_impulsive.cpp.s
 
 # target to generate assembly for a file
 surf_collide_impulsive.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collide_impulsive.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collide_impulsive.cpp.s
 .PHONY : surf_collide_impulsive.cpp.s
 
 surf_collide_piston.o: surf_collide_piston.cpp.o
@@ -3140,7 +3140,7 @@ surf_collide_piston.o: surf_collide_piston.cpp.o
 
 # target to build an object file
 surf_collide_piston.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collide_piston.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collide_piston.cpp.o
 .PHONY : surf_collide_piston.cpp.o
 
 surf_collide_piston.i: surf_collide_piston.cpp.i
@@ -3148,7 +3148,7 @@ surf_collide_piston.i: surf_collide_piston.cpp.i
 
 # target to preprocess a source file
 surf_collide_piston.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collide_piston.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collide_piston.cpp.i
 .PHONY : surf_collide_piston.cpp.i
 
 surf_collide_piston.s: surf_collide_piston.cpp.s
@@ -3156,7 +3156,7 @@ surf_collide_piston.s: surf_collide_piston.cpp.s
 
 # target to generate assembly for a file
 surf_collide_piston.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collide_piston.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collide_piston.cpp.s
 .PHONY : surf_collide_piston.cpp.s
 
 surf_collide_specular.o: surf_collide_specular.cpp.o
@@ -3164,7 +3164,7 @@ surf_collide_specular.o: surf_collide_specular.cpp.o
 
 # target to build an object file
 surf_collide_specular.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collide_specular.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collide_specular.cpp.o
 .PHONY : surf_collide_specular.cpp.o
 
 surf_collide_specular.i: surf_collide_specular.cpp.i
@@ -3172,7 +3172,7 @@ surf_collide_specular.i: surf_collide_specular.cpp.i
 
 # target to preprocess a source file
 surf_collide_specular.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collide_specular.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collide_specular.cpp.i
 .PHONY : surf_collide_specular.cpp.i
 
 surf_collide_specular.s: surf_collide_specular.cpp.s
@@ -3180,7 +3180,7 @@ surf_collide_specular.s: surf_collide_specular.cpp.s
 
 # target to generate assembly for a file
 surf_collide_specular.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collide_specular.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collide_specular.cpp.s
 .PHONY : surf_collide_specular.cpp.s
 
 surf_collide_td.o: surf_collide_td.cpp.o
@@ -3188,7 +3188,7 @@ surf_collide_td.o: surf_collide_td.cpp.o
 
 # target to build an object file
 surf_collide_td.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collide_td.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collide_td.cpp.o
 .PHONY : surf_collide_td.cpp.o
 
 surf_collide_td.i: surf_collide_td.cpp.i
@@ -3196,7 +3196,7 @@ surf_collide_td.i: surf_collide_td.cpp.i
 
 # target to preprocess a source file
 surf_collide_td.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collide_td.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collide_td.cpp.i
 .PHONY : surf_collide_td.cpp.i
 
 surf_collide_td.s: surf_collide_td.cpp.s
@@ -3204,7 +3204,7 @@ surf_collide_td.s: surf_collide_td.cpp.s
 
 # target to generate assembly for a file
 surf_collide_td.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collide_td.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collide_td.cpp.s
 .PHONY : surf_collide_td.cpp.s
 
 surf_collide_transparent.o: surf_collide_transparent.cpp.o
@@ -3212,7 +3212,7 @@ surf_collide_transparent.o: surf_collide_transparent.cpp.o
 
 # target to build an object file
 surf_collide_transparent.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collide_transparent.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collide_transparent.cpp.o
 .PHONY : surf_collide_transparent.cpp.o
 
 surf_collide_transparent.i: surf_collide_transparent.cpp.i
@@ -3220,7 +3220,7 @@ surf_collide_transparent.i: surf_collide_transparent.cpp.i
 
 # target to preprocess a source file
 surf_collide_transparent.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collide_transparent.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collide_transparent.cpp.i
 .PHONY : surf_collide_transparent.cpp.i
 
 surf_collide_transparent.s: surf_collide_transparent.cpp.s
@@ -3228,7 +3228,7 @@ surf_collide_transparent.s: surf_collide_transparent.cpp.s
 
 # target to generate assembly for a file
 surf_collide_transparent.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collide_transparent.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collide_transparent.cpp.s
 .PHONY : surf_collide_transparent.cpp.s
 
 surf_collide_vanish.o: surf_collide_vanish.cpp.o
@@ -3236,7 +3236,7 @@ surf_collide_vanish.o: surf_collide_vanish.cpp.o
 
 # target to build an object file
 surf_collide_vanish.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collide_vanish.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collide_vanish.cpp.o
 .PHONY : surf_collide_vanish.cpp.o
 
 surf_collide_vanish.i: surf_collide_vanish.cpp.i
@@ -3244,7 +3244,7 @@ surf_collide_vanish.i: surf_collide_vanish.cpp.i
 
 # target to preprocess a source file
 surf_collide_vanish.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collide_vanish.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collide_vanish.cpp.i
 .PHONY : surf_collide_vanish.cpp.i
 
 surf_collide_vanish.s: surf_collide_vanish.cpp.s
@@ -3252,7 +3252,7 @@ surf_collide_vanish.s: surf_collide_vanish.cpp.s
 
 # target to generate assembly for a file
 surf_collide_vanish.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_collide_vanish.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_collide_vanish.cpp.s
 .PHONY : surf_collide_vanish.cpp.s
 
 surf_comm.o: surf_comm.cpp.o
@@ -3260,7 +3260,7 @@ surf_comm.o: surf_comm.cpp.o
 
 # target to build an object file
 surf_comm.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_comm.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_comm.cpp.o
 .PHONY : surf_comm.cpp.o
 
 surf_comm.i: surf_comm.cpp.i
@@ -3268,7 +3268,7 @@ surf_comm.i: surf_comm.cpp.i
 
 # target to preprocess a source file
 surf_comm.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_comm.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_comm.cpp.i
 .PHONY : surf_comm.cpp.i
 
 surf_comm.s: surf_comm.cpp.s
@@ -3276,7 +3276,7 @@ surf_comm.s: surf_comm.cpp.s
 
 # target to generate assembly for a file
 surf_comm.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_comm.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_comm.cpp.s
 .PHONY : surf_comm.cpp.s
 
 surf_custom.o: surf_custom.cpp.o
@@ -3284,7 +3284,7 @@ surf_custom.o: surf_custom.cpp.o
 
 # target to build an object file
 surf_custom.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_custom.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_custom.cpp.o
 .PHONY : surf_custom.cpp.o
 
 surf_custom.i: surf_custom.cpp.i
@@ -3292,7 +3292,7 @@ surf_custom.i: surf_custom.cpp.i
 
 # target to preprocess a source file
 surf_custom.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_custom.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_custom.cpp.i
 .PHONY : surf_custom.cpp.i
 
 surf_custom.s: surf_custom.cpp.s
@@ -3300,7 +3300,7 @@ surf_custom.s: surf_custom.cpp.s
 
 # target to generate assembly for a file
 surf_custom.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_custom.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_custom.cpp.s
 .PHONY : surf_custom.cpp.s
 
 surf_react.o: surf_react.cpp.o
@@ -3308,7 +3308,7 @@ surf_react.o: surf_react.cpp.o
 
 # target to build an object file
 surf_react.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_react.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_react.cpp.o
 .PHONY : surf_react.cpp.o
 
 surf_react.i: surf_react.cpp.i
@@ -3316,7 +3316,7 @@ surf_react.i: surf_react.cpp.i
 
 # target to preprocess a source file
 surf_react.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_react.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_react.cpp.i
 .PHONY : surf_react.cpp.i
 
 surf_react.s: surf_react.cpp.s
@@ -3324,7 +3324,7 @@ surf_react.s: surf_react.cpp.s
 
 # target to generate assembly for a file
 surf_react.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_react.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_react.cpp.s
 .PHONY : surf_react.cpp.s
 
 surf_react_adsorb.o: surf_react_adsorb.cpp.o
@@ -3332,7 +3332,7 @@ surf_react_adsorb.o: surf_react_adsorb.cpp.o
 
 # target to build an object file
 surf_react_adsorb.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_react_adsorb.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_react_adsorb.cpp.o
 .PHONY : surf_react_adsorb.cpp.o
 
 surf_react_adsorb.i: surf_react_adsorb.cpp.i
@@ -3340,7 +3340,7 @@ surf_react_adsorb.i: surf_react_adsorb.cpp.i
 
 # target to preprocess a source file
 surf_react_adsorb.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_react_adsorb.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_react_adsorb.cpp.i
 .PHONY : surf_react_adsorb.cpp.i
 
 surf_react_adsorb.s: surf_react_adsorb.cpp.s
@@ -3348,7 +3348,7 @@ surf_react_adsorb.s: surf_react_adsorb.cpp.s
 
 # target to generate assembly for a file
 surf_react_adsorb.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_react_adsorb.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_react_adsorb.cpp.s
 .PHONY : surf_react_adsorb.cpp.s
 
 surf_react_global.o: surf_react_global.cpp.o
@@ -3356,7 +3356,7 @@ surf_react_global.o: surf_react_global.cpp.o
 
 # target to build an object file
 surf_react_global.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_react_global.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_react_global.cpp.o
 .PHONY : surf_react_global.cpp.o
 
 surf_react_global.i: surf_react_global.cpp.i
@@ -3364,7 +3364,7 @@ surf_react_global.i: surf_react_global.cpp.i
 
 # target to preprocess a source file
 surf_react_global.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_react_global.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_react_global.cpp.i
 .PHONY : surf_react_global.cpp.i
 
 surf_react_global.s: surf_react_global.cpp.s
@@ -3372,7 +3372,7 @@ surf_react_global.s: surf_react_global.cpp.s
 
 # target to generate assembly for a file
 surf_react_global.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_react_global.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_react_global.cpp.s
 .PHONY : surf_react_global.cpp.s
 
 surf_react_prob.o: surf_react_prob.cpp.o
@@ -3380,7 +3380,7 @@ surf_react_prob.o: surf_react_prob.cpp.o
 
 # target to build an object file
 surf_react_prob.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_react_prob.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_react_prob.cpp.o
 .PHONY : surf_react_prob.cpp.o
 
 surf_react_prob.i: surf_react_prob.cpp.i
@@ -3388,7 +3388,7 @@ surf_react_prob.i: surf_react_prob.cpp.i
 
 # target to preprocess a source file
 surf_react_prob.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_react_prob.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_react_prob.cpp.i
 .PHONY : surf_react_prob.cpp.i
 
 surf_react_prob.s: surf_react_prob.cpp.s
@@ -3396,7 +3396,7 @@ surf_react_prob.s: surf_react_prob.cpp.s
 
 # target to generate assembly for a file
 surf_react_prob.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/surf_react_prob.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/surf_react_prob.cpp.s
 .PHONY : surf_react_prob.cpp.s
 
 timer.o: timer.cpp.o
@@ -3404,7 +3404,7 @@ timer.o: timer.cpp.o
 
 # target to build an object file
 timer.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/timer.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/timer.cpp.o
 .PHONY : timer.cpp.o
 
 timer.i: timer.cpp.i
@@ -3412,7 +3412,7 @@ timer.i: timer.cpp.i
 
 # target to preprocess a source file
 timer.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/timer.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/timer.cpp.i
 .PHONY : timer.cpp.i
 
 timer.s: timer.cpp.s
@@ -3420,7 +3420,7 @@ timer.s: timer.cpp.s
 
 # target to generate assembly for a file
 timer.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/timer.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/timer.cpp.s
 .PHONY : timer.cpp.s
 
 universe.o: universe.cpp.o
@@ -3428,7 +3428,7 @@ universe.o: universe.cpp.o
 
 # target to build an object file
 universe.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/universe.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/universe.cpp.o
 .PHONY : universe.cpp.o
 
 universe.i: universe.cpp.i
@@ -3436,7 +3436,7 @@ universe.i: universe.cpp.i
 
 # target to preprocess a source file
 universe.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/universe.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/universe.cpp.i
 .PHONY : universe.cpp.i
 
 universe.s: universe.cpp.s
@@ -3444,7 +3444,7 @@ universe.s: universe.cpp.s
 
 # target to generate assembly for a file
 universe.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/universe.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/universe.cpp.s
 .PHONY : universe.cpp.s
 
 update.o: update.cpp.o
@@ -3452,7 +3452,7 @@ update.o: update.cpp.o
 
 # target to build an object file
 update.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/update.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/update.cpp.o
 .PHONY : update.cpp.o
 
 update.i: update.cpp.i
@@ -3460,7 +3460,7 @@ update.i: update.cpp.i
 
 # target to preprocess a source file
 update.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/update.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/update.cpp.i
 .PHONY : update.cpp.i
 
 update.s: update.cpp.s
@@ -3468,7 +3468,7 @@ update.s: update.cpp.s
 
 # target to generate assembly for a file
 update.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/update.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/update.cpp.s
 .PHONY : update.cpp.s
 
 variable.o: variable.cpp.o
@@ -3476,7 +3476,7 @@ variable.o: variable.cpp.o
 
 # target to build an object file
 variable.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/variable.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/variable.cpp.o
 .PHONY : variable.cpp.o
 
 variable.i: variable.cpp.i
@@ -3484,7 +3484,7 @@ variable.i: variable.cpp.i
 
 # target to preprocess a source file
 variable.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/variable.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/variable.cpp.i
 .PHONY : variable.cpp.i
 
 variable.s: variable.cpp.s
@@ -3492,7 +3492,7 @@ variable.s: variable.cpp.s
 
 # target to generate assembly for a file
 variable.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/variable.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/variable.cpp.s
 .PHONY : variable.cpp.s
 
 write_grid.o: write_grid.cpp.o
@@ -3500,7 +3500,7 @@ write_grid.o: write_grid.cpp.o
 
 # target to build an object file
 write_grid.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/write_grid.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/write_grid.cpp.o
 .PHONY : write_grid.cpp.o
 
 write_grid.i: write_grid.cpp.i
@@ -3508,7 +3508,7 @@ write_grid.i: write_grid.cpp.i
 
 # target to preprocess a source file
 write_grid.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/write_grid.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/write_grid.cpp.i
 .PHONY : write_grid.cpp.i
 
 write_grid.s: write_grid.cpp.s
@@ -3516,7 +3516,7 @@ write_grid.s: write_grid.cpp.s
 
 # target to generate assembly for a file
 write_grid.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/write_grid.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/write_grid.cpp.s
 .PHONY : write_grid.cpp.s
 
 write_isurf.o: write_isurf.cpp.o
@@ -3524,7 +3524,7 @@ write_isurf.o: write_isurf.cpp.o
 
 # target to build an object file
 write_isurf.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/write_isurf.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/write_isurf.cpp.o
 .PHONY : write_isurf.cpp.o
 
 write_isurf.i: write_isurf.cpp.i
@@ -3532,7 +3532,7 @@ write_isurf.i: write_isurf.cpp.i
 
 # target to preprocess a source file
 write_isurf.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/write_isurf.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/write_isurf.cpp.i
 .PHONY : write_isurf.cpp.i
 
 write_isurf.s: write_isurf.cpp.s
@@ -3540,7 +3540,7 @@ write_isurf.s: write_isurf.cpp.s
 
 # target to generate assembly for a file
 write_isurf.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/write_isurf.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/write_isurf.cpp.s
 .PHONY : write_isurf.cpp.s
 
 write_restart.o: write_restart.cpp.o
@@ -3548,7 +3548,7 @@ write_restart.o: write_restart.cpp.o
 
 # target to build an object file
 write_restart.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/write_restart.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/write_restart.cpp.o
 .PHONY : write_restart.cpp.o
 
 write_restart.i: write_restart.cpp.i
@@ -3556,7 +3556,7 @@ write_restart.i: write_restart.cpp.i
 
 # target to preprocess a source file
 write_restart.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/write_restart.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/write_restart.cpp.i
 .PHONY : write_restart.cpp.i
 
 write_restart.s: write_restart.cpp.s
@@ -3564,7 +3564,7 @@ write_restart.s: write_restart.cpp.s
 
 # target to generate assembly for a file
 write_restart.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/write_restart.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/write_restart.cpp.s
 .PHONY : write_restart.cpp.s
 
 write_surf.o: write_surf.cpp.o
@@ -3572,7 +3572,7 @@ write_surf.o: write_surf.cpp.o
 
 # target to build an object file
 write_surf.cpp.o:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/write_surf.cpp.o
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/write_surf.cpp.o
 .PHONY : write_surf.cpp.o
 
 write_surf.i: write_surf.cpp.i
@@ -3580,7 +3580,7 @@ write_surf.i: write_surf.cpp.i
 
 # target to preprocess a source file
 write_surf.cpp.i:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/write_surf.cpp.i
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/write_surf.cpp.i
 .PHONY : write_surf.cpp.i
 
 write_surf.s: write_surf.cpp.s
@@ -3588,7 +3588,7 @@ write_surf.s: write_surf.cpp.s
 
 # target to generate assembly for a file
 write_surf.cpp.s:
-	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_mac.dir/build.make src/CMakeFiles/sparta_mac.dir/write_surf.cpp.s
+	cd /home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sparta_tutorial.dir/build.make src/CMakeFiles/sparta_tutorial.dir/write_surf.cpp.s
 .PHONY : write_surf.cpp.s
 
 # Help Target
@@ -3603,9 +3603,9 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... sparta_mac_PRE_BUILD"
-	@echo "... spa_mac"
-	@echo "... sparta_mac"
+	@echo "... sparta_tutorial_PRE_BUILD"
+	@echo "... spa_tutorial"
+	@echo "... sparta_tutorial"
 	@echo "... adapt_grid.o"
 	@echo "... adapt_grid.i"
 	@echo "... adapt_grid.s"

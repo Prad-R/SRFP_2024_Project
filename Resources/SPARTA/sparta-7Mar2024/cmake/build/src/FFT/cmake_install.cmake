@@ -43,6 +43,6 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/sparta/mac/pkgs" TYPE STATIC_LIBRARY FILES "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build/src/FFT/libpkg_fft.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/sparta/tutorial/pkgs" TYPE STATIC_LIBRARY FILES "/home/prad/Desktop/IITM_Courses/Projects/SRFP_2024_Project/Resources/SPARTA/sparta-7Mar2024/cmake/build/src/FFT/libpkg_fft.a")
 endif()
 
