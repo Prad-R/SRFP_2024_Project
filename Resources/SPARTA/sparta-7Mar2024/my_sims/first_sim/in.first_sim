@@ -1,0 +1,140 @@
+################################################################################
+# 1D Fourier Flow
+#
+# Note:
+#  - The "comm/sort” option to the “global” command is used to match MPI runs.
+#  - The “twopass” option is used to match Kokkos runs.
+# The "comm/sort" and "twopass" options should not be used for production runs.
+################################################################################
+
+################################################################################
+# Variables
+################################################################################
+
+variable 	x_min equal -1
+variable	x_max equal 1
+variable	y_min equal -0.1
+variable	y_max equal 0.1
+variable	z_min equal -0.5
+variable	z_max equal 0.5
+variable	x_grid internal 0
+variable	y_grid internal 0
+
+variable	x_cells equal "100"
+variable	y_cells equal "1"
+variable	z_cells equal 1
+variable	Fnum equal 1.0e20
+variable	tstep equal 0.1
+variable	steps equal 500
+variable	time equal "(v_steps * v_tstep)"
+variable	n_particles equal "100"
+variable	n_every equal 1
+variable	n_repeat equal 3
+variable	n_freq equal 10
+
+variable	temp_left equal 100.0
+variable	temp_right equal 500.0
+variable	mean_temp equal "(v_temp_left + v_temp_right) / 2"
+variable	Vx equal "1 * exp(- 0.1 * v_x_grid ^ 2)"
+variable 	Vy equal "0.1 * exp(- 0.01 * v_y_grid ^ 2)"
+
+#################################################################################
+# Printing Variables to the log file
+#################################################################################
+
+print		" ---------------- "
+print		" x-min = ${x_min} "
+print		" ---------------- "
+print		" x-max = ${x_max} "
+print		" ---------------- "
+print		" y-min = ${y_min} "
+print		" ---------------- "
+print		" y-max = ${y_max} "
+print		" ---------------- "
+print		" z-min = ${z_min} "
+print		" ---------------- "
+print		" z-max = ${z_max} "
+print		" ---------------- "
+print		" x-cells = ${x_cells} "
+print		" ---------------- "
+print		" y-cells = ${y_cells} "
+print		" ---------------- "
+print		" z-cells = ${z_cells} "
+print		" ---------------- "
+print		" Number of Particles = ${n_particles} "
+print		" ---------------- "
+print		" Simulation Ratio = ${Fnum} "
+print		" ---------------- "
+print		" Timestep = ${tstep} "
+print		" ---------------- "
+print		" Number of steps in the simulation = ${steps} "
+print		" ---------------- "
+print		" Total time of the simulation = ${time} "
+print		" ---------------- "
+print		" Considering readings every _____ ${n_every} _____ steps "
+print		" ---------------- "
+print		" Considering the last _____ ${n_repeat} _____ readings separated by _____ ${n_every} _____ steps for averaging "
+print		" ---------------- "
+print		" Computing values every _____ ${n_freq} _____ steps "
+print		" ---------------- "
+print		" Temperature at the left end = ${temp_left} K"
+print		" ---------------- "
+print		" Tempearture at the right end = ${temp_right} K"
+print		" ---------------- "
+
+#################################################################################
+# Initialisation
+#################################################################################
+
+dimension 	2
+#package 	kokkos comm threaded gpu/aware yes
+seed 		5838959
+units 		si
+
+################################################################################
+# Problem Definition
+################################################################################
+
+boundary 	ss r p
+create_box 	${x_min} ${x_max} ${y_min} ${y_max} ${z_min} ${z_max}
+create_grid 	${x_cells} ${y_cells} ${z_cells}	
+balance_grid 	proc
+
+species 	air.species N2
+mixture 	air N2 frac 0.5
+
+create_particles &
+		air n ${n_particles} &
+		temperature temp_left NULL NULL NULL &
+		velocity Vx Vy NULL x_grid y_grid NULL
+
+###############################################################################
+# Settings
+###############################################################################
+
+surf_collide	left_wall diffuse ${temp_left} 1.0
+surf_collide	right_wall diffuse ${temp_right} 1.0
+bound_modify	xlo collide left_wall
+bound_modify	xhi collide right_wall
+
+collide 	vss air air.vss relax constant
+collide_modify 	vremax 20 yes remain yes nearcp yes 2 vibrate smooth
+
+global 		fnum ${Fnum} temp ${temp_left}
+timestep	${tstep}	
+
+compute 	temp1 grid all air temp
+fix 		temp1 ave/grid all ${n_every} ${n_repeat} ${n_freq} c_temp1[*]
+
+##############################################################################
+# Output
+##############################################################################
+
+
+dump 		temp1 grid all ${n_freq} temp.grid f_temp1[*]
+		
+stats_style	step cpu wall np nbound ncoll nattempt
+stats_modify	flush no
+stats		${n_freq}
+
+run		${steps}
