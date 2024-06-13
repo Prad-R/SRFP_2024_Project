@@ -12,27 +12,28 @@
 ################################################################################
 
 variable 	x_min equal 0
-variable	x_max equal 1
+variable	x_max equal 4.0e-3
 variable	y_min equal 0
-variable	y_max equal 0.01
+variable	y_max equal 1.0e-2
 variable	z_min equal -0.5
 variable	z_max equal 0.5
 
-variable	x_cells equal "100"
+variable	x_cells equal "1.0e3"
 variable	y_cells equal "1"
 variable	z_cells equal 1
 variable	Fnum equal 1.0e15
-variable	tstep equal 0.1
-variable	steps equal 10000
+variable	tstep equal 2.0e-9
+variable	steps equal 1.0e7
 variable	time equal "(v_steps * v_tstep)"
-variable	n_particles equal "5000"
-variable	n_every equal 2
-variable	n_repeat equal 20
-variable	n_freq equal 100
+variable	n_particles equal 1.5e4
+variable	np_grid equal "(v_n_particles / (v_x_cells * v_y_cells * v_z_cells))"
+variable	n_freq equal 1.0e5
+variable	n_every equal 100
+variable	n_repeat equal 10
 
-variable	temp_left equal 1000.0
-variable	temp_right equal 1500.0
-variable	mean_temp equal "(v_temp_left + v_temp_right) / 2"
+variable	temp_left equal 300.0
+variable	temp_right equal 500.0
+variable	mean_temp equal "(v_temp_left + v_temp_right) / 2" 
 
 #################################################################################
 # Printing Variables to the log file
@@ -75,7 +76,11 @@ print		" Computing values every _____ ${n_freq} _____ steps "
 print		" ---------------- "
 print		" Temperature at the left end = ${temp_left} K"
 print		" ---------------- "
-print		" Tempearture at the right end = ${temp_right} K"
+print		" Temperature at the right end = ${temp_right} K"
+print		" ---------------- "
+print		" Mean temperature = ${mean_temp} K "
+print		" ---------------- "
+print		" Number of particles per grid = ${np_grid} "
 print		" ---------------- "
 
 #################################################################################
@@ -97,8 +102,8 @@ create_box 	${x_min} ${x_max} ${y_min} ${y_max} ${z_min} ${z_max}
 create_grid 	${x_cells} ${y_cells} ${z_cells}
 balance_grid 	rcb part
 
-species 	ar.species Ar
-mixture 	air Ar vstream 0.0 0.0 0.0 temp ${mean_temp}
+species 	./species_vss_files/ar.species Ar
+mixture 	air Ar vstream 0.0 0.0 0.0 temp ${temp_left}
 
 create_particles air n ${n_particles} twopass
 ###############################################################################
@@ -110,7 +115,7 @@ surf_collide	right_wall diffuse ${temp_right} 1.0
 bound_modify	xlo collide left_wall
 bound_modify	xhi collide right_wall
 
-collide 	vss air ar.vss
+collide 	vss air ./species_vss_files/ar.vss
 
 global 		fnum ${Fnum}
 timestep	${tstep}	
@@ -122,19 +127,14 @@ compute		global_temp temp
 
 compute		particles grid all air n
 
-compute		vel grid all air u v w
-fix		vel ave/grid all ${n_every} ${n_repeat} ${n_freq} c_vel[*]
-
 ##############################################################################
 # Output
 ##############################################################################
 
 
-dump 		temp1 grid all ${n_freq} temp.grid f_temp1[*]
+dump 		temp1 grid all ${n_freq} ./grid_files/temp.*.grid f_temp1[*]
 
-dump		particles grid all ${n_freq} particles.grid c_particles[*]
-		
-dump		vel grid all ${n_freq} vel.grid f_vel[*]
+dump		particles grid all ${n_freq} ./grid_files/particles.*.grid c_particles[*]
 
 stats_style	step cpu wall np nbound ncoll nattempt c_global_temp
 stats_modify	flush no
