@@ -1,3 +1,6 @@
 *.sh
 *.swp
 *.ipynb_checkpoints
+*.o
+*.d
+*.bin
