@@ -4,4 +4,4 @@
 *.o
 *.d
 *.bin
-*.vscode
+.vscode/*
