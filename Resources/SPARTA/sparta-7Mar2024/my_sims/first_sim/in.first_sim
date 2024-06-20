@@ -12,24 +12,24 @@
 ################################################################################
 
 variable 	x_min equal 0
-variable	x_max equal 4.0e-3
+variable	x_max equal 1.0e-4
 variable	y_min equal 0
-variable	y_max equal 1.0e-2
+variable	y_max equal 1.0e-5
 variable	z_min equal -0.5
 variable	z_max equal 0.5
 
-variable	x_cells equal "1.0e3"
+variable	x_cells equal "1.0e2"
 variable	y_cells equal "1"
 variable	z_cells equal 1
-variable	Fnum equal 1.0e15
-variable	tstep equal 2.0e-9
-variable	steps equal 1.0e7
+variable	Fnum equal 1.0e9
+variable	tstep equal 2.0e-8
+variable	steps equal 1.0e8
 variable	time equal "(v_steps * v_tstep)"
-variable	n_particles equal 1.5e4
+variable	n_particles equal 1000
 variable	np_grid equal "(v_n_particles / (v_x_cells * v_y_cells * v_z_cells))"
 variable	n_freq equal 1.0e5
 variable	n_every equal 100
-variable	n_repeat equal 10
+variable	n_repeat equal 100
 
 variable	temp_left equal 300.0
 variable	temp_right equal 500.0
@@ -103,9 +103,10 @@ create_grid 	${x_cells} ${y_cells} ${z_cells}
 balance_grid 	rcb part
 
 species 	./species_vss_files/ar.species Ar
-mixture 	air Ar vstream 0.0 0.0 0.0 temp ${temp_left}
+mixture 	air Ar vstream 0.0 0.0 0.0 temp ${temp_left} nrho 1.6e12
 
-create_particles air n ${n_particles} twopass
+#create_particles air n ${n_particles} twopass
+create_particles air n 0
 ###############################################################################
 # Settings
 ###############################################################################
