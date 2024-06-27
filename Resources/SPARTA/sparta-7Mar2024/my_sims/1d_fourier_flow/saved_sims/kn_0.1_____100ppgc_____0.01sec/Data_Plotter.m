@@ -22,7 +22,7 @@ for i = 1 : size(particles,1)
     hold on;
     box on;
     bar(index,particles(i,:),0.4);
-    ylim([0,50]);
+    ylim([50,150]);
     xlabel('Grid Cell $\longrightarrow$',Interpreter='latex',FontSize=15);
     ylabel('Number of Simulated Particles $\longrightarrow$',Interpreter='latex',FontSize=15);
     title(sprintf('\\textbf{Number of Simulated Particles at \\boldmath$t = %f$ s}',time),Interpreter='latex',FontSize=18);
