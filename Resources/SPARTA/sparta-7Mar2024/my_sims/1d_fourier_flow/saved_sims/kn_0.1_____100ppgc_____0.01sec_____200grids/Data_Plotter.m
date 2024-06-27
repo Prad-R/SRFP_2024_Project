@@ -9,9 +9,9 @@ step_freq = 5.0e3;
 time = 0;
 tc = 223.15;
 th = 323.15;
-m = (th - tc) / 100;
+m = (th - tc) / 200;
 
-index = [1 : 1 : 100];
+index = [1 : 1 : 200];
 
 for i = 1 : size(particles,1)
     time = step_freq * time_step * (i - 1);
@@ -21,7 +21,7 @@ for i = 1 : size(particles,1)
     set(gcf,'position',[10,10,700,700]);
     hold on;
     box on;
-    bar(index,particles(i,:),0.4);
+    bar(index,particles(i,:),0.2);
     ylim([50,150]);
     xlabel('Grid Cell $\longrightarrow$',Interpreter='latex',FontSize=15);
     ylabel('Number of Simulated Particles $\longrightarrow$',Interpreter='latex',FontSize=15);
@@ -35,7 +35,7 @@ for i = 1 : size(particles,1)
     set(gcf,'position',[10,10,700,700]);
     hold on;
     box on;
-    bar(index,temperature(i,:),0.4);
+    bar(index,temperature(i,:),0.2);
     plot(index,(tc + m * index),LineWidth=2)
     ylim([200,400]);
     xlabel('Grid Cell $\longrightarrow$',Interpreter='latex',FontSize=15);
