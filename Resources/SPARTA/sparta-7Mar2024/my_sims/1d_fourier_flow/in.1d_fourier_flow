@@ -25,7 +25,7 @@ variable	Fnum equal 8.41e10
 variable	tstep equal 1.0e-8
 variable	steps equal 1.0e6
 variable	time equal "(v_steps * v_tstep)"
-variable	n_particles equal 2000
+variable	n_particles equal 10000
 variable	np_grid equal "(v_n_particles / (v_x_cells * v_y_cells * v_z_cells))"
 variable	n_freq equal 5.0e3
 variable	n_every equal 1
