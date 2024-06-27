@@ -21,7 +21,7 @@ variable	z_max equal 0.5
 variable	x_cells equal "1.0e2"
 variable	y_cells equal "1"
 variable	z_cells equal 1
-variable	Fnum equal 8.41e10
+variable	Fnum equal 1.682e10
 variable	tstep equal 1.0e-8
 variable	steps equal 1.0e6
 variable	time equal "(v_steps * v_tstep)"
