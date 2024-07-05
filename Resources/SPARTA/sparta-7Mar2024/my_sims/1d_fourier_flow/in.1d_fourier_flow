@@ -21,9 +21,9 @@ variable	z_max equal 0.5
 variable	x_cells equal "1.0e2"
 variable	y_cells equal "1"
 variable	z_cells equal 1
-variable	Fnum equal 8.41e10
-variable	tstep equal 1.0e-8
-variable	steps equal 1.0e6
+variable	Fnum equal 1.682e10
+variable	tstep equal 2.0e-8
+variable	steps equal 2.5e6
 variable	time equal "(v_steps * v_tstep)"
 variable	n_particles equal 10000
 variable	np_grid equal "(v_n_particles / (v_x_cells * v_y_cells * v_z_cells))"
@@ -31,8 +31,8 @@ variable	n_freq equal 5.0e3
 variable	n_every equal 1
 variable	n_repeat equal 5000
 
-variable	temp_left equal 223.15
-variable	temp_right equal 323.15
+variable	temp_left equal 300
+variable	temp_right equal 800
 variable	mean_temp equal "(v_temp_left + v_temp_right) / 2" 
 
 #################################################################################
