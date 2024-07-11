@@ -137,6 +137,9 @@ dump 		temp1 grid all ${n_freq} ./grid_files/temp.*.grid f_temp1[*]
 
 dump		particles grid all ${n_freq} ./grid_files/particles.*.grid c_particles[*]
 
+dump		flow image air ${n_freq} ./images/dump.*.ppm type type pdiam 0.02 view 0 0
+dump_modify	flow pad 7
+
 stats_style	step cpu wall np nbound ncoll nattempt c_global_temp
 stats_modify	flush no
 stats		${n_freq}
