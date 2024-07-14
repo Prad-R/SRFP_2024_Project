@@ -1,0 +1,81 @@
+%----------------------------------------%
+% Here are where all the packages that you
+% wish to use are stored, these are just
+% a few necessary for basic structure.
+%----------------------------------------%
+\usepackage{amsmath}
+\usepackage{lipsum}  %% Included for testing purposes
+\usepackage{tikz}
+\usepackage{algorithm2e}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\usepackage{datetime}
+\usepackage{mathptmx}
+\usepackage{setspace}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage[backend=biber]{biblatex}
+
+\usepackage{mathtools,amsthm} % Enable useful mathematical symbols/environments
+\usepackage{graphicx} % Enable graphics
+\usepackage{titlesec,microtype} % enable various formatting commands
+\usepackage[T1]{fontenc}
+
+  
+  \usepackage{xcolor} % Enable coloured elements
+  \definecolor{mypurple}{HTML}{622567} %%% Purple
+  \definecolor{myred}{HTML}{D55C19} %%%EssexOrange
+  \definecolor{myblue}{HTML}{007A87} %%%Seagrass
+  
+  % For technical reasons, hyperref should be loaded after all other packages
+  \usepackage[colorlinks,linkcolor=myblue,citecolor=mypurple]{hyperref}
+  
+  \renewcommand{\baselinestretch}{1.5} % 1.5 line spacing
+  
+  % Define \begin{theorem}, \end{theorem}, etc.
+  \theoremstyle{plain} % The following will be italicised
+  \newtheorem{theorem}{Theorem}[chapter]
+  \newtheorem{lemma}[theorem]{Lemma}
+  \newtheorem{proposition}[theorem]{Proposition}
+  \newtheorem{corollary}[theorem]{Corollary}
+  
+  \theoremstyle{definition} % The following environments will not use italics
+  \newtheorem{definition}[theorem]{Definition}
+  \newtheorem{example}[theorem]{Example}
+  
+  \theoremstyle{remark} % The following environments will not use italics or bold titles
+  \newtheorem{remark}[theorem]{Remark}
+  
+  \numberwithin{equation}{chapter}
+  
+  % Fancy headings
+  \pagestyle{fancy}
+  \setlength{\headheight}{15pt}
+  \fancyheadoffset[LE,RO]{0pt}
+  \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+  \renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+  \fancyhf{}
+  \fancyhead[LE]{\makebox[0pt][l]{\thepage}\hfill\leftmark}
+  \fancyhead[RO]{\rightmark\hfill\makebox[0pt][r]{\thepage}}
+  \fancypagestyle{plain}{%
+  	\fancyhead{} % get rid of headers
+  	\renewcommand{\headrulewidth}{0pt} % and the line
+  }
+  
+  % Fancy chapter numbers
+  \titleformat{\chapter}[display]
+  {\normalfont\bfseries\color{myred}}
+  {\filleft\hspace*{-60pt}%
+  	\rotatebox[origin=c]{90}{%
+  		\normalfont\color{black}\Large%
+  		\textls[180]{\textsc{\chaptertitlename}}%
+  	}
+  	\hspace{10pt}%
+  	{\setlength\fboxsep{0pt}%
+  		\colorbox{myred}{\parbox[c][3cm][c]{2.5cm}{%
+  				\centering\color{white}\fontsize{80}{90}\normalfont\thechapter}%
+  		}
+  	}
+  }
+  {10pt}
+  {\titlerule[2.5pt]\vskip3pt\titlerule\vskip4pt\LARGE\normalfont}
+
