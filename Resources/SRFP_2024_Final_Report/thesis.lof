@@ -1,4 +1,30 @@
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Various regimes according to the knudsen number [Source : Google]\relax }}{3}{figure.caption.5}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Flowchart explaining a simple DSMC Algorithm\relax }}{9}{figure.caption.6}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces A 2D slice of a 3D hierarchical grid around the Apollo space capsule [Source : \blx@tocontentsinit {0}\cite {plimpton2019direct}]\relax }}{13}{figure.caption.7}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces A 5-level 2D hierarchical grid around the Apollo space capsule [Source : \blx@tocontentsinit {0}\cite {plimpton2019direct}]\relax }}{13}{figure.caption.8}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Simulation domain [Source : \blx@tocontentsinit {0}\cite {gallis2021effect}]\relax }}{14}{figure.caption.9}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces DMSC (left) and CFD (right) force histories at late times with periodic vortex shedding [Source : \blx@tocontentsinit {0}\cite {gallis2021effect}]\relax }}{15}{figure.caption.10}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Setup of the simulation\relax }}{16}{figure.caption.11}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Solution obtained through SPARTA for 20 particles per grid cell\relax }}{19}{figure.caption.12}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Solution obtained through SPARTA for 100 particles per grid cell\relax }}{20}{figure.caption.13}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Solution obtained through SPARTA for 200 grid cells\relax }}{21}{figure.caption.14}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Solution obtained through SPARTA for $Kn = 0.02$\relax }}{22}{figure.caption.15}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Setup of the simulation\relax }}{23}{figure.caption.16}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Ray Traced Image of the Flow\relax }}{25}{figure.caption.17}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Lift variation with time\relax }}{26}{figure.caption.18}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Drag variation with time\relax }}{26}{figure.caption.19}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Variation of atmospheric temperature with height on Mars\relax }}{28}{figure.caption.20}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Variation of atmospheric temperature with height on Earth\relax }}{29}{figure.caption.21}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Variation of atmospheric pressure with height on Mars\relax }}{29}{figure.caption.22}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Variation of atmospheric pressure with height on Earth\relax }}{30}{figure.caption.23}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Variation of atmospheric density with height on Mars\relax }}{30}{figure.caption.24}%
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Variation of atmospheric density with height on Earth\relax }}{31}{figure.caption.25}%
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Relative abundance of compounds in the Martian atmophere\relax }}{31}{figure.caption.26}%
 \addvspace {10\p@ }

@@ -33,27 +33,31 @@
 \cleardoublepage
 \input{Front/acknowledgements}
 \pagenumbering{roman}
-% \input{Front/abstract}
+\input{Front/abstract}
 \cleardoublepage
-\addcontentsline{toc}{chapter}{\abstractname}
-\cleardoublepage
-\tableofcontents
-\cleardoublepage
-\addcontentsline{toc}{chapter}{\listtablename}
-\listoftables
-\cleardoublepage
+
+\newpage
 \listoffigures
 \addcontentsline{toc}{chapter}{\listfigurename}
+
+\newpage
+\tableofcontents
+\addcontentsline{toc}{chapter}{\abstractname}
+
 \cleardoublepage
 \pagenumbering{arabic}
 \input{Main/introduction}
+\input{Main/chapterone}
 \input{Main/chaptertwo}
 \input{Main/chapterthree}
 \input{Main/chapterfour}
+\input{Main/chapterfive}
+\input{Main/chaptersix}
+\input{Main/conclusions}
 
-\cleardoublepage
-\printbibliography[heading=bibintoc]
+\newpage
 
+\printbibliography
 
 %\input{Back/tables}
 \end{document}

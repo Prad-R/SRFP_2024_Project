@@ -13,18 +13,32 @@
 \usepackage{mathptmx}
 \usepackage{setspace}
 \usepackage[margin=2.5cm]{geometry}
-\usepackage[backend=biber]{biblatex}
+\usepackage[backend=bibtex, style=numeric]{biblatex}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{float}
+\usepackage{svg}
 
 \usepackage{mathtools,amsthm} % Enable useful mathematical symbols/environments
 \usepackage{graphicx} % Enable graphics
 \usepackage{titlesec,microtype} % enable various formatting commands
 \usepackage[T1]{fontenc}
-
+\usepackage{sectsty}
   
   \usepackage{xcolor} % Enable coloured elements
   \definecolor{mypurple}{HTML}{622567} %%% Purple
   \definecolor{myred}{HTML}{D55C19} %%%EssexOrange
   \definecolor{myblue}{HTML}{007A87} %%%Seagrass
+  
+  \sectionfont{\color{myblue}}
+  \subsectionfont{\color{myblue}}
+  \usepackage[font={color=myblue},figurename=Fig.,labelfont={it}]{caption}
+  
+  % Custom commands
+\renewcommand{\vec}[1]{\bm{#1}}
+\newcommand{\grad}{\vec{\nabla}}
+\renewcommand{\div}[1]{\grad \cdot \vec{#1}}
+\newcommand{\no}{\noindent}
   
   % For technical reasons, hyperref should be loaded after all other packages
   \usepackage[colorlinks,linkcolor=myblue,citecolor=mypurple]{hyperref}

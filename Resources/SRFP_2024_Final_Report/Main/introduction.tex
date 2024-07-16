@@ -1,3 +1,43 @@
-\cleardoublepage
-\chapter{Title Here}
-\lipsum[1-9]
+\newpage
+\chapter{Introduction}
+
+\section{Continuum Mechanics}
+
+Continuum mechanics is a branch of mechanics that deals with the deformation of and transmission of forces through materials modeled as a continuous medium rather than as discrete particles. A continuum is a body that can be continually subdivided into infinitesimal elements with local material properties defined at any particular point. Properties of the bulk material can therefore be described by continuous functions, and their evolution can be studied using the mathematics of calculus. It can be broadly divided into \textbf{fluid mechanics} and \textbf{solid mechanics}.
+
+\section{Fluid Mechanics}
+
+Fluid mechanics is the branch of physics concerned with the mechanics of fluids (liquids, gases, and plasmas) and the forces on them. It can be divided into \textit{fluid statics}, the study of fluids at rest; and \textit{fluid dynamics}, the study of the effect of forces on fluid motion. Being a branch of \textit{continuum mechanics}, it models matter from a macroscopic viewpoint. \\
+
+\noindent Modeling fluids mathematically can be quite complex and is an active field of research. Many problems in fluid mechanics that haven't been solved analytically are often solved using numerical methods employing computers. \textit{Computational Fluid Dynamics (CFD)} is a field devoted to this approach. \\
+
+\noindent A popular mathematical model for describing continuum fluid flow is the \textbf{Navier-Stokes equations}. It is a set of partial differential equations that describe the motion of viscous fluid substances. The most general form of the Navier-Stokes equation is given below,
+
+\begin{equation}
+\rho \left( \frac{\partial \vec{u}}{\partial t} + \left( \vec{u}  \cdot \grad \right) \vec{u} \right) = - \grad p + \grad \cdot \left\{ \mu \left[ \grad \vec{u}  + \left( \grad \vec{u} \right) ^ T - \frac{2}{3} \left (\div{u} \right) \vec{I} \right] \right\} + \vec{\nabla} \left[ \zeta \left( \div{u} \right) \right] + \rho \vec{f}
+\end{equation}
+
+\noindent where $\vec{u}$ is the velocity field, $p$ is the pressure field, $\mu$ is the dynamic coefficient of viscosity, $\zeta$ is the bulk viscosity and $\vec{f}$ is the body force field per unit volume, all of the fluid under consideration. \\
+
+\noindent Though this model is used widely to describe several phenomena observed, it fails when some of the underlying assumptions fail. The most fundamental assumption underlying the Navier-Stokes equations is the \textbf{continuum assumption}. When the continuum assumption fails, the solutions predicted by the Navier-Stokes equations start to deviate from the observed solutions. How close a flow is to satisfying the continuum assumption is given by the \textbf{Knudsen number} of the flow. The Knudsen number of a flow is described by the equation given below,
+
+\begin{equation} \label{eq:kn}
+	Kn = \frac{\lambda}{L^\ast}
+\end{equation}
+
+\noindent where $\lambda$ is the mean free path of the molecules comprising the fluid and $L^\ast$ is the characteristic length scale of the problem. \\
+
+\noindent As the Knudsen number approaches 0, the continuum assumption starts to yield solutions closer to the physical solutions. A few regimes for the knudsen number are given in Figure \ref{img:knudsen}.
+
+\begin{figure}[H]
+  \includegraphics[scale=0.55]{Pictures/Introduction/Knudsen_Number.png}
+  \centering
+  \caption{Various regimes according to the knudsen number [Source : Google]} 
+  \label{img:knudsen}
+\end{figure}
+
+\no As a flow starts having knudsen numbers greater than 0.001, the Navier-Stokes equations start to deviate from the physical solutions in their original form. To obtain solutions in these ranges of the knudsen number, one can use other models such as \textit{Smoothed Particles Hydrodynamics (SPH)} or \textit{Burnett equations} to model flow mathematically. Another popular method involves applying Newton's laws of motion on particles individually referred to as \textit{Molecular Dynamics (MD)}. MD is generally implemented numerically using computers. Apart from these methods, one can even solve the \textit{Boltzmann equation} directly for the particles constituting the fluid. Solving the Boltzmann equation is a stochastic method as it considers a set of particles rather than individual particles. Both MD and Boltzmann equations offer a model that no longer considers a fluid to be a continuum, allowing them to capture a wide range of physical phenomena that conventional continuum models fail to capture. \\
+
+\no The DSMC method was first proposed by Graeme Bird \cite{bird1994molecular}. DSMC uses probabilistic Monte 	Carlo simulation to solve the Boltzmann equation for finite Knudsen number flows. Since the introduction of DSMC, it has been gradually gaining more attention. One of the most popular open-source codes available for DSMC called SPARTA was developed by Sandia National Laboratories under the US Department of Energy. \\
+
+\no Both the Boltzmann equation and the DSMC method are discussed in more detail in chapters 2 and 3.

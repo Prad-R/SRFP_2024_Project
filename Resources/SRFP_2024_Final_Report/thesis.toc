@@ -1,0 +1,31 @@
+\contentsline {chapter}{List of Figures}{vi}{chapter*.3}%
+\contentsline {chapter}{Abstract}{viii}{chapter*.4}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Continuum Mechanics}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Fluid Mechanics}{1}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Boltzmann Equation}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}The Phase Space and the Density Function}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Principal Statement}{5}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Force and Diffusion Terms}{5}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Conservation Equations}{6}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Limitations of the Boltzmann Equation}{7}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Direct Simulation Monte Carlo (DSMC) Method}{8}{chapter.3}%
+\contentsline {section}{\numberline {3.1}The Algorithm}{8}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Collisions}{9}{section.3.2}%
+\contentsline {chapter}{\numberline {4}SPARTA}{12}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Effect of Slip on Vortex Shedding}{14}{section.4.1}%
+\contentsline {chapter}{\numberline {5}1D Fourier Flow}{16}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Setup}{16}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Solution for 20 Particles per Grid Cell}{18}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Solution for 100 Particles per Grid Cell}{19}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Deviation of the Solution from the Analytical Slope}{20}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Case 1 : Resolving the Grid}{21}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Case 2 : Changing the Knudsen Number}{22}{subsection.5.4.2}%
+\contentsline {chapter}{\numberline {6}2D Flow Around a Cylinder}{23}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Setup}{23}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Ray Traced Images}{24}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Future Directions}{27}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Martian Atmosphere}{28}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Descent Characteristics}{28}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Chemical Composition}{31}{subsection.7.1.2}%
+\contentsline {chapter}{\numberline {8}Conclusions}{33}{chapter.8}%
