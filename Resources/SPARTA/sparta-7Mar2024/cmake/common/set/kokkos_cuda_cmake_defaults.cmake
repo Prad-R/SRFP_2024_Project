@@ -1,3 +1,0 @@
-set(Kokkos_ENABLE_CUDA_LAMBDA
-    ON
-    CACHE STRING "")
