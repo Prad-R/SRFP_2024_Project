@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 # Script:  grid_refine.py
 # Purpose: create a refined hierarchical grid around
@@ -330,7 +330,8 @@ print(file=fp)
 count = 0
 for parent in plist:
   count += 1
-  print(count,parent[0],parent[1],parent[2],parent[3], file=fp)
+  #print(count,parent[0],parent[1],parent[2],parent[3], file=fp)
+  print(parent[0],parent[1],parent[2],parent[3], file=fp)
   
 fp.close()
 
