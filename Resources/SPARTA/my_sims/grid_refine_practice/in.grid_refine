@@ -1,0 +1,49 @@
+	#################################################################################
+# Initialisation
+#################################################################################
+
+dimension 	2
+seed 		5838959
+units 		si
+
+################################################################################
+# Problem Definition
+################################################################################
+
+boundary 		pp pp pp
+create_box 		-100 200 -100 100 -0.5 0.5
+#read_grid		./grid.txt
+create_grid		150 100 1
+
+
+species 		./species_vss_files/ar.species Ar
+mixture 		air Ar
+
+read_surf		./circle.surf group circle_surf
+
+#create_particles 	air n ${n_sim_particles} velocity v_init_x v_init_y NULL x y NULL
+
+###############################################################################
+# Settings
+###############################################################################
+
+#collide 	vss air ./species_vss_files/ar.vss
+surf_collide	circle_collide specular
+surf_modify	circle_surf collide circle_collide
+
+adapt_grid	all refine surf all 0.05 iterate 2 cells 2 2 1
+
+global		fnum 1
+timestep	0.1	
+
+##############################################################################
+# Output
+##############################################################################
+
+dump		flow image air 10 ./dump.*.ppm type type pdiam 5.0e-4 sline yes 5.0e-4 view 0 0 size 1920 1080 zoom 8 gline yes 0.001 shiny 1.0 box yes 0.005
+dump_modify	flow pad 7 boxcolor yellow
+
+stats_style	step wall np nscoll ncoll nattempt
+stats		10
+
+run		20
