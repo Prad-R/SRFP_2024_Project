@@ -1,0 +1,262 @@
+################################################################################
+# 2D flow around a cylinder
+#
+# Note:
+#  - The "comm/sort” option to the “global” command is used to match MPI runs.
+#  - The “twopass” option is used to match Kokkos runs.
+# The "comm/sort" and "twopass" options should not be used for production runs.
+################################################################################
+
+################################################################################
+# Variables
+################################################################################
+
+variable	diameter 		equal 		" 1.0e-2 " 
+
+variable 	x_min 			equal 		" (- 10 * v_diameter) "
+variable	x_max 			equal 		" (20 * v_diameter) "
+variable	y_min 			equal 		" (-10 * v_diameter) "
+variable	y_max 			equal 		" (10 * v_diameter) "
+variable	z_min 			equal 		" -0.5 "
+variable	z_max 			equal 		" 0.5 "
+variable	volume			equal 		" ((v_x_max - v_x_min) * (v_y_max - v_y_min) * (v_z_max - v_z_min)) "
+
+variable	aspect_ratio		equal 		" ((v_y_max - v_y_min) / (v_x_max - v_x_min)) "
+variable	grid_resolution 	equal 		" 2 "
+variable	x_sampling_cells 	equal 		" (((v_x_max - v_x_min) / v_diameter) * v_grid_resolution) "
+variable	y_sampling_cells 	equal 		" (v_aspect_ratio * v_x_sampling_cells) "
+variable	z_sampling_cells 	equal 		" 1 "
+variable	x_collision_cells 	equal 		" 2 "
+variable	y_collision_cells 	equal 		" 1 "
+variable	z_collision_cells 	equal 		" 1 "
+variable	n_cells 		equal 		" ((v_x_sampling_cells * v_y_sampling_cells * v_z_sampling_cells) * (v_x_collision_cells * v_y_collision_cells * v_z_collision_cells)) "
+variable	refine_size		equal		" (v_diameter / 50) "
+
+variable	x_avg			equal		" (0.5 * (v_x_max + v_x_min))"
+variable	y_avg			equal		" (0.5 * (v_y_max + v_y_min))"
+variable	z_avg			equal		" (0.5 * (v_z_max + v_z_min))"
+variable	x_thick			equal		" ((v_x_max - v_x_min) / (v_x_sampling_cells * v_x_collision_cells)) "
+variable	y_thick			equal		" ((v_y_max - v_y_min) / (v_y_sampling_cells * v_y_collision_cells)) "
+variable	z_thick			equal		" ((v_z_max - v_z_min) / (v_z_sampling_cells * v_z_collision_cells)) "
+variable	x_in			equal		" (v_x_min + v_x_thick) "
+
+variable	kn_ar			equal		" 0.01 "
+variable	kn_ar_real_time		equal		" (v_kn_ar) "
+variable	lambda_ar		equal		" (v_kn_ar * v_diameter) "
+variable	dia_ar			equal		" 3.658e-10 "
+variable	n_dens			equal		" (1 / (sqrt(2) * PI * (v_dia_ar ^ 2) * v_lambda_ar)) "
+variable	n_actual_particles	equal		" (v_n_dens * v_volume) "
+variable	ppgc			equal		" 105 "
+variable 	n_sim_particles		equal		" (v_n_cells * v_ppgc) "
+variable	f_n			equal		" (v_n_actual_particles / v_n_sim_particles) "
+
+variable	k_b			equal		" 1.38e-23 "
+variable	mass_ar			equal		" 6.63e-26 "
+variable	temperature		equal		" 500 "
+variable	vel_mps			equal		" (sqrt((2 * v_k_b * v_temperature) / v_mass_ar)) "
+variable	mean_coll_time		equal		" (v_lambda_ar / v_vel_mps) "
+
+variable	circle_dia		equal		" 6 "
+variable	circle_scale		equal		" (v_diameter / v_circle_dia)"
+variable	frac_origin_x		equal 		" 1 / 3 "
+variable	frac_origin_y		equal 		" 0.5 "
+variable	frac_origin_z		equal 		" 0.5 "
+
+variable	r_ar			equal		" 208.13 "
+variable	gamma_ar		equal		" 5 / 3 "
+variable	pressure		equal 		" (v_n_dens * v_k_b * v_temperature) "
+
+variable	sound_vel		equal		" sqrt(v_gamma_ar * v_r_ar * v_temperature) "
+variable	mach_i			equal		" 1.96 "
+variable	total_temp		equal		" (v_temperature * (1 + 0.5 * (v_gamma_ar - 1) * v_mach_i ^ 2)) "
+variable	surf_temp		equal		" (0.7 * v_total_temp) "
+variable	re_ar			equal		" ( (v_mach_i / v_kn_ar_real_time) * sqrt((v_gamma_ar * PI) / 2) ) "
+variable	vel_inlet_x		equal		" (v_mach_i * v_sound_vel) "
+variable	v_init_x		equal		" 0 "
+variable	v_init_y		equal		" 0 "
+variable	x			internal	0
+variable	y			internal	0
+
+variable	tstep 			equal 		" (v_mean_coll_time / 10) "
+variable	steps 			equal 		" 1.0e6 "
+variable	time 			equal 		" (v_steps * v_tstep) "
+variable	n_freq 			equal 		" 5.0e3 "
+variable	n_every 		equal 		" 1 "
+variable	n_repeat 		equal 		" 5.0e3 "
+
+#################################################################################
+# Printing Variables to the log file
+#################################################################################
+
+print		" =============================================================== "
+
+print		" ---------------- "
+print		" The diameter of the circle is ${diameter} "
+print		" ---------------- "
+
+print		" =============================================================== "
+
+print		" ---------------- "
+print		" x-min = ${x_min} "
+print		" ---------------- "
+print		" x-max = ${x_max} "
+print		" ---------------- "
+print		" y-min = ${y_min} "
+print		" ---------------- "
+print		" y-max = ${y_max} "
+print		" ---------------- "
+print		" z-min = ${z_min} "
+print		" ---------------- "
+print		" z-max = ${z_max} "
+print		" ---------------- "
+print		" Volume of Simulation Box = ${volume} "
+print		" ---------------- "
+
+print		" =============================================================== "
+
+print		" x-sampling-cells = ${x_sampling_cells} "
+print		" ---------------- "
+print		" y-sampling-cells = ${y_sampling_cells} "
+print		" ---------------- "
+print		" z-sampling-cells = ${z_sampling_cells} "
+print		" ---------------- "
+print		" x-collision-cells = ${x_collision_cells} "
+print		" ---------------- "
+print		" y-collision-cells = ${y_collision_cells} "
+print		" ---------------- "
+print		" z-collision-cells = ${z_collision_cells} "
+print		" ---------------- "
+print		" n-cells = ${n_cells} "
+print		" ---------------- "
+print		" Aspect Ratio of Simulation Box = ${aspect_ratio} "
+print		" ---------------- "
+
+print		" =============================================================== "
+
+print		" Target Knudsen Number of Argon = ${kn_ar} "
+print		" ---------------- "
+print		" Target Mean Free Path of Simulation Box = ${lambda_ar} "
+print		" ---------------- "
+print		" Target Number Density of Argon = ${n_dens} "
+print		" ---------------- "
+print		" Target Number Density of Argon = ${n_dens} "
+print		" ---------------- "
+
+print		" =============================================================== "
+
+print		" Number of Actual Particles = ${n_actual_particles} "
+print		" ---------------- "
+print		" Number of Simulated Particles = ${n_sim_particles} "
+print		" ---------------- "
+print		" Simulation Ratio = ${f_n} "
+print		" ---------------- "
+print 		" The number of particles per collision cell = ${ppgc} "
+print		" ---------------- "
+print		" Temperature of particles at the inlet = ${temperature} K "
+print		" ---------------- "
+print		" Pressure of particles at the inlet = ${pressure} Pa "
+print		" ---------------- "
+print		" MPS Velocity of Argon = ${vel_mps} m/s "
+print		" ---------------- "
+print		" Timestep = ${tstep} "
+print		" ---------------- "
+print		" Number of steps in the simulation = ${steps} "
+print		" ---------------- "
+print		" Total time of the simulation = ${time} "
+print		" ---------------- "
+print		" Considering readings every _____ ${n_every} _____ steps "
+print		" ---------------- "
+print		" Considering the last _____ ${n_repeat} _____ readings separated by _____ ${n_every} _____ steps for averaging "
+print		" ---------------- "
+print		" Computing values every _____ ${n_freq} _____ steps "
+print		" ---------------- "
+
+print		" =============================================================== "
+
+print		" Velocity at the inlet is (${vel_inlet_x},0,0) m/s "
+print		" ---------------- "
+print		" Inlet Mach number is ${mach_i} "
+print		" ---------------- "
+print		" Reynolds number is ${re_ar} "
+print		" ---------------- "
+print		" Total temperature of free stream is ${total_temp} K "
+print		" ---------------- "
+
+print		" =============================================================== "
+
+#################################################################################
+# Initialisation
+#################################################################################
+
+dimension 	2
+seed 		5838959
+units 		si
+
+################################################################################
+# Problem Definition
+################################################################################
+
+boundary 		so oo pp
+create_box 		${x_min} ${x_max} ${y_min} ${y_max} ${z_min} ${z_max}
+create_grid 		${x_sampling_cells} ${y_sampling_cells} ${z_sampling_cells} levels 2 subset 2 * * * ${x_collision_cells} ${y_collision_cells} ${z_collision_cells}
+balance_grid 		rcb part
+
+region			x_inlet_reg block ${x_min} ${x_in} ${y_min} ${y_max} ${z_min} ${z_max}
+group			x_inlet_grp grid region x_inlet_reg center
+
+species 		./species_vss_files/ar.species Ar
+mixture 		air Ar nrho ${n_dens} vstream ${vel_inlet_x} 0 0 temp ${temperature}
+
+read_surf		./surf_files/circle.surf origin 5 5 0 scale ${circle_scale} ${circle_scale} 1 group circle_surf atrans 0 0 0 particle keep
+
+create_particles 	air n ${n_sim_particles} velocity v_init_x v_init_y NULL x y NULL
+
+###############################################################################
+# Settings
+###############################################################################
+
+surf_collide	circle_collide diffuse ${surf_temp} 0.0
+surf_modify	circle_surf collide circle_collide
+surf_collide	inlet vanish
+bound_modify	xlo collide inlet
+
+adapt_grid	all refine surf all ${refine_size} iterate 2 cells 2 2 1
+
+collide 	vss air ./species_vss_files/ar.vss
+
+global		fnum ${f_n}
+timestep	${tstep}
+
+fix		inlet emit/face air xlo n 40 nevery 1 perspecies no
+
+compute		elemental_lift_drag surf circle_surf air fy fx
+fix		elemental_lift_drag_avg ave/surf circle_surf ${n_every} ${n_repeat} ${n_freq} c_elemental_lift_drag[*]
+
+compute		total_lift_drag	reduce sum f_elemental_lift_drag_avg[1] f_elemental_lift_drag_avg[2]
+
+compute 	dens grid x_inlet_grp air massrho
+
+variable	kn_ar_real_time delete
+
+variable	kn_ar_real_time equal " (1 / (sqrt(2) * PI * ((np * v_f_n) / v_volume) * (v_dia_ar ^ 2) * v_diameter) ) "
+
+variable 	d_by_l equal " (c_total_lift_drag[2] / (c_total_lift_drag[1] + 1.0e-6)) "
+
+##############################################################################
+# Output
+##############################################################################
+
+dump		flow image air ${n_freq} ./images/dump.*.ppm type type pdiam 4.0e-4 sline yes 2.0e-3 view 0 0 size 1920 1080 zoom 8 gline yes 0.002 shiny 1.0 box yes 0.005
+dump_modify	flow pad 7 boxcolor yellow
+
+dump		dens grid x_inlet_grp ${n_freq} ./grid_files/dens.*.grid c_dens[*]
+dump_modify	dens pad 7
+
+dump		grid_id grid all ${n_freq} ./grid_id/grid_id.*.txt idstr
+dump_modify	grid_id pad 7
+
+stats_style	step wall np nscoll ncoll nattempt c_total_lift_drag[1] c_total_lift_drag[2] v_d_by_l v_kn_ar_real_time v_re_ar
+stats_modify	format line "%07d %07.2f %6d %02d %05d %05d %+07.4f %+07.4f %+010.4f %.4f %.4f"
+stats		${n_freq}
+
+run		${steps}	
