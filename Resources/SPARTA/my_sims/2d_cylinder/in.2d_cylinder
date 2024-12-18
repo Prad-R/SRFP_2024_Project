@@ -27,18 +27,26 @@ variable	x_sampling_cells 	equal 		" (((v_x_max - v_x_min) / v_diameter) * v_gri
 variable	y_sampling_cells 	equal 		" (v_aspect_ratio * v_x_sampling_cells) "
 variable	z_sampling_cells 	equal 		" 1 "
 variable	x_collision_cells 	equal 		" 2 "
-variable	y_collision_cells 	equal 		" 2 "
+variable	y_collision_cells 	equal 		" 1 "
 variable	z_collision_cells 	equal 		" 1 "
 variable	n_cells 		equal 		" ((v_x_sampling_cells * v_y_sampling_cells * v_z_sampling_cells) * (v_x_collision_cells * v_y_collision_cells * v_z_collision_cells)) "
 variable	refine_size		equal		" (v_diameter / 50) "
 
-variable	kn_ar			equal		" 0.08	 "
+variable	x_avg			equal		" (0.5 * (v_x_max + v_x_min))"
+variable	y_avg			equal		" (0.5 * (v_y_max + v_y_min))"
+variable	z_avg			equal		" (0.5 * (v_z_max + v_z_min))"
+variable	x_thick			equal		" ((v_x_max - v_x_min) / (v_x_sampling_cells * v_x_collision_cells)) "
+variable	y_thick			equal		" ((v_y_max - v_y_min) / (v_y_sampling_cells * v_y_collision_cells)) "
+variable	z_thick			equal		" ((v_z_max - v_z_min) / (v_z_sampling_cells * v_z_collision_cells)) "
+variable	x_in			equal		" (v_x_min + v_x_thick) "
+
+variable	kn_ar			equal		" 0.01 "
 variable	kn_ar_real_time		equal		" (v_kn_ar) "
 variable	lambda_ar		equal		" (v_kn_ar * v_diameter) "
 variable	dia_ar			equal		" 3.658e-10 "
 variable	n_dens			equal		" (1 / (sqrt(2) * PI * (v_dia_ar ^ 2) * v_lambda_ar)) "
 variable	n_actual_particles	equal		" (v_n_dens * v_volume) "
-variable	ppgc			equal		" 20 "
+variable	ppgc			equal		" 105 "
 variable 	n_sim_particles		equal		" (v_n_cells * v_ppgc) "
 variable	f_n			equal		" (v_n_actual_particles / v_n_sim_particles) "
 
@@ -148,7 +156,7 @@ print		" Temperature of particles at the inlet = ${temperature} K "
 print		" ---------------- "
 print		" Pressure of particles at the inlet = ${pressure} Pa "
 print		" ---------------- "
-print		" MPS Velocity of Argon = ${vel_mps} K "
+print		" MPS Velocity of Argon = ${vel_mps} m/s "
 print		" ---------------- "
 print		" Timestep = ${tstep} "
 print		" ---------------- "
@@ -171,6 +179,8 @@ print		" Inlet Mach number is ${mach_i} "
 print		" ---------------- "
 print		" Reynolds number is ${re_ar} "
 print		" ---------------- "
+print		" Total temperature of free stream is ${total_temp} K "
+print		" ---------------- "
 
 print		" =============================================================== "
 
@@ -186,10 +196,13 @@ units 		si
 # Problem Definition
 ################################################################################
 
-boundary 		so pp pp
+boundary 		so oo pp
 create_box 		${x_min} ${x_max} ${y_min} ${y_max} ${z_min} ${z_max}
 create_grid 		${x_sampling_cells} ${y_sampling_cells} ${z_sampling_cells} levels 2 subset 2 * * * ${x_collision_cells} ${y_collision_cells} ${z_collision_cells}
 balance_grid 		rcb part
+
+region			x_inlet_reg block ${x_min} ${x_in} ${y_min} ${y_max} ${z_min} ${z_max}
+group			x_inlet_grp grid region x_inlet_reg center
 
 species 		./species_vss_files/ar.species Ar
 mixture 		air Ar nrho ${n_dens} vstream ${vel_inlet_x} 0 0 temp ${temperature}
@@ -204,8 +217,8 @@ create_particles 	air n ${n_sim_particles} velocity v_init_x v_init_y NULL x y N
 
 surf_collide	circle_collide diffuse ${surf_temp} 0.0
 surf_modify	circle_surf collide circle_collide
-surf_collide	inlet vanish
-bound_modify	xlo collide inlet
+surf_collide	inlet td ${temperature}
+bound_modify	xlo collide inlet 
 
 adapt_grid	all refine surf all ${refine_size} iterate 2 cells 2 2 1
 
@@ -214,14 +227,14 @@ collide 	vss air ./species_vss_files/ar.vss
 global		fnum ${f_n}
 timestep	${tstep}
 
-fix		inlet emit/face air xlo n 83 nevery 1 perspecies no
+fix		inlet emit/face air xlo n 40 nevery 1 perspecies no
 
 compute		elemental_lift_drag surf circle_surf air fy fx
 fix		elemental_lift_drag_avg ave/surf circle_surf ${n_every} ${n_repeat} ${n_freq} c_elemental_lift_drag[*]
 
 compute		total_lift_drag	reduce sum f_elemental_lift_drag_avg[1] f_elemental_lift_drag_avg[2]
 
-compute 	dens grid all air massrho
+compute 	dens grid x_inlet_grp air massrho
 
 variable	kn_ar_real_time delete
 
@@ -233,10 +246,10 @@ variable 	d_by_l equal " (c_total_lift_drag[2] / (c_total_lift_drag[1] + 1.0e-6)
 # Output
 ##############################################################################
 
-dump		flow image air ${n_freq} ./images/dump.*.ppm type type pdiam 5.0e-4 sline yes 2.0e-3 view 0 0 size 1920 1080 zoom 8 gline yes 0.002 shiny 1.0 box yes 0.005
+dump		flow image air ${n_freq} ./images/dump.*.ppm type type pdiam 4.0e-4 sline yes 2.0e-3 view 0 0 size 1920 1080 zoom 8 gline yes 0.002 shiny 1.0 box yes 0.005
 dump_modify	flow pad 7 boxcolor yellow
 
-dump		dens grid all ${n_freq} ./grid_files/dens.*.grid c_dens[*]
+dump		dens grid x_inlet_grp ${n_freq} ./grid_files/dens.*.grid c_dens[*]
 dump_modify	dens pad 7
 
 dump		grid_id grid all ${n_freq} ./grid_id/grid_id.*.txt idstr
