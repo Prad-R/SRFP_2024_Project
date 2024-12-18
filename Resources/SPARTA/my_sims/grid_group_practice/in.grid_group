@@ -1,0 +1,62 @@
+#################################################################################
+# Variables
+#################################################################################
+
+variable 	circle_scale	equal	" 0.01 / 6 "
+
+#################################################################################
+# Initialisation
+#################################################################################
+
+dimension 	2
+seed 		5838959
+units 		si
+
+################################################################################
+# Problem Definition
+################################################################################
+
+boundary 		pp pp pp
+create_box 		-0.1 0.2 -0.1 0.1 -0.5 0.5
+create_grid		60 40 1
+
+region			yeq0_reg block -0.1 0.2 0.005 0.010 -0.5 0.5
+group			yeq0_grp grid region yeq0_reg center
+
+species 		./species_vss_files/ar.species Ar
+mixture 		air Ar
+
+read_surf		./circle.surf origin 5 5 0 scale ${circle_scale} ${circle_scale} 1 group circle_surf atrans 0 0 0 particle keep
+
+#create_particles 	air n 96000
+
+###############################################################################
+# Settings
+###############################################################################
+
+#collide 	vss air ./species_vss_files/ar.vss
+surf_collide	circle_collide specular
+surf_modify	circle_surf collide circle_collide
+
+adapt_grid	all refine surf all 0.001 iterate 2 cells 2 2 1
+
+compute 	dens grid yeq0_grp air massrho
+
+global		fnum 1
+timestep	0.1	
+
+##############################################################################
+# Output
+##############################################################################
+
+dump		flow image air 10 ./dump.*.ppm type type pdiam 5.0e-4 sline yes 5.0e-3 view 0 0 size 1920 1080 zoom 8 gline yes 0.002 shiny 1.0 box yes 0.01
+dump_modify	flow pad 7 boxcolor yellow
+
+dump		grid_id grid yeq0_grp 30 ./grid_id.*.txt idstr
+
+dump		dens grid yeq0_grp 30 ./dens.*.grid c_dens[*]
+
+stats_style	step wall np nscoll ncoll nattempt
+stats		10
+
+run		20
